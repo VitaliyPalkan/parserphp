@@ -1,0 +1,373 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Лента новостей. Комментарии посетителей - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/?mode=209" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/?mode=209" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">Лента новостей. Комментарии посетителей</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=74" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-09-07_17-20-21.JPG">
+ Вид из гостиницы Черкассы, 1965 г.</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=4" class="link_razdel_gallery" title="Открыть раздел галереи">Город</a> (25 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1551" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2016-11-18-366djonsony.jpg"><br>
+ Успеть за Джонсами</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">ТРЦ "ДнепроПлаза"</a><br>
+ (5 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      <h2>Лента новостей. Комментарии посетителей</h2>
+
+<table class='table_comments'>
+<tr class=tr_colored1><td>Первый? А как же питьевые фонтаны в парках? Или парки... (<b>Володя</b>, 2016-04-26 14:52:26) - <a href="/news/7987/"></a></td></tr><tr class=tr_colored2><td>Прокурор обязан настаивать не просто на 115, а на высшей... (<b>Алексей Венедиктович</b>, 2016-01-12 08:43:26) - <a href="/news/7939/"></a></td></tr><tr class=tr_colored1><td>Добрый день!Как можно записаться на прием?Подскажите пожалуйста.... (<b>Оля</b>, 2015-11-18 19:05:06) - <a href="/news/524/"></a></td></tr><tr class=tr_colored2><td>Утримувачів собак потрібно притягти до кримінальної відповідальності і вимагати до... (<b>Ярмоленко</b>, 2015-09-18 10:34:06) - <a href="/news/7904/"></a></td></tr><tr class=tr_colored1><td>Дякую за статтю, дуже корисна інформація. До речі, інвітро мені... (<b>Вероніка</b>, 2015-08-12 12:25:03) - <a href="/news/7890/"></a></td></tr><tr class=tr_colored2><td>КНП "Перша Черкаська міська лікарня" ЧМР<br />
+http://1ml.ck.ua... (<b>Перша Черкаська міська лікарня</b>, 2015-08-07 22:42:10) - <a href="/news/7018/"></a></td></tr><tr class=tr_colored1><td>А почему обязательна регистрация? Есть же скромные люди, которым слава... (<b>Александр</b>, 2015-07-27 09:21:43) - <a href="/news/5013/"></a></td></tr><tr class=tr_colored2><td>одно меня радует, что рано или поздно человечество вымрет.... (<b>Черкас</b>, 2015-07-10 14:06:14) - <a href="/news/7876/"></a></td></tr><tr class=tr_colored1><td>Це ж як вона його дістала...... (<b>Dfcz</b>, 2015-07-03 10:03:15) - <a href="/news/7874/"></a></td></tr><tr class=tr_colored2><td>Ничево не поменялось с приходом новой власти как шугали за... (<b>Вечно Недовольный</b>, 2015-06-25 15:23:54) - <a href="/news/7876/"></a></td></tr><tr class=tr_colored1><td>Стефан,<br />
+зазвичай жінки перевіряються на вагітність, здаючи тест №66 Хоріонічний... (<b>ІНВІТРО</b>, 2015-03-05 11:26:52) - <a href="/news/7823/"></a></td></tr><tr class=tr_colored2><td>Стефан, заздрю вашій дружині, що має такого чоловіка як Ви)))... (<b>Таня</b>, 2015-03-03 13:58:45) - <a href="/news/7823/"></a></td></tr><tr class=tr_colored1><td>Доброго дня А скільки буде коштувать узять наліз на вагітність... (<b>Стефан</b>, 2015-02-26 15:36:56) - <a href="/news/7823/"></a></td></tr><tr class=tr_colored2><td>А где зарплаты? На какие ставки набираются полицейские?! Меньше 5... (<b>НЕсепаратист</b>, 2015-01-27 12:29:21) - <a href="/news/7806/"></a></td></tr><tr class=tr_colored1><td>Как уже русские надоели со своей войной!(... (<b>Vladlen</b>, 2014-11-20 12:07:58) - <a href="/newsua/1659/"></a></td></tr><tr class=tr_colored2><td>Фу гадость! Никогда не пойму этих монстров. А у девушек... (<b>Сергей</b>, 2014-10-31 12:28:49) - <a href="/news/7746/"></a></td></tr><tr class=tr_colored1><td>Если  кому не нравится - у нас демократия давайте... (<b>Владимир Владимирович П.</b>, 2014-08-10 19:09:36) - <a href="/news/7501/"></a></td></tr><tr class=tr_colored2><td>Всегда любил подтянутых цыпочек - обязательно приеду с Киева.... (<b>Геннадий</b>, 2014-07-21 12:05:41) - <a href="/news/7667/"></a></td></tr><tr class=tr_colored1><td>Украинцы демонтируют памятники основателю Украины. Чудны дела твои, Господи!... (<b>Николай</b>, 2014-04-25 21:42:31) - <a href="/news/7501/"></a></td></tr><tr class=tr_colored2><td>"аби на державному рівні був запроваджений контроль за цінами на... (<b>Сергей</b>, 2014-04-16 17:54:05) - <a href="/news/7579/"></a></td></tr><tr class=tr_colored1><td>Ну, что лучше жить стало "стахановцы"?... (<b>Прохожий</b>, 2014-03-30 19:23:14) - <a href="/news/7501/"></a></td></tr><tr class=tr_colored2><td>у меня племянница в каневе живет. говорит все нормально, только... (<b>евгений</b>, 2014-03-17 17:52:11) - <a href="/news/7498/"></a></td></tr><tr class=tr_colored1><td>Не, ну а чо? Коммунякам можно улицы в честь террористов... (<b>Галя из СССР</b>, 2014-03-05 13:07:14) - <a href="/news/7507/"></a></td></tr><tr class=tr_colored2><td>vk.com/id244851019  <br />
+Приєднуйтесь!!!... (<b>НОД Черкаси</b>, 2014-03-04 19:22:32) - <a href="/news/7511/"></a></td></tr><tr class=tr_colored1><td>На самом деле, задрали придурки. Сами ни фига не читают,... (<b>Дмитрий</b>, 2014-03-02 15:29:29) - <a href="/news/7498/"></a></td></tr><tr class=tr_colored2><td>Согласно принятой понятийной терминологии, демократическое государство подразумевает, что "Народ является... (<b>Черновоцкий</b>, 2014-02-27 09:28:03) - <a href="/news/7498/"></a></td></tr><tr class=tr_colored1><td>ленинов поваляли, а ни один маєток не горит... эт че,... (<b>Achmad</b>, 2014-02-26 11:55:45) - <a href="/news/7501/"></a></td></tr><tr class=tr_colored2><td>это так мы строим демократическое государство... я еду по своей... (<b>Gud</b>, 2014-02-24 15:59:56) - <a href="/news/7498/"></a></td></tr><tr class=tr_colored1><td>Хорошо что в Черкассах еще есть адекватные люди!Спасибо за статью.... (<b>Rodion</b>, 2014-02-24 06:48:26) - <a href="/news/7494/"></a></td></tr><tr class=tr_colored2><td>Я хочу занемаца кик боксом... (<b>олег</b>, 2014-02-23 00:24:48) - <a href="/news/2177/"></a></td></tr><tr class=tr_colored1><td>все правильно... только вместо кличка/тягнибока в жертву принесли несколько десятков... (<b>Gkr</b>, 2014-02-22 21:30:47) - <a href="/news/7494/"></a></td></tr><tr class=tr_colored2><td>Какую чушь вы тут печатаете... (<b>mukola</b>, 2014-02-21 18:35:19) - <a href="/news/7494/"></a></td></tr><tr class=tr_colored1><td>Всё - якобы ради блага народа. А на деле они... (<b>pro</b>, 2014-02-20 23:30:21) - <a href="/news/7494/"></a></td></tr><tr class=tr_colored2><td>нет не  то ... (<b>алина просмориливая </b>, 2014-02-12 19:19:10) - <a href="/news/5702/"></a></td></tr><tr class=tr_colored1><td>От-то я і думаю: шось златогорчик на смак в останній... (<b>Гриша с ЖД</b>, 2014-02-11 11:35:18) - <a href="/news/7475/"></a></td></tr><tr class=tr_colored2><td>Негодяи! Такая банька замечательная, а! Я туда с подругами частенько... (<b>Иннокентий</b>, 2014-02-11 11:06:14) - <a href="/news/7481/"></a></td></tr><tr class=tr_colored1><td>может и ещё как ... (<b>stepan - chemodan</b>, 2014-01-05 00:44:04) - <a href="/news/7438/"></a></td></tr><tr class=tr_colored2><td>И снова та же петрушка: почему вы не пишете имён?... (<b>Аркаша</b>, 2013-12-29 21:25:54) - <a href="/news/7437/"></a></td></tr><tr class=tr_colored1><td>А если привить от бешенства человека, то он уже никогда... (<b>Джек Воробей</b>, 2013-12-29 21:22:08) - <a href="/news/7438/"></a></td></tr><tr class=tr_colored2><td>Спасибо жителям Донецка... (<b>Папа</b>, 2013-12-25 09:40:35) - <a href="/news/7436/"></a></td></tr><tr class=tr_colored1><td>Слава герою, его земной путь уже закончен. Многие хотели бы... (<b>Сергей</b>, 2013-12-09 12:23:32) - <a href="/news/7411/"></a></td></tr><tr class=tr_colored2><td>Вы бы лучше за ценообразованием следили на Украине, тогда бы... (<b>Путин</b>, 2013-11-26 11:20:09) - <a href="/news/7387/"></a></td></tr><tr class=tr_colored1><td>так у нас бюджета не когда хватать не будет.сколько еще... (<b>владимир</b>, 2013-11-21 14:51:58) - <a href="/news/7367/"></a></td></tr><tr class=tr_colored2><td>В пьяном состоянии машиной убил человека - 5 лет!<br />
+Да... (<b>Валентин</b>, 2013-11-11 20:27:30) - <a href="/news/7356/"></a></td></tr><tr class=tr_colored1><td>- Прокуратура смотрит в свой карман, который наполняется вот этими,... (<b>Марк</b>, 2013-11-01 14:42:31) - <a href="/news/3074/"></a></td></tr><tr class=tr_colored2><td>Полностью согласна с автором статьи.Медицинские работники (врачи, зав. отделениями и... (<b>Светлана</b>, 2013-10-30 19:00:09) - <a href="/news/3074/"></a></td></tr><tr class=tr_colored1><td>Странно.. видимо, как всегда рассея катит бочку на нас. рошеновские... (<b>XXX</b>, 2013-10-28 15:57:53) - <a href="/newsua/1622/"></a></td></tr><tr class=tr_colored2><td>Млин, хахлы замучали уже на Красной площади тусить! Панаехали.. так... (<b>Алехандро</b>, 2013-10-28 15:45:16) - <a href="/newsua/1621/"></a></td></tr><tr class=tr_colored1><td>И свои там были в курсе.... (<b>Ramzes</b>, 2013-10-16 13:41:11) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored2><td>А где имя? Кого задержали? Народ должен знать своих героев!... (<b>Сталин</b>, 2013-10-07 16:14:33) - <a href="/news/7296/"></a></td></tr><tr class=tr_colored1><td>А у меня всё греет) Даже теперь в унитазе когда... (<b>Владик</b>, 2013-10-07 16:07:47) - <a href="/news/7291/"></a></td></tr><tr class=tr_colored2><td>Это все замечательно но в квартирах температура опустилась ниже установленной... (<b>замерзающий!!!</b>, 2013-10-04 11:52:59) - <a href="/news/7291/"></a></td></tr><tr class=tr_colored1><td>Местный, ну ничего, на тот год будет! Что вы всё... (<b>Антуан</b>, 2013-08-28 09:06:03) - <a href="/news/7221/"></a></td></tr><tr class=tr_colored2><td>Покидьки!!!... (<b>Чесне слово</b>, 2013-08-24 01:56:00) - <a href="/news/7224/"></a></td></tr><tr class=tr_colored1><td>Вы бы еще зимой его открыли :)... (<b>Местный</b>, 2013-08-22 17:39:39) - <a href="/news/7221/"></a></td></tr><tr class=tr_colored2><td>Бабло рулит ! Да, Мирза никак нинажрется , депутат хе*ов... (<b>Сергей</b>, 2013-08-20 17:37:07) - <a href="/news/7214/"></a></td></tr><tr class=tr_colored1><td>весь скот вивезли ферми розибрали... (<b>николай</b>, 2013-07-29 09:22:38) - <a href="/news/1404/"></a></td></tr><tr class=tr_colored2><td>А кто теперь потолок ремонтировать будет и пулю вынимать?... (<b>Евгений Ваганыч</b>, 2013-07-22 10:20:10) - <a href="/news/7174/"></a></td></tr><tr class=tr_colored1><td>Интересно, а есть ли свидетели того, как "злодей" бьёт себя... (<b>Анатолий</b>, 2013-07-22 09:21:45) - <a href="/news/7170/"></a></td></tr><tr class=tr_colored2><td>Скажіть будь ласка переоформляю пай бабусі  оскільки мама ... (<b>Ольга</b>, 2013-07-17 16:32:36) - <a href="/news/6347/"></a></td></tr><tr class=tr_colored1><td>Редакция, побольше бы таких ПРАВИЛЬНЫХ фото!)) Настроение так и поднимается!... (<b>Джастин Тимберлейк</b>, 2013-07-14 12:39:19) - <a href="/news/7165/"></a></td></tr><tr class=tr_colored2><td>де фотографії ?... (<b>ира </b>, 2013-07-02 21:29:18) - <a href="/news/4048/"></a></td></tr><tr class=tr_colored1><td>Последний кусок хлеба отнимают, полицаи поганые... Снова конфискуют кабачки и... (<b>Макар Джонович</b>, 2013-06-10 15:28:37) - <a href="/news/7105/"></a></td></tr><tr class=tr_colored2><td>а я не буду економить... (<b>Слава</b>, 2013-06-07 08:37:35) - <a href="/news/7100/"></a></td></tr><tr class=tr_colored1><td>Та вона гарна і цнотлива дівчинка. Не набалакуйте.... (<b>Ритуля</b>, 2013-06-06 11:10:03) - <a href="/news/7011/"></a></td></tr><tr class=tr_colored2><td>Серж, Вадь, по вашим адресам уже выехали оперативные группы, пожалуйста,... (<b>Служба Безпеки</b>, 2013-06-06 11:09:10) - <a href="/news/7021/"></a></td></tr><tr class=tr_colored1><td>Как это кто будет? Вы сами и будете! Ну что... (<b>САМОНЕЗНАЮ</b>, 2013-06-06 11:06:41) - <a href="/news/7027/"></a></td></tr><tr class=tr_colored2><td>Куда вы пишете, аууу!! Это ж городской портал, а не... (<b>Вадимка</b>, 2013-06-06 11:04:31) - <a href="/news/6347/"></a></td></tr><tr class=tr_colored1><td>Wow! What a nice guys!<br />
+I love Ukraine so so... (<b>Sasha Grey</b>, 2013-06-06 11:02:46) - <a href="/news/7099/"></a></td></tr><tr class=tr_colored2><td>Господи помилуй! Ну що ви за люди такі ото, га?!<br... (<b>Віталіна Бєнєдіктовна</b>, 2013-06-06 10:58:51) - <a href="/news/7066/"></a></td></tr><tr class=tr_colored1><td>Мочили, мочат и будут мочить. Народ у нас такой: отнять... (<b>Антон Крава</b>, 2013-06-06 10:43:32) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored2><td>Этому петушку курочки ой как не хватает!... (<b>Евгеша</b>, 2013-06-06 10:40:17) - <a href="/news/7029/"></a></td></tr><tr class=tr_colored1><td>Тоже мне новость Карась сообщил! "Побори зашкалюють" во всех госструктурах... (<b>Константин Меладзе</b>, 2013-06-06 10:37:58) - <a href="/news/7066/"></a></td></tr><tr class=tr_colored2><td>Доброго дня! Скажыть будь ласка яким чином повернути або перерахувати... (<b>Неля</b>, 2013-05-30 16:46:44) - <a href="/news/6347/"></a></td></tr><tr class=tr_colored1><td>Цікаво,чи марки подарованих авто престижні,чи від вітчизняного виробника?... (<b>Марта Вісіцька</b>, 2013-05-23 22:28:25) - <a href="/news/7066/"></a></td></tr><tr class=tr_colored2><td>ничего не изменится! родители не будут говорить, чтобы не пострадал... (<b>ёрник</b>, 2013-05-23 17:21:26) - <a href="/news/7066/"></a></td></tr><tr class=tr_colored1><td>БРЕХНЯ!!!<br />
+По яким нормам міряли? По радянським 80-х років минулого... (<b>VD</b>, 2013-05-22 13:31:28) - <a href="/news/7058/"></a></td></tr><tr class=tr_colored2><td>Всёж лучше чем iдолiще поганое было 25 лет назад. А... (<b>Олексiй</b>, 2013-05-20 14:05:56) - <a href="/news/7029/"></a></td></tr><tr class=tr_colored1><td>Бабло рулит!!! Надо психиатрическую экспертизу и судье назначить...... (<b>Серж</b>, 2013-05-16 17:41:58) - <a href="/news/7050/"></a></td></tr><tr class=tr_colored2><td>всё суета сует ... (<b>Сергей</b>, 2013-05-06 10:12:27) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored1><td>А почему никто даже не вспоминает ул Героев Днепра в... (<b>татьяна</b>, 2013-05-04 20:27:59) - <a href="/news/7027/"></a></td></tr><tr class=tr_colored2><td>это- дибилизм! "птах...".... (<b>Максим</b>, 2013-04-30 18:28:28) - <a href="/news/7029/"></a></td></tr><tr class=tr_colored1><td>под суд его! с конфискацией всего добра, что мимо бюджета... (<b>Вадь</b>, 2013-04-26 01:48:54) - <a href="/news/7021/"></a></td></tr><tr class=tr_colored2><td>К Юльке Одарыча! она ему там все припомнит, и обман,... (<b>1128</b>, 2013-04-25 13:27:19) - <a href="/news/7024/"></a></td></tr><tr class=tr_colored1><td>Во жгут!!! Что ж ты сука чужие то земли разбазариваешь... (<b>Серж</b>, 2013-04-24 16:46:22) - <a href="/news/7021/"></a></td></tr><tr class=tr_colored2><td>Ничего не изменилось , как была жабой так и осталась,... (<b>Серж</b>, 2013-04-23 18:03:23) - <a href="/news/7011/"></a></td></tr><tr class=tr_colored1><td>А де тарифи на операції? Я вже замаїлася шукати! Редактори,... (<b>Марта Федорівна</b>, 2013-04-23 16:30:27) - <a href="/news/7018/"></a></td></tr><tr class=tr_colored2><td>Поцеловала короля в нужное место, и вот уже сменила кожу... (<b>Loki</b>, 2013-04-20 21:34:36) - <a href="/news/7011/"></a></td></tr><tr class=tr_colored1><td>Игорь Мельников...Это,случайно, не тот рэкетир по кличке Меля... (<b>Рут</b>, 2013-04-15 22:46:40) - <a href="/news/6991/"></a></td></tr><tr class=tr_colored2><td>Отправлял заяву на этот адрес zayava_mreo@chk.mia.qov.ua с 4х и-мейлов, письмо... (<b>Евгений</b>, 2013-04-11 12:31:28) - <a href="/news/6643/"></a></td></tr><tr class=tr_colored1><td>На базаре , бесплатно, можно столько мата наслушаться ... ... (<b>Серж</b>, 2013-04-04 17:00:33) - <a href="/news/6979/"></a></td></tr><tr class=tr_colored2><td>головного спеціаліста відділу фінансування, бухгалтерського обліку та звітності ДПІ у... (<b>Тетяна</b>, 2013-04-03 15:15:47) - <a href="/news/6592/"></a></td></tr><tr class=tr_colored1><td>Большое спасибо за статью. Не подскажете адрес данной школы или... (<b>Валя </b>, 2013-03-22 15:05:58) - <a href="/news/2470/"></a></td></tr><tr class=tr_colored2><td>Дожились,в Украине слово "бандит"стало почетным званием...... (<b>Митя</b>, 2013-03-21 18:25:27) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored1><td>прекрасная статья. И , действительно, Слава Богу, что среди нас,... (<b>Алёна</b>, 2013-03-09 21:48:09) - <a href="/news/2470/"></a></td></tr><tr class=tr_colored2><td>Очень жаль что сейчас нету етого клуба и етого тренера... (<b>Игорь </b>, 2013-02-28 09:02:26) - <a href="/news/2860/"></a></td></tr><tr class=tr_colored1><td>Естественный отбор природы :) ...... (<b>Сергей</b>, 2013-02-26 16:35:10) - <a href="/news/6919/"></a></td></tr><tr class=tr_colored2><td>я в шоке!... (<b>Руслан</b>, 2013-02-09 15:49:37) - <a href="/news/6887/"></a></td></tr><tr class=tr_colored1><td> ВИ чо за дурнів нас тримаете в Бюджеті розвитку... (<b>Громадянин СРСР!</b>, 2013-02-06 20:57:27) - <a href="/news/6890/"></a></td></tr><tr class=tr_colored2><td>скажіть будь-ласка, як можна попасти до цього цілителя? коли він... (<b>марія</b>, 2013-02-02 11:25:20) - <a href="/news/524/"></a></td></tr><tr class=tr_colored1><td>моя мечта побевать на большой сцене... (<b>инна</b>, 2013-01-31 16:06:52) - <a href="/news/5406/"></a></td></tr><tr class=tr_colored2><td>Лохонулся паренёк по неопытности, ну ничего, это всё с практикой... (<b>Людмила добрый вечер</b>, 2013-01-22 15:15:48) - <a href="/news/6856/"></a></td></tr><tr class=tr_colored1><td>было очень весело и интересно... (<b>гоша</b>, 2013-01-20 15:29:14) - <a href="/news/6857/"></a></td></tr><tr class=tr_colored2><td>А за сто тогда Субам платить квартплату если вывоз мусора... (<b>Виталий Иванович</b>, 2013-01-17 21:03:22) - <a href="/news/6850/"></a></td></tr><tr class=tr_colored1><td>2 Евгений Иванович Мииненко: расшифруйте, будьте любезны, не совсем понятно,... (<b>Григорий</b>, 2013-01-14 10:18:43) - <a href="/news/6016/"></a></td></tr><tr class=tr_colored2><td>ВЫ,,, ЧИТО    ПРОПАГАНДИРУЕ-ТУ??? Кому нужна эта корреспондентская... (<b>Евгений </b>, 2013-01-13 00:14:00) - <a href="/news/6841/"></a></td></tr><tr class=tr_colored1><td>Интересно,а есть ли у ноа-воявленных *фи-нан -сис-тов*  ...... -ящик... (<b>(Евгений Иванович  Мииненко</b>, 2013-01-13 00:05:43) - <a href="/news/6016/"></a></td></tr><tr class=tr_colored2><td>Побольше бы таких проверок, а то что-то они редки, как... (<b>Марианна</b>, 2013-01-10 12:43:13) - <a href="/news/5855/"></a></td></tr><tr class=tr_colored1><td>Ваша версия очень похожа на правду. Не стоит обольщаться, дорогие... (<b>Абдулла</b>, 2013-01-10 12:39:16) - <a href="/news/6828/"></a></td></tr><tr class=tr_colored2><td>клас... (<b>сіка</b>, 2013-01-03 11:06:12) - <a href="/news/5855/"></a></td></tr><tr class=tr_colored1><td>сложно верится что они так бистро отреагировали на визов(говорю имея... (<b>константин</b>, 2012-12-31 19:19:28) - <a href="/news/6828/"></a></td></tr><tr class=tr_colored2><td>А какой же интервал движения маршруток в новогоднюю ночь? ... (<b>Андрей</b>, 2012-12-29 21:02:30) - <a href="/news/6823/"></a></td></tr><tr class=tr_colored1><td>автоспорт всегда жил, благодаря таким фанатам , как В.Понедельник!!! Володя... (<b>пергат борис , днепропетровск, </b>, 2012-12-22 22:21:08) - <a href="/news/2736/"></a></td></tr><tr class=tr_colored2><td>"Заявление соответствует иудейской религиозной традиции, где считается, что прах должен... (<b>Сергей Олегович</b>, 2012-12-21 10:33:54) - <a href="/news/3969/"></a></td></tr><tr class=tr_colored1><td>Я не имею достоверных данных о добрых и полезных для... (<b>Абрамович</b>, 2012-12-21 10:14:10) - <a href="/news/6793/"></a></td></tr><tr class=tr_colored2><td>Человек, который всю жизнь боролся за развитие и становление Украины,... (<b>татьяна</b>, 2012-12-20 17:50:09) - <a href="/news/6793/"></a></td></tr><tr class=tr_colored1><td>Очень понравилась статья, только почему-то никто не вспомнил о том,... (<b>татьяна</b>, 2012-12-20 17:40:53) - <a href="/news/6795/"></a></td></tr><tr class=tr_colored2><td>Замечательно. А теперь "ревнивий молодик" отсидит полжизни. В итоге -... (<b>Абдулла Шейхмуддинович</b>, 2012-12-18 15:50:09) - <a href="/news/6779/"></a></td></tr><tr class=tr_colored1><td>Ну а тепер шановні рятівники виставлять горе-рибалці гарненький рахунок у... (<b>Генка</b>, 2012-12-18 15:43:45) - <a href="/news/6803/"></a></td></tr><tr class=tr_colored2><td>Одно до сих пор не ясно: почему же такого тяжело... (<b>Аркадий Валерьянович</b>, 2012-12-18 13:55:22) - <a href="/news/6324/"></a></td></tr><tr class=tr_colored1><td>А что это никто не комментирует, а?! Что всем наплевать... (<b>Абрамович</b>, 2012-12-18 11:33:27) - <a href="/news/6793/"></a></td></tr><tr class=tr_colored2><td>Не город, а ледовая арена!!! ... (<b>Сергей</b>, 2012-12-17 20:26:37) - <a href="/news/6318/"></a></td></tr><tr class=tr_colored1><td>А где вообще почищенные дороги? О чем речь??? Черкассы ---... (<b>Константин</b>, 2012-12-17 13:12:43) - <a href="/news/6318/"></a></td></tr><tr class=tr_colored2><td>Капец, докотались!... (<b>Дмитрий</b>, 2012-12-04 17:50:35) - <a href="/news/6767/"></a></td></tr><tr class=tr_colored1><td>Я пропустив це явище.Як там гарна ялинка?... (<b>Вадим</b>, 2012-12-03 19:22:02) - <a href="/news/6755/"></a></td></tr><tr class=tr_colored2><td>Богомолец лжёт.... (<b>Вася</b>, 2012-12-02 15:59:25) - <a href="/newsua/1156/"></a></td></tr><tr class=tr_colored1><td>они того не стоят... (<b>коля</b>, 2012-11-16 13:11:14) - <a href="/news/6681/"></a></td></tr><tr class=tr_colored2><td>Малолетний дурак !!!... (<b>николай</b>, 2012-11-02 11:19:45) - <a href="/news/6681/"></a></td></tr><tr class=tr_colored1><td>Я вас ніколи не забуду..сумую за вами.. Водії автомобілів будьте... (<b>Катя</b>, 2012-10-23 18:23:33) - <a href="/news/4644/"></a></td></tr><tr class=tr_colored2><td>Внивание вопрос: как можно было подливать снотворное, а затем (со... (<b>Дагестанецъ</b>, 2012-10-22 09:07:50) - <a href="/news/6679/"></a></td></tr><tr class=tr_colored1><td>земля пухом Вовка, спасибо ,что не дал меня разорвать ,людское... (<b>Сергей</b>, 2012-09-20 23:29:32) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored2><td>Можна падумат што всё асталноэ качественнаэ. Народ давно травят патамушьта... (<b>Рахман Тожиевич</b>, 2012-09-17 10:54:25) - <a href="/news/6606/"></a></td></tr><tr class=tr_colored1><td>Прежде всего р.Тясмин травит г.Камянка, где сбрасывает свои неочищенные нечистоты... (<b>Александр</b>, 2012-09-08 19:01:52) - <a href="/news/6591/"></a></td></tr><tr class=tr_colored2><td>приятная новость... (<b>наталья</b>, 2012-09-07 23:59:29) - <a href="/news/6593/"></a></td></tr><tr class=tr_colored1><td>нужно пройти по ул. Героев Днепра все тротуары и газоны... (<b>ruba</b>, 2012-08-07 14:46:29) - <a href="/news/6528/"></a></td></tr><tr class=tr_colored2><td>КТО ИМЕЛ ПРАВО УСТАНАВЛИВАТЬ ТАКОЙ ГРАФИК РОБОТЫ ЦЕНТРА. У РАБОТНИКОВ... (<b>ЗОЯ</b>, 2012-08-06 15:02:50) - <a href="/news/6501/"></a></td></tr><tr class=tr_colored1><td>Доброго дня! звертається до Вас Державний вищий навчальний заклад!<br />
+У... (<b>Миахйло</b>, 2012-08-01 13:57:03) - <a href="/news/6347/"></a></td></tr><tr class=tr_colored2><td>Чому транпортна реформа не передбачає розширення мережі тролейбусів, як екологічно... (<b>Світлана Василівна</b>, 2012-07-26 18:32:28) - <a href="/news/6500/"></a></td></tr><tr class=tr_colored1><td>Город задыхается от выхлопных газов огромного количества маршруток и другого... (<b>elizsrbna</b>, 2012-07-26 18:19:40) - <a href="/news/6500/"></a></td></tr><tr class=tr_colored2><td>Так надо 90% чиновников пересажать, кровососы... (<b>Андранік</b>, 2012-07-16 08:41:20) - <a href="/news/6476/"></a></td></tr><tr class=tr_colored1><td>Чудово... (<b>Діана</b>, 2012-07-06 14:30:03) - <a href="/news/6045/"></a></td></tr><tr class=tr_colored2><td>Класс... (<b>Кирилл</b>, 2012-07-06 13:02:24) - <a href="/news/4499/"></a></td></tr><tr class=tr_colored1><td>на бриджстоунах лучше зимой ездить, а на кумхе летом... (<b>Валерон</b>, 2012-06-27 10:28:55) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>По ходу в черкасах всего один магазин, какая нафиг сеть?... (<b>Победа 6</b>, 2012-06-21 12:39:03) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Поиска отзывы в сети. Большинство довольно... (<b>Маникен</b>, 2012-06-21 12:27:37) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Тоже мне новость . Биджтоун тоже гарантию предоставляет.... (<b>Алерт</b>, 2012-06-21 10:28:29) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Догоним и перегоним. предлагаю заодно и на машину полную гарантию... (<b>Pepper </b>, 2012-06-20 18:38:40) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Кумо всегда удивляли своей лояльностью... (<b>Bizzzzzzzzzzzzz</b>, 2012-06-20 18:33:18) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Шины хорошие, только стоят немеряно... (<b>Пирогов Костя</b>, 2012-06-20 17:37:44) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>о, ещё бензин можно выиграть!... (<b>Диман</b>, 2012-06-20 17:17:53) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>То есть как это? Мне талон задним числом оформят?... (<b>12345</b>, 2012-06-20 17:13:09) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>То есть как это? Мне талон задним числом оформят?... (<b>12345</b>, 2012-06-20 17:13:04) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>А че , мне нравится!<br />
+Всякое на дороге случается, даже... (<b>Петрович.</b>, 2012-06-20 16:28:43) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>неужели себистоимить шин в корее так мала, что они готовы... (<b>Смерть шпионов.</b>, 2012-06-20 15:37:34) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Молодцы, давно пора.<br />
+А то украинцев вообще за людей не... (<b>Макстер</b>, 2012-06-20 15:07:49) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Не верю я в сказки.... (<b>Скептик</b>, 2012-06-20 12:46:50) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>с нашими дорогами Kumho разоряться )... (<b>Сеня</b>, 2012-06-20 11:36:59) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Без шума и пыли, резина полностью устроила... (<b>Вано</b>, 2012-06-20 11:22:06) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Тупые корейцы еще не поняли во что вляпались<br />
+Да уж... (<b>Hitman</b>, 2012-06-20 11:11:51) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>бесплатный ремонт шин это класс! считай что бесплатная страховка)))... (<b>Феликс</b>, 2012-06-20 10:34:05) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>очень качественная продукция, пользуюсь много лет.... (<b>Алексей</b>, 2012-06-20 10:31:57) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Кумо -крутая фирма , может себе позволить... (<b>Гаишник</b>, 2012-06-19 16:55:18) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Угу. Интересно, как быстро они прогорят с нашими дорогами?<br />
+Удачи... (<b>Старик</b>, 2012-06-19 15:08:02) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>я уже два сезона на кумхо откатал, надеюсь и третий... (<b>Сергей</b>, 2012-06-19 15:07:23) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>Между прочим отличная резина, хорошо глотает неровности, дорогу держит шикарно... (<b>Воха </b>, 2012-06-19 11:26:22) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>Ну наконец-то!Хоть что-то стоящее.<br />
+А то в нашей стране товары... (<b>Алекс</b>, 2012-06-19 11:03:28) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored1><td>отлично! постоянно пользуюсь этой ТМ... (<b>Лиза</b>, 2012-06-19 11:03:10) - <a href="/newsua/1509/"></a></td></tr><tr class=tr_colored2><td>який графік роботи теплоходу?... (<b>Олена</b>, 2012-06-18 12:44:03) - <a href="/news/6410/"></a></td></tr><tr class=tr_colored1><td>Патамушьта власт горада думает не о жителях а о прибыл.... (<b>Вахтанг</b>, 2012-06-11 10:35:00) - <a href="/news/6448/"></a></td></tr><tr class=tr_colored2><td>А ще б пан ДЕРНОВИЙ Валерий   звернув увагу... (<b>МАРИНА Ахметова</b>, 2012-06-09 20:04:50) - <a href="/news/6439/"></a></td></tr><tr class=tr_colored1><td>А чем организаторы думали когда рассчитывали количество мест? <br />
+Неужели... (<b>Роман</b>, 2012-06-08 08:19:03) - <a href="/news/6448/"></a></td></tr><tr class=tr_colored2><td>- Да о таких мероприятиях нужно предупреждать потребителей за месяц!... (<b>Аркадий Валериевич</b>, 2012-05-29 12:03:29) - <a href="/news/6422/"></a></td></tr><tr class=tr_colored1><td>а как можно узнать росписание этого чуда???)... (<b>Елена</b>, 2012-05-23 20:20:23) - <a href="/news/6410/"></a></td></tr><tr class=tr_colored2><td>Просто ужас! Кастрировать и на растерзание зекам.... (<b>валентина</b>, 2012-05-23 08:02:20) - <a href="/news/6408/"></a></td></tr><tr class=tr_colored1><td>Давайте спочатку визначимось - що є громадським місцем ащо ні... (<b>Максим</b>, 2012-05-22 22:37:57) - <a href="/news/5029/"></a></td></tr><tr class=tr_colored2><td>кастрировать<br />
+<br />
+... (<b>валентина</b>, 2012-05-22 21:57:32) - <a href="/news/6408/"></a></td></tr><tr class=tr_colored1><td>скот... а мамашка этого насильника его как может выгораживает... хочет... (<b>sanic</b>, 2012-05-21 16:20:10) - <a href="/news/6408/"></a></td></tr><tr class=tr_colored2><td>Какие туристы, что в этих Черкассах смотреть?... (<b>М.К.</b>, 2012-05-12 15:41:16) - <a href="/news/6382/"></a></td></tr><tr class=tr_colored1><td>А вам українцям аби все на халяву, и какать, и... (<b>Ringo</b>, 2012-04-27 16:26:08) - <a href="/news/6358/"></a></td></tr><tr class=tr_colored2><td>Ох якыж всі розумні інститути позакінчували! Аде ж ті гроші... (<b>Настуся</b>, 2012-04-27 15:46:24) - <a href="/news/6358/"></a></td></tr><tr class=tr_colored1><td>Настуся, выгребные ямы бетонировать нужно, і буде вам файна водичка... (<b>Ringo</b>, 2012-04-27 15:25:59) - <a href="/news/6358/"></a></td></tr><tr class=tr_colored2><td>Ну хто це постійно друкує таку дурню, га?? Вже двісті... (<b>Настуся</b>, 2012-04-27 15:04:42) - <a href="/news/6358/"></a></td></tr><tr class=tr_colored1><td>"...до цього у Черкасах пам’ятного знаку прикордонникам не було."
+
+О ужас!... (<b>Diego</b>, 2012-04-26 17:04:54) - <a href="/news/6359/"></a></td></tr><tr class=tr_colored2><td>Скоко ссылок в одном тексте
+... (<b>ДДЛ</b>, 2012-04-23 15:04:31) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>пацаны кто знает ежемесячный розыгрыш когда? в недельном вообще не... (<b>Григорий</b>, 2012-04-23 15:04:28) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Интересно, сколько у них карточек.
+Шансов выиграть много?... (<b>Lolo</b>, 2012-04-23 12:04:00) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>пацаны кто знает ежемесячный розыгрыш когда? в недельном вообще не... (<b>Григорий</b>, 2012-04-23 11:04:32) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>вроде на сайте написали, что 27 числа... (<b>Филатов</b>, 2012-04-23 11:04:08) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>когда следующий розыгрыш, кто в курсе? ... (<b>Женя</b>, 2012-04-23 11:04:10) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>нам просто билеты ненужны, надо было призом абонемент в салон... (<b>Томара</b>, 2012-04-20 13:04:15) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>Жаль что девушек нет в победителях(... (<b>Люда</b>, 2012-04-20 13:04:04) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Це напевно Юра Піковський, голова сільгосп управління Звенигородської РДА -... (<b>Сергій Ф.</b>, 2012-04-20 13:04:34) - <a href="/news/6325/"></a></td></tr><tr class=tr_colored1><td>Та не сцы, бесплатно. просто шансов выиграть - сам понимаешь.... (<b>Такида</b>, 2012-04-20 11:04:44) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Мужики, так в чем подвох? Там купить что-то надо или... (<b>Хи-хи</b>, 2012-04-20 10:04:37) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>Присоединяюсь!
+ я с карточкой,Жду розыгрыша. Держите за меня кулаки.... (<b>Велл</b>, 2012-04-19 18:04:51) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Че-то физиономии победителей на сайте какие-то грустные ...... (<b>Богатые тоже плачут</b>, 2012-04-19 15:04:51) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>А если я футбол не люблю, можно деньгами?... (<b>Лена</b>, 2012-04-19 15:04:41) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Ну не знаю как на счет призов. А карточка дает... (<b>ЛУи</b>, 2012-04-19 15:04:04) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>А я 2 карты зарегил на разные имена. Теперь шансов... (<b>Дядя Ваня</b>, 2012-04-19 15:04:53) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>А это дисконты или так "лотерейный билетиг"... (<b>КЗ</b>, 2012-04-19 14:04:30) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>Ну я активировал , когда розыгрыш?... (<b>MR-X</b>, 2012-04-19 14:04:04) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>та ну и что, что места могут быть фиговые, главное... (<b>Денис </b>, 2012-04-19 14:04:59) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>бензин фигня, вот билет на ЕВРО 2012 это супер! хотя... (<b>Юрий</b>, 2012-04-19 14:04:47) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Здравствуйте, подскажите, пожалуйста, какая будет стоимость на билеты? Заранее спасибо.... (<b>Инна</b>, 2012-04-19 13:04:58) - <a href="/news/6333/"></a></td></tr><tr class=tr_colored1><td>Хочу на ЕВРО-2012!!!! ... (<b>Макс Данилов</b>, 2012-04-19 11:04:11) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>акция просто супер!!!!!!!! у меня отец выиграл, в первом розыгрыше.... (<b>Диана</b>, 2012-04-19 11:04:03) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored1><td>Офигительно ! Мой брат на той неделе зарегился и через... (<b>Верочка</b>, 2012-04-19 10:04:05) - <a href="/news/6341/"></a></td></tr><tr class=tr_colored2><td>Не смішіть курей. Не позорьте націю. Десять років все було... (<b>Сергій.</b>, 2012-04-18 13:04:12) - <a href="/news/6334/"></a></td></tr><tr class=tr_colored1><td>что дороги чистите конечно очень хорошо,но еше немного и просто... (<b>Павел</b>, 2012-04-09 21:04:41) - <a href="/news/6318/"></a></td></tr><tr class=tr_colored2><td>моя дочка поступила на навчання з 01.09.2011 року,за І семестр... (<b>Ірина</b>, 2012-04-02 17:04:26) - <a href="/news/5260/"></a></td></tr><tr class=tr_colored1><td>   Скільки ж можна насміхатись над темою? "Спільні... (<b>ігор</b>, 2012-03-31 12:03:28) - <a href="/news/6291/"></a></td></tr><tr class=tr_colored2><td>А Віницька обл.буде приймати участь??... (<b>Ігор </b>, 2012-03-29 17:03:09) - <a href="/news/3724/"></a></td></tr><tr class=tr_colored1><td>да, капец!... (<b>Лёля</b>, 2012-03-18 13:03:17) - <a href="/news/4456/"></a></td></tr><tr class=tr_colored2><td>Давно пора уже,дороги,которые отремонтирвоали в прошлом году за зиму стали... (<b>Павел</b>, 2012-03-17 22:03:25) - <a href="/news/6260/"></a></td></tr><tr class=tr_colored1><td>а кто пробывал пробить лунку в 60 см? а ее... (<b>рыбак</b>, 2012-03-12 14:03:19) - <a href="/news/6203/"></a></td></tr><tr class=tr_colored2><td>Боже, как много всего сделано!... (<b>Федор</b>, 2012-03-10 13:03:34) - <a href="/news/6246/"></a></td></tr><tr class=tr_colored1><td>Потрібно вказати військову чстину, де служили ці вояки, щоб люди... (<b>гість</b>, 2012-03-03 20:03:54) - <a href="/news/6238/"></a></td></tr><tr class=tr_colored2><td>був у чорнобилі з вересня 1988 року по лютий 1989... (<b>бадрак василь </b>, 2012-02-24 16:02:39) - <a href="/news/6204/"></a></td></tr><tr class=tr_colored1><td>На Днепре толщина льда в районе моста 60 см.По льду... (<b>рыбак новичок</b>, 2012-02-19 20:02:03) - <a href="/news/6203/"></a></td></tr><tr class=tr_colored2><td>Так почему же не спасают гибнущую рыбу можно пригласить всех... (<b>рыбак новичок</b>, 2012-02-18 19:02:32) - <a href="/news/6203/"></a></td></tr><tr class=tr_colored1><td>Водитель ВАЗа находиться в очень тяжелом состояния. По данному ДТП... (<b>Vova</b>, 2012-02-17 17:02:38) - <a href="/news/6193/"></a></td></tr><tr class=tr_colored2><td>Год назад когда играл в игровые автоматы в Сумах, страшно... (<b>Ник! Ник! Ник-Ник-Ник! Ник-Ник-Ник-Ник! Ник-Н</b>, 2012-02-11 14:02:21) - <a href="/newsua/1215/"></a></td></tr><tr class=tr_colored1><td>А когда Генадий Мельниченко отдаст деньги вкладчиков кредитного союза Альянс????????????... (<b>Наталья</b>, 2012-02-10 13:02:04) - <a href="/news/2730/"></a></td></tr><tr class=tr_colored2><td>Шкода, хто це?... (<b>Оля</b>, 2012-02-08 19:02:15) - <a href="/news/6161/"></a></td></tr><tr class=tr_colored1><td>ЛИСИЦЮ РОСТРІЛЯЛИ З ГАУБИЦІ... (<b>ALEKS</b>, 2012-02-07 16:02:06) - <a href="/news/6098/"></a></td></tr><tr class=tr_colored2><td>Від Драбова до Канева рукою подати, те ж самісіньке скоїлося,... (<b>Артемій</b>, 2012-01-28 17:01:06) - <a href="/news/5722/"></a></td></tr><tr class=tr_colored1><td>Хорошие работы. Автор прочувствовал наши корни, уходящие в древние знания... (<b>Олег</b>, 2012-01-19 22:01:14) - <a href="/news/6076/"></a></td></tr><tr class=tr_colored2><td>Щоб вберегти свою оселю від крідіїв, є не один спосіб,... (<b>Безпека</b>, 2012-01-16 19:01:03) - <a href="/news/6064/"></a></td></tr><tr class=tr_colored1><td>а также по котовского
+... (<b>Вика</b>, 2011-12-29 22:12:22) - <a href="/news/6056/"></a></td></tr><tr class=tr_colored2><td>Правильно зробили, що надали таку інформацію, а то потрібно чекати,... (<b>Гість</b>, 2011-12-29 16:12:28) - <a href="/news/6061/"></a></td></tr><tr class=tr_colored1><td>И как всегда на Луначарку ничего не будет ездить(((... (<b>Андрей</b>, 2011-12-29 11:12:48) - <a href="/news/6056/"></a></td></tr><tr class=tr_colored2><td>Если вор правит страной, то что ожидать от более низших... (<b>Дима</b>, 2011-12-20 22:12:46) - <a href="/news/2853/"></a></td></tr><tr class=tr_colored1><td>где искать справедливость... (<b>любовь</b>, 2011-12-20 14:12:04) - <a href="/news/4995/"></a></td></tr><tr class=tr_colored2><td>Ви як діти! Втусували йому патрони, підкинули, щоб козирнути показником,... (<b>Комент</b>, 2011-12-16 23:12:29) - <a href="/news/6027/"></a></td></tr><tr class=tr_colored1><td>Информацию добрые менты вам дали почти что правильную, но политику... (<b>Сергей</b>, 2011-12-16 23:12:01) - <a href="/news/2711/"></a></td></tr><tr class=tr_colored2><td>Лучше бы эти деньги использовали на питание в детских садиках!... (<b>Сергей</b>, 2011-12-06 11:12:16) - <a href="/news/5999/"></a></td></tr><tr class=tr_colored1><td>Уже и адвокатов трясут!... (<b>Патриот</b>, 2011-12-02 19:12:55) - <a href="/news/5989/"></a></td></tr><tr class=tr_colored2><td>Лично знаком со всеми участниками инцидента.
+
+Комментарий к личности "чоловіка співзасновниці".... (<b>Свідок</b>, 2011-12-02 13:12:54) - <a href="/news/5897/"></a></td></tr><tr class=tr_colored1><td>Нашу жизнь по ходу соседний евродворик превратит в кошмар!!! 1)Обустроили... (<b>Татьяна</b>, 2016-09-06 10:31:58) - <a href="/news/8017/"></a></td></tr></table></td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

@@ -1,0 +1,476 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Работа - вакансии - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/index.php?mode=15&page=9" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/index.php?mode=15&page=9" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">Работа - вакансии</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=43" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-05-17_16-12-51.jpg">
+ Облагораживание города</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=4" class="link_razdel_gallery" title="Открыть раздел галереи">Город</a> (25 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1555" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2017-01-26-524ballerina_.jpg"><br>
+ Баллерина 2Д</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">ТРЦ "Любава"</a><br>
+ (6 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      <h2>Банк вакансий</h2>
+<b>Вся информация в каталоге хранится не более 6 месяцев с момента добавления.</b><br><br>
+
+<TABLE width='100%' border='0' cellspacing='5' cellpadding='5' align='center'>
+
+<tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2475'>агент по недвижимости</a><br>
+	 Название организации: ТОВ "ЕМ ПЛЮС"<br>
+     <span style='color:brown;'>Добавлено: 2011-07-02</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2474'>продавец-консультант</a><br>
+	 Название организации: Carstart<br>
+     <span style='color:brown;'>Добавлено: 2011-05-31</span>            
+    </td>
+    
+     </tr>
+    <tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2473'>Модератор, Администратор, Юрист, Психолог</a><br>
+	 Название организации: Сайт beztruda.org.ua<br>
+     <span style='color:brown;'>Добавлено: 2011-05-29</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2472'>срочно требуются агенты</a><br>
+	 Название организации: "Социал-Сервис"<br>
+     <span style='color:brown;'>Добавлено: 2011-05-20</span>            
+    </td>
+    
+     </tr>
+    <tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2471'>водитель - дальнобойщик</a><br>
+	 Название организации: ЧСП "Ньютон Транс"<br>
+     <span style='color:brown;'>Добавлено: 2011-05-17</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2470'>Продавец-консультант</a><br>
+	 Название организации: ИРИС<br>
+     <span style='color:brown;'>Добавлено: 2011-05-12</span>            
+    </td>
+    
+     </tr>
+    <tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2469'>Каменщики Срочно</a><br>
+	 Название организации: ВМ-БУД<br>
+     <span style='color:brown;'>Добавлено: 2011-05-05</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2468'>Cпециалист отдела поддержки рабочих мест (г.Черкассы)</a><br>
+	 Название организации: Beeline Украина<br>
+     <span style='color:brown;'>Добавлено: 2011-04-28</span>            
+    </td>
+    
+     </tr>
+    <tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2467'>домработники(семейная пара)</a><br>
+	 Название организации: Ольга<br>
+     <span style='color:brown;'>Добавлено: 2011-04-22</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2466'>Агент</a><br>
+	 Название организации: Компания "Социал-Сервис"<br>
+     <span style='color:brown;'>Добавлено: 2011-04-20</span>            
+    </td>
+    
+     </tr>
+    <tr>    
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2465'>продавец- консультант смесителей</a><br>
+	 Название организации: ЧП<br>
+     <span style='color:brown;'>Добавлено: 2011-04-07</span>            
+    </td>
+    
+        
+    <td width="50%" bgcolor="#f7fbea" valign="top">Вакансия/должность: <a href='./?mode=83&id=2464'>Агент Приватбанка</a><br>
+	 Название организации: Приватбанк<br>
+     <span style='color:brown;'>Добавлено: 2011-04-05</span>            
+    </td>
+    
+     </tr>
+     
+ </table>
+
+<p align="center"><b>Стр.  <a href="/index.php?mode=15&page=1" class=page style=font-weight:normal;>1</a>  <a href="/index.php?mode=15&page=2" class=page style=font-weight:normal;>2</a>  <a href="/index.php?mode=15&page=3" class=page style=font-weight:normal;>3</a>  <a href="/index.php?mode=15&page=4" class=page style=font-weight:normal;>4</a>  <a href="/index.php?mode=15&page=5" class=page style=font-weight:normal;>5</a>  <a href="/index.php?mode=15&page=6" class=page style=font-weight:normal;>6</a>  <a href="/index.php?mode=15&page=7" class=page style=font-weight:normal;>7</a>  <a href="/index.php?mode=15&page=8" class=page style=font-weight:normal;>8</a>  9 </b></font><br />Всего вакансий : <b>172</b></p>
+ <br><h3>Добавить вакансию</h3>
+ Если вы ищете персонал, в этом разделе вы имеете возможность
+ разместить свою вакансию. Для того, чтобы добавить вакансию в список,
+ отошлите нам заявку отсюда:<br><br><br>
+    
+ <form method='post' action='./?mode=15&md=add'>
+  <table border='0' class='table_common' width="99%">     
+   <tr>
+    <td valign='top' width="35%">Название организации</td>
+    <td><input type='text' name='name' style="width: 99%;" value=""></td>
+   </tr>
+   <tr>     
+    <td valign='top'>Почтовый адрес</td>
+    <td><input type='text' name='firm_adress' style="width: 99%;" value=""></td>
+   </tr>
+   <tr>
+    <td valign='top'>Телефон</td>
+    <td><input type='text' name='phone' style="width: 99%;" value=""></td>
+   </tr>
+   <tr>
+    <td valign='top'>Электронная почта (email)</td>
+    <td><input type='text' name='mail' style="width: 99%;" value=""></td>
+   </tr>
+   <tr>
+    <td valign='top'>Вакансия</td>
+    <td><input type='text' name='vacancy' style="width: 99%;" value=""></td>
+   </tr>
+   <tr>
+    <td valign='top'>Заработная плата, грн./мес.</td>
+    <td><input type='text' name='money' size="5" maxlength="5" value=""></td>
+   </tr>
+   <tr>
+    <td valign='top'>Требования (не более 1000 символов)</td>
+    <td><textarea name='about' rows="13" style="width: 99%;"></textarea></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td valign='top'><input type='submit' name='Submit' value='Отправить'> &nbsp;<input type='reset' name='Reset'></td>
+   </tr>
+  </table>
+ </form>
+
+</td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

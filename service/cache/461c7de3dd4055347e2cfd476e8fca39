@@ -1,0 +1,941 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Транспорт - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/?mode=16" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/?mode=16" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">Транспорт</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=84" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-12-21_22-59-48.jpg">
+ Осень 2014</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=1" class="link_razdel_gallery" title="Открыть раздел галереи">Природа</a> (6 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1555" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2017-01-26-524ballerina_.jpg"><br>
+ Баллерина 2Д</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">ТРЦ "Любава"</a><br>
+ (6 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      <table width='100%' border='0'>
+ <tr>
+  <td><img src="/img/transport32.jpg"></td>
+  <td style="padding-left: 1rem;">
+   <div class="passage">Железнодорожный транспорт</div><br>
+   <a href='?mode=86'>Черкасский железнодорожный вокзал</a>, тел. 63-87-87<br>
+   <a href='?mode=87'>Станция им. Т. Г. Шевченко</a><br><br><br>
+             
+   <div class="passage">Междугородние автобусные маршруты</div><br>
+   <a href=javascript:new_window6('info/transport/ch_bus1.html')><b>Автостанция №1</b>, Смелянская, 166, тел. 63-44-33</a><br>
+   <a href=javascript:new_window6('info/transport/ch_bus2.html')><b>Автостанция №2</b>, возле ж/д вокзала, тел. 63-89-37</a><br>
+   <a href=javascript:new_window6('info/transport/ch_bus3.html')><b>Автостанция №3</b>, Гоголя, 295, тел. 45-21-48</a><br>             
+  </td>
+ </tr>
+</table><br>
+             
+<div class="passage">Автобусные перевозки</div><br>
+<div style="display: inline; padding: 0.3rem; border: 1px solid #cccccc;">Фирма <a href="http://www.elitexpress.com.ua" title="Пассажирские перевозки Харьков-Черкассы">"Элит-Экспресс"</a> - бульв. Шевченко, 205, тел. 063 190-12-12, 067 470-02-73, 095 378-70-07</div><br><br>
+
+<div class="passage">Черкассы-Харьков</div> 
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Отправление из Черкасс в Кременчуг, Полтаву, Харьков (от "МакДональдса")</td>
+   <td>Отправление из Кременчуга в Харьков (возле КрАЗа, остановка возле танка)</td>
+   <td>Отправление из Полтавы в Харьков (перекрёсток ул. Фрунзе и Киевская возле Макдональдса)</td>
+   <td>Прибытие в Харьков (станция метро Холодная гора платформа № 23)</td>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>6:45</td>
+   <td>09:00</td>
+   <td>10:30</td>
+   <td>12:30</td>
+  </tr>
+  <tr>
+   <td>10:00</td>
+   <td>12:00</td>
+   <td>13:30</td>
+   <td>15:30</td>
+  </tr>
+  <tr>
+   <td>12:45</td>
+   <td>15:00</td>
+   <td>16:30</td>
+   <td>18:30</td>
+  </tr>
+  <tr>
+   <td>15:45</td>
+   <td>18:00</td>
+   <td>19:30</td>
+   <td>21:30</td>
+  </tr>
+  <tr>
+   <td>18:00</td>
+   <td>20:00</td>
+   <td>21:30</td>
+   <td>23:30</td>
+  </tr>
+ </tbody>
+</table><br>
+
+<div class="passage">Харьков-Черкассы (через Полтаву, Кременчуг)</div>
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Отправление из Харькова (станция метро Холодная гора платформа № 23)</td>
+   <td>Отправление из Полтавы в Черкассы (перекрёсток ул. Фрунзе и Киевская возле Макдональдса)</td>
+   <td>Отправление из Кременчуга в Черкассы (возле КрАЗа, остановка возле танка)</td>
+   <td>Прибытие в Черкассы (к "МакДональдсу")</td>
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>
+   <td>6:45</td>
+   <td>09:00</td>
+   <td>10:30</td>
+   <td>12:30</td>
+  </tr>
+  <tr>
+   <td>10:00</td>
+   <td>12:00</td>
+   <td>13:30</td>
+   <td>15:30</td>
+  </tr>
+  <tr>
+   <td>12:45</td>
+   <td>15:00</td>
+   <td>16:30</td>
+   <td>18:30</td>
+  </tr>
+  <tr>
+   <td>15:45</td>
+   <td>18:00</td>
+   <td>19:30</td>
+   <td>21:30</td>
+  </tr>
+  <tr>
+   <td>18:00</td>
+   <td>20:00</td>
+   <td>21:30</td>
+   <td>23:30</td>
+  </tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Черкассы–Одесса</div>
+<table order='1' class="table_prices">
+ <tr>
+  <td>8:00</td>
+  <td>6:00</td>
+ </tr>
+ <tr>
+  <td>13:30</td>
+  <td>11:00</td>
+ </tr>
+ <tr>
+  <td>22:00</td>
+  <td>13:00</td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>22:30</td>
+ </tr>
+</table><br>
+
+(063) 980-33-37, (067) 471-51-51<br><br>
+
+<div class="passage">Одесса–Харьков</div>
+<table order='1' class="table_prices">
+ <tr>
+  <td class="td_top">Время отправления:</td>
+  <td>7:00, 11:00, 22:00</td>  
+ </tr>
+ <tr>
+  <td class="td_top">Время в пути:</td>
+  <td>8 часов 20 минут </td>
+ </tr>
+ <tr>
+  <td class="td_top">Через:</td>
+  <td>Одесса, Умань, Тальное, Звенигородка, Шпола, Смела, Черкассы, Кременчуг, Полтава, Харьков</td>
+ </tr>
+ <tr>
+  <td class="td_top">Отправление из Одессы:</td>
+  <td>Центральный железнодорожный вокзал</td>
+ </tr>
+ <tr>
+  <td class="td_top">Прибытие в Харьков:</td>
+  <td>ж/д вокзал «Новый терминал» станция метро Холодная гора платформа № 23</td>
+ </tr>
+</table><br>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>  
+   <td>Одесса</td>
+   <td>Умань</td>
+   <td>Тальное</td>
+   <td>Звенигородка</td>
+   <td>Шпола</td>
+   <td>Смела</td>
+   <td>Черкассы</td>
+   <td>Кременчуг</td>
+   <td>Полтава</td>
+   <td>Харьков</td>  
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>  
+   <td>7:00</td>
+   <td>11:00</td>
+   <td>12:10</td>
+   <td>12:55</td>
+   <td>13:50</td>
+   <td>14:40</td>
+   <td>15:20</td>
+   <td>18:00</td>
+   <td>19:45</td>
+   <td>21:45</td>
+  </tr>
+  <tr>  
+   <td>11:00</td>
+   <td>14:30</td>
+   <td>15:30</td>
+   <td>16:15</td>
+   <td>16:50</td>
+   <td>17:45</td>
+   <td>18:15</td>
+   <td>20:15</td>
+   <td>22:00</td>
+   <td>23:45</td>
+  </tr>
+  <tr>  
+   <td>22:00</td>
+   <td>02:00</td>
+   <td>03:10</td>
+   <td>03:55</td>
+   <td>04:40</td>
+   <td>05:30</td>
+   <td>06:00</td>
+   <td>09:00</td>
+   <td>10:30</td>
+   <td>12:45</td>
+  </tr>
+  <tr><td colspan="10" align="center">Отправление</td></tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Харьков–Одесса</div>
+
+<table order='1' class="table_prices">
+ <tr>
+  <td>Время отправления:</td>
+  <td>7:00, 16:00, 22:00</td>  
+ </tr>
+ <tr>
+  <td>Время в пути:</td>
+  <td>14 часов 30 минут</td>
+ </tr>
+ <tr>
+  <td>Через:</td>
+  <td>Харьков, Полтава, Кременчуг, Черкассы, Смела, Шпола, Звенигородка, Тальное, Умань, Одесса</td>
+ </tr>
+ <tr>
+  <td>Отправление из Харькова:</td>
+  <td>станция метро Холодная гора 23 платформа</td>
+ </tr>
+ <tr>
+  <td>Прибытие в Одессу:</td>
+  <td>Центральный железнодорожный вокзал</td>
+ </tr>
+</table><br>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Харьков</td>
+   <td>Полтава</td>
+   <td>Кременчуг</td>
+   <td>Черкассы</td>
+   <td>Смела</td>
+   <td>Шпола</td>
+   <td>Звенигородка</td>
+   <td>Тальное</td>
+   <td>Умань</td>
+   <td>Одесса</td>     
+  </tr>  
+ </thead>
+ <tbody> 
+  <tr>
+   <td>7:00</td>
+   <td>8:45</td>
+   <td>10:30</td>
+   <td>13:00</td>
+   <td>14:30</td>
+   <td>15:20</td>
+   <td>16:00</td>
+   <td>17:00</td>
+   <td>17:45</td>
+   <td>21:30</td>
+  </tr>
+  <tr>
+   <td>16:00</td>
+   <td>17:45</td>
+   <td>19:30</td>
+   <td>21:30</td>
+   <td>22:30</td>
+   <td>23:20</td>
+   <td>24:00</td>
+   <td>01:00</td>
+   <td>01:45</td>
+   <td>05:30</td>
+  </tr>
+  <tr><td colspan="10" align="center">Отправление</td></tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Харьков-Умань</div>
+
+<table order='1' class="table_prices">
+ <tr>
+  <td>Время отправления:</td>
+  <td>7:00, 16:00</td>  
+ </tr>
+ <tr>
+  <td>Время в пути:</td>
+  <td>10 часов 45 минут</td>
+ </tr>
+ <tr>
+  <td>Через:</td>
+  <td>Харьков, Полтава, Кременчуг, Черкассы, Смела, Шпола, Звенигородка, Тальное, Умань</td>
+ </tr>
+ <tr>
+  <td>Отправление из Харькова:</td>
+  <td>ж/д вокзал «Новый терминал»</td>
+ </tr>
+ <tr>
+  <td>Прибытие в Умань:</td>
+  <td>Автовокзал</td>
+ </tr>
+</table><br>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Харьков</td>
+   <td>Полтава</td>
+   <td>Кременчуг</td>
+   <td>Черкассы</td>
+   <td>Смела</td>
+   <td>Шпола</td>
+   <td>Звенигородка</td>
+   <td>Тальное</td>
+   <td>Умань</td> 
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>
+   <td>07:00</td>
+   <td>08:45</td>
+   <td>10:30</td>
+   <td>13:00</td>
+   <td>14:30</td>
+   <td>15:20</td>
+   <td>16:00</td>
+   <td>17:00</td>
+   <td>17:45</td>
+  </tr>
+  <tr>
+   <td>16:00</td>
+   <td>17:45</td>
+   <td>19:30</td>
+   <td>21:30</td>
+   <td>22:30</td>
+   <td>23:20</td>
+   <td>24:00</td>
+   <td>01:00</td>
+   <td>01:45</td>
+  </tr>
+  <tr><td colspan="9" align="center">Отправление</td></tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Умань-Харьков</div>
+
+<table order='1' class="table_prices">
+ <tr>
+  <td>Время отправления:</td>
+  <td>11:00, 14:30, 02:00</td>  
+ </tr>
+ <tr>
+  <td>Время в пути:</td>
+  <td>10 часов 45 минут</td>
+ </tr>
+ <tr>
+  <td>Через:</td>
+  <td>Умань, Тальное, Звенигородка, Шпола, Смела, Черкассы, Кременчуг, Полтава, Харьков</td>
+ </tr>
+ <tr>
+  <td>Отправление из Умани:</td>
+  <td>Автовокзал</td>
+ </tr>
+ <tr>
+  <td>Прибытие в Харьков:</td>
+  <td>станция метро Холодная гора 23 платформа ж/д вокзал «Новый терминал»</td>
+ </tr>
+</table><br>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Умань</td>
+   <td>Тальное</td>
+   <td>Звенигородка</td>
+   <td>Шпола</td>
+   <td>Смела</td>
+   <td>Черкассы</td>
+   <td>Кременчуг</td>
+   <td>Полтава</td>
+   <td>Харьков</td> 
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>
+   <td>07:00</td>
+   <td>12:00</td>
+   <td>12:55</td>
+   <td>13:50</td>
+   <td>14:40</td>
+   <td>15:20</td>
+   <td>18:00</td>
+   <td>19:45</td>
+   <td>21:45</td>
+  </tr>
+  <tr>
+   <td>14:30</td>
+   <td>15:30</td>
+   <td>16:15</td>
+   <td>16:55</td>
+   <td>17:45</td>
+   <td>18:15</td>
+   <td>20:15</td>
+   <td>22:00</td>
+   <td>23:45</td>
+  </tr>
+  <tr>
+   <td>02:00</td>
+   <td>03:10</td>
+   <td>03:55</td>
+   <td>04:40</td>
+   <td>05:30</td>
+   <td>06:00</td>
+   <td>09:00</td>
+   <td>10:30</td>
+   <td>12:45</td>
+  </tr>
+  <tr><td colspan="9" align="center">Отправление</td></tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Черкассы–Москва</div>
+
+<table order='1' class="table_prices">
+ <tr>
+  <td>Отправление из Черкасс:</td>
+  <td>напротив Макдональдса по ул. Смелянская возле маг. "ЛАЙФ"</td>  
+ </tr>
+ <tr>
+  <td>Время отправления:</td>
+  <td>13:00</td>
+ </tr>
+ <tr>
+  <td>Через:</td>
+  <td>Кременчуг, Полтава, Харьков</td>
+ </tr>
+ <tr>
+  <td>Прибытие в Москву:</td>
+  <td>автостанция Красногвардейская</td>
+ </tr>
+ <tr>
+  <td>Время прибытия:</td>
+  <td>10:00</td>
+ </tr>
+</table><br>
+     
+<div class="passage">Москва-Черкассы</div>
+
+<table order='1' class="table_prices">
+ <tr>
+  <td>Отправление из Москвы:</td>
+  <td>Курский ж/д вокзал</td>  
+ </tr>
+ <tr>
+  <td>Время отправления:</td>
+  <td>20:40</td>
+ </tr>
+ <tr>
+  <td>Через:</td>
+  <td>Харьков, Полтаву, Кременчуг, Градежзк, Золотоношу</td>
+ </tr>
+ <tr>
+  <td>Прибытие в Черкассы:</td>
+  <td>к Макдональдсу</td>
+ </tr>
+ <tr>
+  <td>Время прибытия:</td>
+  <td>16:00</td>
+ </tr>
+</table><br>
+
+<div style="display: inline; padding: 0.3rem; border: 1px solid #cccccc;">Заказ мест по тел.: 063 401-23-27, 095 941-38-79, 068 517-35-37</div><br><br><br>
+
+<div class="passage">Черкассы-Варшава-Познань</div>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Остановки</td>
+   <td>Стоимость</td>
+   <td colspan="2">Время отправки</td>
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>
+   <td>Черкасcы</td>
+   <td></td>
+   <td>13:35</td>
+   <td>15:55</td>
+  </tr>
+  <tr>
+   <td>Люблин</td>
+   <td>900 грн</td>
+   <td>5:05</td>
+   <td>7:50</td>
+  </tr>
+  <tr>
+   <td>Варшава</td>
+   <td>1000 грн</td>
+   <td>9:05</td>
+   <td>11:00</td>
+  </tr>
+  <tr>
+   <td>Лодзь</td>
+   <td>1100 грн</td>
+   <td>10:50</td>
+   <td>12:50</td>
+  </tr>
+  <tr>
+   <td>Познань</td>
+   <td>1300 грн</td>
+   <td>14:15</td>
+   <td>17:20</td>
+  </tr>
+ </tbody> 
+</table><br>
+
+<div class="passage">Познань-Варшава-Черкассы</div>
+
+<table order='1' class="table_common">
+ <thead>
+  <tr>
+   <td>Остановки</td>
+   <td>Стоимость</td>
+   <td colspan="2">Время отправки</td>
+  </tr>
+ </thead>
+ <tbody> 
+  <tr>
+   <td>Познань</td>
+   <td>1300 грн</td>
+   <td>10:15</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>Лодзь</td>
+   <td>1100 грн</td>
+   <td>13:40</td>
+   <td>18:25</td>
+  </tr>
+  <tr>
+   <td>Варшава</td>
+   <td>1000 грн</td>
+   <td>15:30</td>
+   <td>21:00</td>
+  </tr>
+  <tr>
+   <td>Люблин</td>
+   <td>900 грн</td>
+   <td>19:30</td>
+   <td>23:30</td>
+  </tr>
+  <tr>
+   <td>Черкассы</td>
+   <td></td>
+   <td>13:00</td>
+   <td>17:00</td>
+  </tr>
+ </tbody> 
+</table><br>
+
+<div style="display: inline; padding: 0.3rem; border: 1px solid #cccccc;">063 401-23-27, 098 226-74-07 (Viber)</div><br><br><br>
+             
+<div class="passage">Такси</div><br>
+
+<b>Такси '15-81'</b> тел. 54-01-11, 54-01-12, 54-03-03, 067-983-81-85, 093-996-15-66<br>
+<b>Такси 'Студент'</b> тел. 71-20-00, 050-024-83-20, 063-402-29-27, 067-470-84-84<br>
+<b>Такси 'Пан-Такси'</b> тел. 51-10-00, 063-380-81-40, 093-344-42-22, 097-593-13-13<br>
+<b>Такси 'Шара'</b> тел. 51-00-00, 093-436-78-78, 067-971-56-99, 095-330-58-85<br>
+<b>Такси '15-00'</b> тел. 51-15-00, 050-597-97-99, 067-712-94-85<br>
+<b>Такси '15-51'</b> тел. 33-07-07, 063-195-08-77, 067-750-26-37, 068-283-30-51<br>
+<b>Такси '16-55'</b> тел. 38-60-55, 063-065-22-55<br>
+<b>Такси '15-68'</b> тел. 45-43-03, 33-04-04, 067-734-55-88, 093-677-34-83<br>
+<b>Такси 'Економ-Такси'</b> тел. 330-000, 093-703-62-63, 097-255-75-05<br>
+<b>Такси 'Наше Такси'</b> тел. 330-330, 15-01<br>
+<b>Такси 'Экспресс'</b> тел. 15-54, 56-55-25, 093-442-78-08, 097-426-01-98<br>
+<b>Такси 'Евросервис'</b> тел. 71-25-25, 050-371-25-25, 063-063-25-25, 067-537-25-25<br>
+<b>Такси 'Партнер'</b> тел. 38-55-55, 093-753-20-00, 095-602-20-00, 096-900-20-00<br>
+<b>Такси 'Плюс'</b> тел. 38-31-00, 38-32-00, 093-224-35-39, 095-699-19-39,096-444-45-06<br>
+<b>Такси 'ЕвроТакси'</b> тел. 15-83, 15-84, 54-42-42, 063-582-85-50, 050-538-25-45<br>
+<b>Такси 'Экипаж'</b> тел. 15-33, 56-00-00, 050-464-95-95, 067-472-63-63<br>
+<b>Такси 'На Дубровку'</b> тел. 56-64-00, 56-83-00, 093-093-26-36, 098-308-63-63<br>
+<b>Такси 'Гарант-Такси'</b> тел. 377-377, 063-862-77-00, 067-802-30-00<br>
+<b>Такси '5 Хвилин'</b> тел. 15-58, 54-40-40, 050-510-84-25, 067-994-25-58<br>
+<b>Такси 'Десятка'</b> тел. 51-05-05, 063-769-38-82, 096-315-83-69<br>
+<b>Такси 'Love-Такси'</b> тел. 38-20-38, 095-512-33-93, 096-344-55-88<br><br>
+   
+<div class="passage">Водные перевозки</div><br>
+ 
+Черкасский речной вокзал и порт<br>
+ул. Горького, 1, тел. (0472) 42-21-58, 47-82-69<br><br>
+            
+Морские транспортные перевозки - ICT GMBH<br>
+бул. Шевченко, 208, к. 24, тел. (0472) 32-03-60<br>           </td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

@@ -1,0 +1,418 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>История - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/?mode=1" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/?mode=1" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">История</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=81" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-12-21_22-44-25.jpg">
+ Красоты Черкасских аллей</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=1" class="link_razdel_gallery" title="Открыть раздел галереи">Природа</a> (6 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1559" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2017-01-26-807pocsemu-on.jpg"><br>
+ Почему он?</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">ТРЦ "Любава"</a><br>
+ (6 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      <!--Раздел-->
+          <table border='0' align='' width='100%' cellspacing='1' bgcolor=''>       
+           <tr><td align='center'><span style='font-family:Arial;font-weight:bold;font-size:14px'>Страницы истории</span></td></tr></table><br>
+         <!--/Раздел-->
+      
+
+         <table border='0' align='center' width='98%%' cellspacing='0' bgcolor='Black'>
+                
+                                                
+                <tr>
+                 <td bgcolor='#ffffff' colspan='2'>
+ 
+                  <table width='100%%' align='center'>
+                   <tr>
+                    <td>
+                     <span class='content'>&nbsp;&nbsp;&nbsp;&nbsp;Территория нынешней Черкасской области была заселена в эпоху палеолита (примерно <b>40 тысяч лет</b> назад).<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Начало археологических исследований Черкасщины можно с уверенностью относить к <b>30-гг XIX века</b>. Именно с этого времени любители древности, <img src="../../pic/history/1.jpg" align="right">в основном аматоры или кладоискатели, начинают массовые "исследования" памяток края. Археологическая наука делала свои первые шаги, и лишь с приходом следующего поколения, в конце XIX ст. появляются первые археологи - профессионалы.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Были найдены каменные и костяные орудия труда (скребки, резцы, топоры), найденные при раскопках Межиричской палеолитической стоянки, возраст которой насчитывает <b>15 - 17 тыс. лет</b>.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Значительное место занимают материалы Трипольской культуры (<b>IV-III тысячелетия до н.э.</b>), найденные в поселениях возле сел Майданецкое Тальянки и Доброводы. Это сосуды разных размеров с характерным орнаментом, ожерелья из зубов оленей, антропоморфные керамические статуэтки.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В <b>VII - III</b> веках до нашей эры значительную часть территории степных районов Украины, в том числе и Черкасщины, занимали кочевые ираноязычные племена скифов.
+В те же времена на правобережье Днепра жили оседлые земледельческие племена - непосредственные предки восточных славян. Они занимались пашенным земледелием и скотоводством. Развивались железоизготовительное и бронзолитейное ремесла, <img src="../../pic/history/2.jpg" align="left">гончарство, ткачество, обработка кости и дерева. Это подтверждают материалы, найденные при раскопках городища (VI век до н. э.) возле села Трахтемиров Каневского района. А именно, орудия труда и предметы быта: серпы, ножи, керамика, браслеты, бронзовые булавки, изделия из кости.
+Территория современной области входила в состав тех земель Приднепровья, где формировалось ядро восточнославянских племен, из которых возникла могучая феодальная держава - <b>Киевская Русь</b>.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Экономической основой древнерусского государства были высокоразвитое сельское хозяйство и ремесло. А именно, земледельческими орудиями труда и предметами кузнечного, гончарного, ювелирного и других ремесел: серпы, ножи, топоры, стремена, кресала, замки, браслеты, подвески, керамика, найденные в районе <b>Канева</b> и около села <b>Сахновка</b> Корсунь-Шевченковского района.
+Растущий класс феодалов Киевской Руси нуждался в новой религии, которая крепила бы его власть над народными массами. Язычество феодалов уже не удовлетворяло. В <b>988 г.</b> при князе Владимире было введено Христианство. Православная церковь быстро обогащалась, обретала могущество и влияние. На территории Черкасщины были построены Зарубский монастырь и Георгиевский собор в Каневе. 
+Воспользовавшись монголо-татарским нашествием и феодальной раздробленностью Руси, в <b>XIV - XVI</b> веках территорию современной области захватили литовские и польские феодалы. История этого периода характеризуется дальнейшим увеличением феодальных земельных владений и усилением крепостного гнета. Хозяйство феодалов базировалось на жестокой эксплуатации крестьян, которые платили денежный и натуральный оброк, отбывали барщину, выполняли повинности в пользу государства и церкви. Трудящиеся массы страдали от издевательств и бесправия.
+Тяжелое социальное и национальное угнетение со стороны чужеземных феодалов, постоянные набеги врагов были причиной зарождения на Украине казачества. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В XV веке на Черкасщине появились первые поселения казаков, а <b>Черкассы</b>, основанные в конце <b>XIII века</b>, стали их мощным укреплением в борьбе против польской шляхты, набегов турков и <img src="../../pic/history/3.jpg" align="right">крымских татар. Для защиты от врагов был сооружен Черкасский замок (на этом месте сейчас - <b>Холм Славы</b>).
+Важное место принадлежит Черкасщине в освободительной войне украинского народа <b>1648-1654 г. г.</b> против польских магнатов. Документы и вещественные экспонаты рассказывают о событиях в крае в период освободительной борьбы народа в под руководством Богдана Хмельницкого. В Черкасском краеведческом музее представлены оружие, казацкие пороховницы, карта боевых действий восставших. В центре зала бюст гетьмана, казацкие знамена и копия первого письма Богдана Хмельницкого к русскому царю Алексею Михайловичу с просьбой о воссоединении Украины с Россией, написанного в Черкассах 8 июня 1648 года.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;8 июня 1648 года Переяславская Рада приняла историческое решение о воссоединении Украины с Россией.
+В конце XVII и на протяжении XVIII века усиливается феодально-крепостническая зависимость, ожесточается национальный гнет. Все это привело к обострению классовых противоречий, развертыванию крестьянских восстаний.
+Одним из крупных восстаний <b>XVIII века</b> на Правобережной Украине было выступление крестьянских масс на Черкасщине против польско-шляхетского угнетения, известное под названием "Колиивщина".<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Украинский народ вместе с русским принимал активное участие в Отечественной войне 1812 года. связана с деятельностью декабристов на Украине. Один из центров декабристского движения на Украине - Каменка. На экспозициях в Черкасском краеведческом музее "Мельница декабристов", Пушкинский грот, где проводились собрания и тайные совещания декабристов. Выставлены фотокопии, программные документы Южного общества, портреты руководителей Каменской управы - полковника В. Л. Давыдова и генерал-майора С. Г. Волконского, а также жен декабристов, разделивших с мужьями годы сибирской ссылки - М. Н. Волконской, А. Г. Муравьевой и А. И. Давыдовой.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Буржуазная реформа 1861 года дала толчок быстрому развитию капитализма. Во второй половине XIX века ведущее положение на Черкасщине занимала сахарная промышленность. Ежегодно здесь производилось сахара на <b>26 миллионов рублей</b>.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Мощные сахарные заводы действовали в Черкассах, Смеле, Шполе, Городище.
+С развитием промышленности в крае развивался и рабочий класс. В 1885 году на правобережной части Черкасщины действовало 210 фабрик и заводов, на которых было занято 18 тысяч рабочих.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В конце XIX - начале XX века развивался капитализм и в сельском хозяйстве. Помещики внедряли в своих хозяйствах новую технику. Жестокой эксплуатации подвергалась сельская беднота, батрачили и дети.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В 70х годах XIX века борьбу с царизмом вели народники, которые хотели поднять крестьянские массы "чтобы завоевать землю и волю.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Научной теорией освободительного движения рабочего класса, отражающей его коренные интересы, стал марксизм. Одним из первых пропагандистов экономического учения Маркса на Украине был С. А. Подолинский (уроженец села Ярославка, ныне Шполянского района).<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зародышем партии пролетариата в России был созданный <b>В. И. Лениным в 1895 г.</b> Петербургский "Союз борьбы за освобождение рабочего класса".
+В 1900 году В. И. Ленин основал газету "Искра", которая сыграла решающую роль <img src="../../pic/history/4.jpg" align="left">в создании в тот период партии нового типа.
+В 1903 - 1904 годах началось объединение социал-демократических кружков на Черкасщине. Летом 1904 года оформилась социал-демократическая группа, которая установила связь с организациями Киева.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В 1905 году в стране начались мощные революционные выступления.
+В марте 1905 года бастовали рабочие Уманских типографий, пекарен чугуноплавильного завода; в мае - июне Шполянского и Черкасского сахарных заводов.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;В феврале 1917 года в стране победила буржуазно-демократическая революция. В борьбе с самодержавием в Петербурге принимали участие и уроженцы края (А. П. Хоменко, Я. И. Шкыри, И. С. Заславский).
+В мае - июне 1917 года активизируется работа большевистских организаций на Черкасщине.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;25 октября (7 ноября) 1917 года победила Великая Октябрьская Социалистическая революция.
+В декабре 1917 года в Харькове состоялся I Всеукраинский съезд Советов, который провозгласил Украину Советской республикой и сформировал первое Советское правительство Украины.
+В январе - феврале 1918 года в большинстве городов и сел <img src="../../pic/history/5.jpg" align="right"> края была установлена Советская власть.
+В ноябре 1922 года был пущен Смелянский сахарный завод, через год начали выпускать продукцию еще десять сахарных заводов.
+В 1940 году в Черкасском крае действовало 1039 школ, в которых обучалось 229600 учащихся.
+Широко развернулась подготовка специалистов для сельского хозяйства. На Черкасщине их готовили Уманский сельскохозяйственный институт, 11 сельскохозяйственных школ и техникумов.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Основным программным документом в начале войны стала директива СНК СССР и ЦК ВКП(б) партийным и советским организациям прифронтовых областей от 29 июня 1941 года.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Местные жители массово вступали в ряды Красной Армии, участвовали в оборонительных боях и самоотверженно трудились в тылу.
+По всему краю прошли собрания и митинги трудящихся, участники которых заявили о своей готовности защищать родину. Уже в первый период войны с немецко-фашистскими захватчиками черкасщане проявили стойкость и героизм.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Среди участников обороны героической Брестской крепости были и наши земляки Я. С. Крюк, И. Д. Кодацкий, С. П. Хуторян.
+В оборонительных боях за Одессу проявил героизм черкасщанин, летчик старший политрук С. А. Куница (Герой Советского Союза, награжден посмертно), который совершил более 150 вылетов на вражеские позиции, уничтожил много живой силы и техники противника.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;С середины 1941 года территория Черкасщины стала <b>ареной кровопролитных сражений</b>. Оборонительные бои на этом участке фронта вели 26-я, 6-я, 38-я, 12-я армии, а также Днепровский отряд Пинской военной флотилии. Командующие армиями и Днепровской военной флотилии: генерал-лейтенанты Ф. Я. Костенко, И. Н. Музыченко, Д. И. Рябышев, генерал-майор П. Г. Понеделин, контр-адмирал Д. Д. Рогачев.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Используя преимущество в живой силе и технике, оккупанты захватили в августе - сентябре все территорию края и установили режим террора и насилия. Под Уманью враг создал лагерь смерти для советских военнопленных, в котором томились десятки тысяч человек. Большая их часть была уничтожена. Узником "Уманской ямы" был известный советский поэт Е. А. Долматовский, книги которого - "Одна судьба" и "Зеленая брама", где он рассказывает о зверствах фашистских захватчиков.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>18 июня 1943 г.</b> гитлеровцы окружили хутор Буда Чигиринского района и подожгли его, а затем учинили дикую расправу над жителями. Грудных детей бросали в огонь живыми, стариков и женщин согнали в долину и расстреляли. Всего было уничтожено 82 человека.
+На священную борьбу против гитлеровских оккупантов поднялись советские люди, оставшиеся временно на оккупированной территории. На Черкасщине действовали три подпольных райкома партии, 26 партийных, пять комсомольских и молодежных организаций, 53 подпольные патриотические группы, более 30 партизанских отрядов и соединений.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;После ожесточенных боев 14 декабря 1943 года Черкассы были освобождены от немецко-фашистских захватчиков войсками 2-го Украинского фронта. Родина салютовала доблестным воинам 12 артиллерийскими залпами из 124 орудий.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Одной из выдающихся операций <b>Великой Отечественной Войны</b> была Корсунь-Шевченковская битва. Гитлеровские войска укрепились на Корсунском выступе и готовились к контрнаступлению на восток. Советское командование разработало план окружения и уничтожения фашистской группировки. В этом сражении принимали участие войска 1-го и 2-го Украинских фронтов. Она закончилась полным разгромом врага.
+149 воинов, наших земляков, удостоены звания Героя Советского Союза, двоим из них И. Д. Черняховскому и И. Н. Степаненко - это звание присвоено дважды.<br><br>
+Черкасская область <b>самая молодая</b> на Украине.<br><br>
+Образовалась она <b>7 января 1954 года</b>.</span>
+                    </td>
+                   </tr>
+                  </table>
+ 
+                 </td>
+                </tr>
+               </table><br><br></td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

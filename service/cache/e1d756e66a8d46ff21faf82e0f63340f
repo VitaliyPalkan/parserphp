@@ -1,0 +1,748 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Статистика - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/?mode=206" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/?mode=206" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">Статистика</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=29" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-05-14-675.jpg">
+ Быстрее звука</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=2" class="link_razdel_gallery" title="Открыть раздел галереи">Люди</a> (20 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1544" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2016-11-03-38dr_strenj_3D.jpg"><br>
+ Доктор Стрэндж 3D</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">ТРЦ "ДнепроПлаза"</a><br>
+ (5 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<table width="100%%">
+ <tr align="center">
+  <td> 
+   <span style="font-size:16px">Некоторые статистические данные о городе Черкассы</span><br><br>
+  </td>
+ </tr>
+ 
+ <!--<tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Географическое положение, статус, население</span><br><br>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Территориальное деление города</span><br><br>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Экономика, строительство, промышленность</span><br><br>
+  </td>
+ </tr>
+  
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Занятость населения</span><br><br>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Городское хазяйство</span><br><br>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Торговля</span><br><br>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:19px">Транспорт</span><br><br>
+  </td>
+ </tr>-->
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Строки биографии города</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+	  <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">Н</span>ачало 20 ст. - в Черкассах существовали мужская гимназия (построеная в 1903 г. за проектом архитектора В. Городецкого - памятник архитектуры), двукласное городское училище, три церковно-парафияльные школы и два пансионата для девушек. Вскоре открылась женская гимназия и четырёхклассное училище. В городе действовали театр, городской клуб, два гражданских собрания, два кинотеатра, народный дом, две библиотеки. Медицинкую помощь осуществляли поветовая, земская, железнодорожная и частаная (при сахароварне) больницы, родильный дом.<br><br>
+	  &nbsp;&nbsp;<b>1911 г.</b> - в городе было 57 предприятий. Значительного развития достигла торговля. Действовали десятки торговельных контор, складов, магазинов. Проиходило три ярмарки в год. Возростал грузооборот пристани.<br><br>
+	  &nbsp;&nbsp;<b>1912 г.</b> - завершено будівництво зілізниці Бахмач-Одеса через Черкаси.<br><br>
+	  &nbsp;&nbsp;<b>1924 г.</b> - в городе открыт первый детский сад.<br><br>
+	  &nbsp;&nbsp;<b>1930 г.</b> - в Черкассах открылось первое высшее учебное заведение - педагогический институт.<br><br>
+	  &nbsp;&nbsp;<b>1932 г.</b> - Черкассы - районный центр Киевской области.<br><br>
+	  &nbsp;&nbsp;<b>1933 г.</b> - начал работать драматический театр.<br><br>
+	  &nbsp;&nbsp;<b>22 августа 1941 г.</b> - окупация города немецко-фашистскими захватчиками.<br><br>
+	  &nbsp;&nbsp;<b>Январь 1954 г.</b> - Черкассы становятся административным центром созданной Черкасской области.<br><br>
+	  &nbsp;&nbsp;<b>7 февраля 1954 г.</b> - вышел первый номер областной ежедневной газеты "Черкасская правда".<br><br>
+	  &nbsp;&nbsp;<b>1957 г.</b> - построен центральный городской стадион.<br><br>
+	  &nbsp;&nbsp;<b>1959-1965 гг.</b> - в Черкассах было введено в действие 14 предприятий.<br><br>
+	  &nbsp;&nbsp;<b>1959 г.</b> - построен Дом советов, памятник архитектуры (арх. В. Штокмар).<br><br>
+	  &nbsp;&nbsp;<b>1963 г.</b> - в Черкассах проживало 103 тыс. человек.<br><br>
+	  &nbsp;&nbsp;<b>1964 г.</b> - из Шебелинки до Черкасс пришёл природный газ. На честь 150-летия от дня рождения сооружён памятник Тарасу Шевченко (скульпторы М. Воронский, О. Олийнык). Построено помещение драматического театра (архитектор Б. Кучер и др.).<br><br>
+	  &nbsp;&nbsp;<b>1965 г.</b> - выдал первую продукцию Черкасский химический комбинат. Построен Дом связи. Сооружён Железнодорожный вокзал (арх. В. Чуприн).<br><br>
+	  &nbsp;&nbsp;<b>Январь 1954 г.</b> - Черкассы становятся административным центром созданной Черкасской области.<br><br>
+	  &nbsp;&nbsp;<b>1967 г.</b> - в городе построен Дворец спорта.<br><br>
+	  &nbsp;&nbsp;<b>1977 г.</b> - Открылся мемориальный комплекс Холм Славы (скульптор Г. Кальченко, Е. Кунцевич и др.).<br><br>
+	  &nbsp;&nbsp;<b>1979 г.</b> - Население составляло 230 тыс. человек.<br><br>
+	  &nbsp;&nbsp;<b>1980 г.</b> - построен Дворец культуры "Дружба народов" (арх. Л. Конрадский, М. Собчук, С. Фурсенко).<br><br>
+	  &nbsp;&nbsp;<b>1984 г.</b> - в Черкассах работали 55 промышленных предприятий. Проживало 267 тыс. человек.<br><br>
+	  &nbsp;&nbsp;<b>1990 г.</b> - население города составляло 297 тыс. человек.<br><br>
+	  &nbsp;&nbsp;<b>2000 г.</b> - в городе работают предприятия химической, (азотные удобрения, синтетические волокна, реактивы, пластмассы), машиностроительной, металообрабатывающей, пищевой, текстильной промышенности; действуют речной порт, железнодорожный узел, аеропорт; есть два театра (украинской драмы и кукольный), филармония, зоопарк, семь парков отдыха.<br><br>
+	  &nbsp;&nbsp;<b>2004 г.</b> - в городе действовали четыре высших учебных заведения, пять средних специальных, три средних профессионально-технических училищ.<br><br>
+	  &nbsp;&nbsp;<span style="font-size:15px">С</span> историей Черкасс тесно связаны имена целого ряда талантливых представителей науки, культуры и исскуства, которые в разное время жили здесь, или чья трудовая деятельность проходила в этом городе. Среди них - известный украинский драматург И. Карпенко-Карый, который посещал Черкассы и работал здесь. На сцене городского театра выступала популярная Мария Заньковецкая. В городе бывал ерейский писатель Шолом Алейхем. Здесь родились художник-график В. Замирайло, писатель Лесь Гомин, певица Лилия Лобанова, один из первых наших стратонавтов Я. Украинский, физиолог М. Витте, учёний в сфере строительства О. Норовецкий и другие. В Черкассах некоторое время пребывал П. Тычина, выступали актёри А. Бучма та Г. Юра, работал известный поэт В. Симоненко.<br><br><br></span></td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Культура</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+	  <span style="font-size:11px">&nbsp;&nbsp;Библиотеки<br><br>
+	  &nbsp;&nbsp;&nbsp;1. Ценральная библиотека им Л. Украинки, ул. Крещатик, тел.: 459191.<br><br>
+	  &nbsp;&nbsp;&nbsp;2. Отдел обслуживания читателей, тел.: 459187.<br><br>
+	  &nbsp;&nbsp;&nbsp;3. Библиотека-филлиал № 2, тел.: 648588.<br><br>
+	  &nbsp;&nbsp;&nbsp;4. Библиотека-филлиал № 4, тел.: 430334.<br><br>
+	  &nbsp;&nbsp;&nbsp;5. Библиотека-филлиал № 8, тел.: 660747.<br><br>
+	  &nbsp;&nbsp;&nbsp;6. Ценральная городская библиотека для детей, тел.: 648588.<br><br>
+	  &nbsp;&nbsp;&nbsp;7. Библиотека-филлиал № 1 для детей, тел.: 648588.<br><br>
+	  &nbsp;&nbsp;&nbsp;8. Библиотека-филлиал № 2 для детей, тел.: 668616.<br><br>
+	  &nbsp;&nbsp;&nbsp;9. Библиотека-филлиал № 3 для детей, тел.: 432401.<br><br>
+	  &nbsp;&nbsp;&nbsp;10. Библиотека-филлиал № 4 для детей, тел.: 660403.<br><br>
+	  &nbsp;&nbsp;&nbsp;11. Областная универсальная научная библиотека им Т. Г. Шевченко, тел.: 473242.<br><br>
+	  &nbsp;&nbsp;&nbsp;12. Областная юношеская библиотека им. В. Симоненка, тел.: 476500.<br><br>
+	  &nbsp;&nbsp;&nbsp;13. Областная научная медицинская библиотека, тел.: 479065.<br><br>
+	  &nbsp;&nbsp;&nbsp;14. Библиотека-филлиал № 2, тел.: 648588.<br><br>
+	  &nbsp;&nbsp;Музеи, театры, кино<br><br>
+	  &nbsp;&nbsp;&nbsp;1. Областной краеведческий музей, тел.: 451122.<br><br>
+	  &nbsp;&nbsp;&nbsp;2. Областной художественный музей, тел.: 472877.<br><br>
+	  &nbsp;&nbsp;&nbsp;3. Музей "Кобзаря" Т. Г. Шевченко, тел.: 454105.<br><br>
+	  &nbsp;&nbsp;&nbsp;4. Музей В. Симоненко, тел.: 470470.<br><br>
+	  &nbsp;&nbsp;&nbsp;5. Дворец культуры "Дружба народов", тел.: 452949.<br><br>
+	  &nbsp;&nbsp;&nbsp;6. Областной украинский музыкально-драматический театр им. Т. Г. Шевченко, тел.: 474418.<br><br>
+	  &nbsp;&nbsp;&nbsp;7. Областной кукольный театр, тел.: 457049.<br><br>
+	  &nbsp;&nbsp;&nbsp;8. Областная филармония, тел.: 451184.<br><br>
+	  &nbsp;&nbsp;&nbsp;9. Дворец кино "Салют", тел.: 452515.<br><br>
+	  &nbsp;&nbsp;&nbsp;10. Кинотеатр "Украина", тел.: 459281.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Охрана здоровья</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+      <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">В</span> г. Черкассах насчитывается 8 поликлиник (из них 3 - детские), областная больница, 4 городские больницы, детская городская больница, 6 диспансеров, 2 родильных дома, госпиталь ветеранов Великой Отечественной войны.<br><br>
+	  &nbsp;&nbsp;<span style="font-size:15px">Т</span>акже работают медико-санитарные части больших промышленных предприятий ("АЗОТ", "Фотоприбор"). Мощность больниц города - 2880 коек.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> медицинских организациях города работает более 919 докторов и около 2369 средних медицинских работников. В городе работает более 30 заслуженых докторов Украины, из них 13 - в областной больнице.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Е</span>жегодно в больницах города проводится около 15,5 тыс. операций в стацыонарах и около 15 тыс. операций в поликлиниках.<br><br>
+	  &nbsp;&nbsp;<span style="font-size:15px">У</span>лучшение материальной базы больниц, оснащение их новой медицинской аппаратурой создали базу для высоких достижений медицинской науки и практики. К примеру, в <b>2003 г.</b> закуплено 120 единиц медицинского оборудования на сумму 1,5 млн. грн.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> городе введены современные технологии оперативного вмешательства на почках, печени, поджелудочной железе, пищеводе. Широко используются хирургические технологии - лапароскопия, эндоскопия, гистероскопия, риноскопия, ректоскопия.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span>ведены лапароскопические оперативные вмешательства на органах желудочно-кишечного тракта, эндопротезирование больших суглобов. В оздоровительных учереждениях гоорда исопльзуются современные технологии экстракорпоральной детоксикации - плазмаферез, гемосорбция, ультрафильтрация крови, методи лимфокоррекции, лазерное УВЧ облучение, озонотерапия. Розвиваются новые направления диагностики - современные УЗ и рентген оборудование, розширяются биохимические исследования.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">С</span>пециалистов для учереждений охраны здоровья готовит Черкасcкий медицинский колледж. В нём получают образование будущие фельдшеры, лаборанты, медсёстры, фармацевты, стоматологи. В последенее время в Черкассах появились и новые медицинские учереждения - это, в первую очередь, реабилитационный центр "Астра", много частных медицинских учереждений.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>	 
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">СМИ</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+	  <span style="font-size:11px">&nbsp;&nbsp;1. Авизо, газета, тел.: 320518.<br><br>
+	  &nbsp;&nbsp;2. Акцент, газета, тел.: 478202.<br><br>
+	  &nbsp;&nbsp;3. Вечерние Черкассы, газета, тел.: 450271.<br><br>
+	  &nbsp;&nbsp;4. Викка, телерадиокомпания, тел.: 350355, 353164, 372710.<br><br>
+	  &nbsp;&nbsp;5. Губернские ведомости, газета, тел.: 453306.<br><br>
+	  &nbsp;&nbsp;6. Золотые страницы Украины, Черкасское представительство. Реклама в телефонных справочниках по всей Украине. 18000, г. Черкассы, ул. Смелянская, 48, тел.: 476898, 473521.<br><br>
+	  &nbsp;&nbsp;7. Мисто, газета, тел.: 454340.<br><br>
+	  &nbsp;&nbsp;8. Молодь Черкасщины, газета, тел.: 474515.<br><br>
+	  &nbsp;&nbsp;9. Наше радио. Изготовление и трансляция рекламно-информационной продукции. 18000, г. Черкассы, ул. Энгельса, 235/1. Е-маil: nashe 102.9@routek.net, тел.: 327737.<br><br>
+	  &nbsp;&nbsp;10. Недвижимость Черкасщины, газета, тел.: 452768.<br><br>
+	  &nbsp;&nbsp;11. Нова доба, газета, тел.: 452597, 450036.<br><br>
+	  &nbsp;&nbsp;12. Новыны тыжня, информационный ежедневник. 18000, г. Черкассы, ул. О. Дашкевича, 39 к. 102. E-mail: nw@newsweek.ck.ua, тел.: 320176.<br><br>
+	  &nbsp;&nbsp;13. Объектив, общественно-политическая газета, тел.: 540211, 540401.<br><br>
+	  &nbsp;&nbsp;14. Областное радио, общественно-политическая газета, тел.: 477587.<br><br>
+	  &nbsp;&nbsp;15. От и До, еженедельная газета рекламы, прайс-листов и частных объявлений. 18000, г. Черкассы, ул. Крещатик, 195, оф. 408. E-mail: otido@otido.com.ua, www.otido.com.ua, тел.: 452764, 448371.<br><br>
+	  &nbsp;&nbsp;16. Пресс-информ, ПП, Екстра-Пресс, газета, тел.: 326842, 327851, 327852.<br><br>
+	  &nbsp;&nbsp;17. Ранок, газета, тел.: 456459, 475066.<br><br>
+	  &nbsp;&nbsp;18. Рынок-Черкассы, безплатная рекламмно-информационная газета. 18000, г. Черкассы, ул. Парижской Коммуны, 37, тел.: 544000.<br><br>
+	  &nbsp;&nbsp;19. Рось, телерадиокомпания, 37, тел.: 451306.<br><br>
+	  &nbsp;&nbsp;20. ТЕТ-Черкассы, телерадиокомпания, тел.: 544049, 455549.<br><br>
+	  &nbsp;&nbsp;21. Фактор, газета, тел.: 328803.<br><br>
+	  &nbsp;&nbsp;22. ХИТ-FM, украинская радиосеть, тел.: 452518.<br><br>
+	  &nbsp;&nbsp;23. Черкассы-Выбор, ПП, РК, тел.: 452518.<br><br>
+	  &nbsp;&nbsp;24. Черкассыторгпресса. 18000, г. Черкассы, бул. Шевченко, 205, тел.: 328787, 544117.<br><br>
+	  &nbsp;&nbsp;25. Черкасская служба заказов. 18002, г. Черкассы, ул. Смелянская, 2, тел.: 320200.<br><br>
+	  &nbsp;&nbsp;26. Черкасский край, газета, тел.: 473152.<br><br>
+	  &nbsp;&nbsp;27. Черкасские вести, газета, тел.: 473427, 470334.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Образование, детские учереждения</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+      <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">В</span> городе функционирует 38 общеобразовательных школ коммунальной собственности, в которых учится 35 тыс. учеников. В том числе 14 учереждений нового типа и специализированных школ (2 лицея, 3 гимназии, коллегиум, 8 специализированных школ), в которых учатся 15,2 тыс. учеников, что составляет 43 проц. от общего колличества учеников.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span>о всех учереждениях І-ІІІ степеней открыты классы с углублённым изучением отдельных предметов. Всего углублённым изучением охвачено 11652 ученика, что составляет 33 проц. от общего колличества учеников.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> Черкассах работает 8 ПТУ, в которых учится 3540 учеников.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Т</span>акже в городе насчитывается 55 дошкольных учереждения, которые посещают 8,5 тыс. детей и 4 послешкольные учереждения.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">К</span>роме этого, на территории города расположены 2 школы-интерната, 3 частные школы.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> учебных учереждениях коммунальной собственности города работает:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;2460 учителей, из них имеют звание "Заслуженный учитель Украины" - 14, квалификационную категорию "Специалист висшей категории" - 722( 29 проц.).<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;1110 воспитателей дошкольных учереждений, из них имеют квалификационную категорию "Специалист висшей категории"-64 (6 проц.).<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> 7 высших учебных заведениях I-IІ уровня акредитации, учится 8145 студентов.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> городе функционируют 5 высших учебных заведений III-IV уровня акредитации, два из яких - негосударственной формы собственности: национальный университет, государственный технологический университет, институт пожарной безопасности имени Героев Чернобыля, институт социального управления, академия менеджмента.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">О</span>бщий контингент студентов - 27 359.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> Черкассах сейчас работает больше 20 филлиалов вузов Киева, Харькова, Луцка и других городов Украины.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>	 
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Молодёжные организации</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+      <span style="font-size:11px">&nbsp;&nbsp;1. Молодёжная гражданская организация "Объединение инициативной молодёжи "Молодая инициатива". Ул Лазарева 6, к. 329, Чипенко Ольга.<br><br>
+      &nbsp;&nbsp;2. Молодёжная организация "Ленинсий коммунистический союз молодёжи". Ул Лазарева 6, к.404.<br><br>
+      &nbsp;&nbsp;3. Молодёжная гражданская организация "Спектр". Ул Орджоникидзе 72 к. 29.<br><br>
+      &nbsp;&nbsp;4. Молодёжная детская гражданская организация "Грани". Ул. Лазарева 6, к. 209. 32-08-01.<br><br>
+      &nbsp;&nbsp;5. Молодёжная гражданская организация "МОСТ". Кравцов О. Б. 76-36-39.<br><br>
+      &nbsp;&nbsp;6. Гражданская организация "МОДем" (Молодой Демократ). Гончар Сергей, 45-42-52.<br><br>
+      &nbsp;&nbsp;7. Гражданская организация "Черкасский городской клуб весёлых и находчивых". Бракар Дмитрий 43-39-47.<br><br>
+      &nbsp;&nbsp;8. Коммитет в делах семьи и молодёжи приглашает все городские гражданские организации к сотрудничеству. Звоните и приходите.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>	 
+  </td>
+ </tr>
+
+ <tr>
+  <td align="left">
+   <li><span style="font-size:13px">Спорт</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+	  <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">Ч</span>еркассы - спортивный город, известный талантливыми спортсменами, олимпийскими чемпионами и призёрами престижных спортивных соревнований, которые представляют Украину на международной арене, создавая позитивный иммидж нашей страны, как спортивной, где спорт является важным и неотъемлимым атрибутом духовного и физического здоровья нации. В <b>50-60 гг.</b> успешно развивается спорт в городе. Спортивные коллективы города получают свои первые победы в международных соревнованиях. В этот период футбольная комманда "Колгоспник" стала чемпионом Украины среди аматоров, завоевала право выступать в первенстве СРСР, женская гандбольная комманда "Освита" стала бронзовым призёром Чемпионата СРСР. В начале <b>70-х г.</b> широко развился вёсельный спорт. На олимпийских играх в г. Токио (<b>1964 г.</b>) Черкассы представили первого олимпийского чемпиона - Химича Андрея.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> <b>80-90 гг.</b> особенно распостранённым среди жителей города стал воллейбол. В следствии этого, была создана мужская воллейбольная комманда "Азот", неодноразовый призёр СРСР и победитель кубка СРСР, подготовлено 7 мастеров спорта международного класса. В период <b>1990-2000 гг.</b> воллейбольная комманда "Химволокно-Круг" (женщины) выигрывает Кубок Украины и занимает призовые места в суперлиге Чемпионата Украины. С <b>2000-2004 гг.</b> появляются новые спортивные имена, которые очаровали тысячи сердец не только черкащан, но и всей страны, успешно выступив на Олимпийских играх. Среди них: Сиробаба Н., Кваша О., - учасницы Олимпийских игр, чемпионки Европы; Перешкура О. (спортивная гимнастика) - серебрянный призёр Олимпийских игр; Феденко О. (велоспорт) - серебрянный призёр Олимпийских игр; Скачков О. (лёгкая атлетика) - серебрянный призёр Параолимпийських игр. Успешно выступают комманды мастеров воллейбола в суперлиге "Азот", "Круг" и "Химволокно". Также порадовали своих болельщиков футбольные клубы "Минора" (мини-футбол, женщины), ФК "Черкассы" (ІІ лига), ФК "Рятивнык" (мини-футбол, І лига).<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">П</span>олноценную жизнь города сегодня невозможно представить без спортивно-воспитательных учереждений, которые воспитуют будущих чемпионов и пропагандируют здоровый способ жизни. Центральный стадион, территория которого составляет 8,7 га., имеет футбольное поле с беговыми дорожками, секторами для прыжков та метаний, вмещает 15 тыс. зрительских мест, является местом проведения городских, областных и всеукраинских соревнований, принимая на своём поле отечественные футбольные клубы.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Д</span>ворец спорта "Будивэльнык" (игровой зал площадью 1408 м, зал бокса, зал борьбы) и дворец спорта "Фотоприбор" (расщитан на 100 зрительских мест, вмещает игровой зал, плавательный бассейн 25 м., залы штанги и бокса) пользуются популярностью среди городского населения. В городе насчитывается 6 детско-юношеских спортивных школ, в которых яких занимается более 6000 юных спортсменов. Это даёт возможность молодёжи развить свои физические способности, приятно и с пользой для себя провести свободное время. В дошкольных учебных заведениях с детьми работают 28 специалистов физического воспитания. 111 учителей физкультуры работают в 36 школах, гимназиях, лицеях.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">В</span> 12 высших и 8 профессионально-технических учебных заведениях работает 137 преподавателей физкультуры. Около 10 тыс. студентов посещают учебные занятия с физической культуры, более 2 тыс. - занятия спортивных секций этих учереждений. <br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Ф</span>акультет физической культуры Черкасского Национального Университета ежегодно готовит до 100 специалистов. Каждый год в городе проводится более чем 200 спортивных мероприятий, спартакиад, соревнований, турниров, в которых принимает участие до 10 тыс. детей, молодёжи и взрослого населения города.<br><br>
+	  &nbsp;&nbsp;Спортивные сооружения<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;1. Водно-спортивная станция, ул. Гагарина, 7;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;2. Дворец спорта "Спартак", ул. Остафия Дашкевича, 23;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;3. Комплекс технологического университета, ул. Добровольского, 5;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;4. Физкультурно-оздоровительный комплекс, ул. Ярославская, 5;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;5. Дворец спорта "Будивэльнык", просп. Химиков, 50/2.<br><br>
+	  &nbsp;&nbsp;Стадионы<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;1. "Спартак", ул. Добровольского, 2;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;2. "Центральный", ул. Смелянская, 78.<br><br>
+	  &nbsp;&nbsp;Бассейны<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;1. "Астра", ул. Гоголя, 368;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;2. "Сокол" ул. Смелянская, 78;<br><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;3. "Свят", ул. Академика Королёва, 4.</span><br><br><br>
+	 </td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+
+ <tr>
+  <td align="left">
+   <li><span style="font-size:13px">Бюджет города на 2004 год</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+      <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">В</span>ідповідно до п.23 ст.26, ст.41 Закону України "Про місцеве самоврядування в Україні", вимог ст.ст.76, 77 Бюджетного Кодексу України із змінами, внесеними Законом України "Про внесення змін до Бюджетного кодексу України та Закону України "Про оплату праці", Закону України "Про Державний бюджет на 2004 рік", Черкаська міська рада ВИРІШИЛА:<br><br>
+      &nbsp;&nbsp;1. Затвердити загальний обсяг доходів міського бюджету на 2004 рік у сумі 166067,5 тис.грн., у тому числі відповідно до ст.58 Закону України "Про Державний бюджет України на 2004 рік" додаткову дотацію з державного бюджету на зменшення фактичних диспропорцій між місцевими бюджетами через нерівномірність мережі бюджетних установ у сумі 755,1 тис.грн., субвенцій з державного та обласного бюджету у загальній сумі 36588,4 тис.грн., з них:<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на виплату допомоги сім'ям з дітьми, малозабезпеченим сім'ям та інвалідам з дитинства і дітям-інвалідам - у сумі 10689,0 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на надання передбачених чинним законодавством пільг ветеранам війни і праці, ветера-нам військової служби, ветеранам органів внутрішніх справ, реабілітованим громадянам, які стали інвалідами внаслідок репресій, або є пенсіонерами, громадянам, які постраждали внаслідок Чорнобильської катастрофи, та житлових субсидій населенню на оплату електроенергії, природного газу, послуг тепло-, водопостачання і водовідведення, квартирної плати, вивезення побутового сміття та рідких нечистот у сумі 15988,7 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на надання передбачених чинним законодавством пільг ветеранам війни і праці, ветеранам військової служби, ветеранам органів внутрішніх справ, громадянам, які постраждали внаслідок Чорнобильської катастрофи, та житлових субсидій населенню на придбання твердого та рідкого пічного побутового палива і скрапленого газу у сумі 31,0 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на надання пільг ветеранам війни і праці, військової служби, органів внутрішніх справ, реабілітованим громадянам, які стали інвалідами внаслідок репресій, або є пенсіонерами, громадянам, які постраждали внаслідок Чорнобильської катастрофи, з послуг зв'язку та інших передбачених законодавством пільг (крім пільг на одержання ліків, зубопротезування, оплату електроенергії, природного і скрапленого газу, твердого та рідкого пічного побутового палива, послуг тепло-, водопостачання і водовідведення, квартирної плати, вивезення побутового сміття та рідких нечистот) та компенсацію за пільговий проїзд окремих категорій громадян - у сумі 5917,7 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на будівництво і придбання житла військовослужбовцям, особам рядового і начальницького складу, кримінально-виконавчої системи та органів внутрішніх справ, в тому числі звільненим у запас або відставку за станом здоров'я, вислугою років та у зв'язку із скороченням штатів, які перебувають на квартирному обліку за місцем проживання, членам сімей з числа цих осіб, які загинули під час виконання ними службових обов'язків, а також учасникам бойових дій в Афганістані та воєнних конфліктів у зарубіжних країнах - у сумі 2305,8 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з державного бюджету місцевим бюджетам на погашення заборгованості з пільг окремим категоріям громадян (згідно з чинним законодавством) за надані послуги зв'язку у минулих роках - у сумі 1643,0 тис.грн.;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;субвенцію з обласного бюджету - у сумі 13,2 тис.грн. для виплати щомісячної грошової допомоги особам, які мають особливі заслуги перед Батьківщиною, в розмірі 100 грн.<br>
+      &nbsp;&nbsp;<span style="font-size:15px">О</span>бсяг доходів загального фонду міського бюджету визначити у сумі 147723,9 тис.грн., спеціального фонду бюджету 18343,6 тис.грн., у тому числі бюджету розвитку 4066,6 тис.грн. (додатки 1, 6).<br><br>
+      &nbsp;&nbsp;2. Затвердити загальний обсяг видатків міського бюджету на 2004 рік у сумі 166067,5 тис.грн. з урахуванням коштів, що згідно із ст. 58 Закону України "Про Державний бюджет України на 2004 рік" передаються до державного бюджету у сумі 10945,41тис.грн., у тому числі обсяг видатків загального фонду бюджету у сумі 147723,9 тис.грн. та видатків спеціального фонду бюджету - 18343,6 тис.грн., в тому числі бюджет розвитку - 4066,6 тис.грн., за функціональною структурою бюджету (додаток 2) та за головними розпорядниками коштів (додаток 3).<br><br>
+      &nbsp;&nbsp;3. Згідно зі ст.41 Закону України "Про місцеве самоврядування в Україні", ст.68 Бюджетного кодексу України визначити склад доходів бюджетів районів у місті на 2004 рік , а саме:<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;3.1. Затвердити обсяги міжбюджетних трансфертів на 2004 рік (додаток 4):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенції районним у місті бюджетам у сумі 32924,0 тис.грн., у т.ч.:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з державного бюджету місцевим бюджетам на виплату допомоги сім'ям з дітьми, малозабезпеченим сім'ям та інвалідам з дитинства і дітям-інвалідам - у сумі 10689,0 тис.грн., у т.ч. Придніпровському району - 5249,0 тис.грн., Соснівському району - 5440,0 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з державного бюджету місцевим бюджетам на надання передбачених чинним законодавством пільг ветеранам війни і праці, ветеранам військової служби, ветеранам органів внутрішніх справ, реабілітованим громадянам, які стали інвалідами внаслідок репресій, або є пенсіонерами, громадянам, які постраждали внаслідок Чорнобильської катастрофи, та житлових субсидій населенню на оплату електроенергії, природного газу, послуг тепло-, водопостачання і водовідведення, квартирної плати, вивезення побутового сміття та рідких нечистот у сумі 15988,7 тис.грн., у т.ч. Придніпровському району - 7994,0 тис.грн., Соснівському району - 7994,7 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з державного бюджету місцевим бюджетам на надання передбачених чинним законодавством пільг ветеранам війни і праці, ветеранам військової служби, ветеранам органів внутрішніх справ, громадянам, які постраждали внаслідок Чорнобильської катастрофи, та житлових субсидій населенню на придбання твердого та рідкого пічного побутового палива і скрапленого газу у сумі 31,0 тис.грн., у т.ч. Придні-провському району - 11,0 тис.грн., Соснівському району - 20,0 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з державного бюджету місцевим бюджетам на надання пільг ветеранам війни і праці, військової служби, органів внутрішніх справ, реабілітованим громадянам, які стали інвалідами внаслідок репресій, або є пенсіонерами, громадянам, які постраждали внаслідок Чорнобильської катастрофи, з послуг зв'язку та інших передбачених законодавством пільг (крім пільг на одержання ліків, зубопротезування, оплату електроенергії, природного і скрапленого газу, твердого та рідкого пічного побутового палива, послуг тепло-, водопостачання і водовідведення, квартирної плати, вивезення побутового сміття та рідких нечистот) та компенсацію за пільговий проїзд окремих категорій громадян - у сумі 1343,3 тис.грн., у т.ч. Придніпровському району - 670,0 тис.грн., Соснівському району - 673,3 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з державного бюджету місцевим бюджетам на погашення заборгованості з пільг окремим категоріям громадян (згідно з чинним законодавством) за надані послуги зв'язку у минулих роках - у сумі 1643,0 тис.грн., у т.ч. Соснівському району - 1643,0 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- субвенцію з міського бюджету районним у місті бюджетам - у сумі 3229,0 тис.грн. на передані їм повноваження, у т.ч. Придніпровському району - 1685,6 тис.грн. (в т.ч. на утримання органів місцевого самоврядування - 974,8 тис.грн., відділу соціальної допомоги одиноким непрацездатним громадянам Придніпровського району - 674,8 тис.грн., надання матеріальної допомоги - 26,0 тис.грн., благоустрій - 10,0 тис.грн.), Соснівському району - 1543,4 тис.грн. (в т.ч. на утримання органів місцевого самоврядування - 953,4 тис.грн., територіальний центр по обслуговуванню одиноких непрацездатних громадян Соснівського району - 554,0 тис.грн., надання матеріальної допомоги - 26,0 тис.грн., благоустрій - 10,0 тис.грн.).<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;3.2. Надати право фінансовому управлінню міськвиконкому проводити перерахування зазначених субвенцій до районних у місті бюджетів по фактично проведених видатках та проводити перерозподіл обсягів субвенцій з Державного бюджету України на надання пільг та субсидій між місцевими бюджетами та між їх видами, виходячи з фактично нарахованих обсягів відповідних пільг та субсидій населенню.<br><br>
+       &nbsp;&nbsp;4. Визначити склад видатків бюджетів районів у місті на виконання переданих їм повноважень згідно з додатком 8 до цього рішення.<br><br>
+       &nbsp;&nbsp;5. Установити, що до доходів загального фонду міського бюджету у 2004 році належать:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- 75 відс. прибуткового податку з громадян та фіксованого податку на доходи фізичних осіб від підприємницької діяльності, що справляються на території міста;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- податок на прибуток підприємств і організацій, що належать до комунальної власності;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- 75 відс. плати за землю;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- плата за державну реєстрацію суб'єктів підприємницької діяльності;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- плата за торговий патент на деякі види підприємницької діяльності;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- місцеві податки і збори;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- 43 відс. єдиного податку для суб'єктів малого підприємництва;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- плата за оренду цілісних майнових комплексів та іншого майна в т.ч.:<br>
+       &nbsp;&nbsp;20 відс. плати за оренду майна (нежитлових приміщень), що належить бюджетним установам та організаціям, які повністю або частково утримуються за рахунок коштів міського бюджету та направити ці кошти на енергозберігаючі заходи в бюджетних установах та організаціях в сумі 80,0 тис.грн., в тому числі установ освіти - 55,0 тис.грн., охорони здоров"я - 22,0 тис.грн., культури - 1,5 тис.грн., комітету у справах сім"ї та молоді - 1,5 тис.грн.;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- державне мито;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- адміністративні штрафи та інші санкції;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- податок на промисел;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- плата за користування надрами місцевого значення;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- інші доходи, що підлягають зарахуванню до міського бюджету згідно зі ст.69 Бюджетного Кодексу України.<br><br>
+       &nbsp;&nbsp;6. Установити, що джерелами формування спеціального фонду міського бюджету у 2004 році є:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.1. Надходження до бюджету розвитку:<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- надходження коштів від відчуження майна, що знаходиться в міській комунальній власності - у сумі 1566,6 тис.грн.;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- надходження від продажу земельних ділянок несільськогосподар-ського призначення - 2500 тис.грн.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.2. 70 відс. податку з власників транспортних засобів та інших самохідних машин і механізмів.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.3. Плата за придбання торгових патентів пунктами продажу нафтопродуктів.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.4. Власні надходження бюджетних установ і організацій, які утримуються за рахунок коштів міського бюджету (в тому числі 80 відс. плати за оренду майна бюджетних установ, які утримуються з міського бюджету).<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.5. 20 відс. збору за забруднення навколишнього середовища.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.6. Відшкодування втрат сільськогосподарського і лісогосподарського виробництва.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6.7. Надходження до цільових фондів, утворених міською радою:<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- міський цільовий фонд щодо проведення капітального ремонту Центрального стадіону міста Черкаси;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- міський цільовий фонд сприяння покращенню інфраструктури міста Черкаси;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- екологічний фонд охорони та відтворення зелених насаджень міста;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- міський цільовий фонд на утримання комунальних мереж зливової каналізації м.Черкаси.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Кошти спеціального фонду міського бюджету витрачаються на заходи, передбачені законодавством та положеннями про міські цільові фонди.<br><br>
+       &nbsp;&nbsp;7. Затвердити розмір оборотної касової готівки міського бюджету на 2004 рік в сумі 50,0 тис.грн.<br><br>
+       &nbsp;&nbsp;8. Управлінню власності міста направити в 2004 році 90 відс. коштів, отриманих від приватизації комунального майна до спеціального фонду (бюджет розвитку), а 10 відс. коштів, отриманих від приватизації комунального майна, на спеціальний рахунок управління власності міста, як власні надходження, та 80 відс. від оренди нежитлових приміщень (код 22080400) до загального фонду міського бюджету, а 20 відс. на спеціальний рахунок управління власності міста, як власні надходження.<br><br>
+       &nbsp;&nbsp;9. У разі перевищення власних надходжень управління власності міста над видатками, що визначені у сумі 297,4 тис.грн., перевищення цих надходжень зараховується у повному обсязі до загального фонду міського бюджету.<br><br>
+       &nbsp;&nbsp;10. До прийняття рішення Черкаської міської ради "Про затвердження Положення про порядок сплати місцевих податків і зборів" розмір плати за дозволи на розміщення об'єктів торгівлі та сфери послуг складає 20 неоподатковуваних мінімумів доходів громадян на рік та один неоподатковуваний мінімум за одноразові дозволи.<br><br>
+       &nbsp;&nbsp;11. Зобов"язати бюджетні установи та організації, які утримуються за рахунок міського бюджету, а також управління власністю міста перераховувати до 15 числа місяця, наступного за звітним до загального фонду міського бюджету плату за оренду майна (нежитлових приміщень) у розмірах, визначених даним рішенням, та надавати звітність щодо стану розрахунків за оренду майна (нежитлових приміщень) згідно з розробленими формами у фінансове управління міськвиконкому.<br><br>
+       &nbsp;&nbsp;12. Заклади, установи та організації, які фінансуються за рахунок коштів міського бюджету, зобов'язані надавати в фінансове управління міськвиконкому договори на здачу в оренду власних приміщень для реєстрації та проведення їх експертизи.<br><br>
+       &nbsp;&nbsp;13. Бюджетним установам при наданні в оренду нежитлових приміщень суб"єктам підприємницької діяльності в розрахунку орендної плати застосовувати тарифи на оплату комунальних послуг як для небюджетної сфери.<br><br>
+       &nbsp;&nbsp;14. Установити, що бюджетні установи можуть заключати договори на оренду майна з суб"єктами підприємницької діяльності на термін не більше ніж 3 роки.<br><br>
+       &nbsp;&nbsp;15. Встановити, що підприємства, які належать до міської комунальної власності, сплачують за результатами фінансово-господарської діяльності 2003 року та щоквартальної фінансово-господарської діяльності у 2004 році до загального фонду міського бюджету частину прибутку у розмірі 15 відсотків обсягу чистого прибутку (доходу). Зазначена частина прибутку сплачується у строки, встановлені для сплати податку на прибуток підприємств комунальної власності, і зараховується на відповідний рахунок до загального фонду міського бюджету.<br><br>
+       &nbsp;&nbsp;16. Зобов'язати тендерний комітет міськвиконкому до 01.04.2004 року оголосити тендер на визначення організації по справлянню збору за парковку автотранспорту.<br><br>
+       &nbsp;&nbsp;17. Зобов'язати відділ земельних відносин міськвиконкому до 01.03.2004 року розробити та затвердити порядок набуття права на землю юридичними особами та громадянами.<br><br>
+       &nbsp;&nbsp;18. Запропонувати міському управлінню земельних ресурсів до 01.04.2004 року провести інвентаризацію рішень міськвиконкому та міської ради, з метою виявлення юридичних та фізичних осіб, яким надано земельні ділянки в постійне користування, але не видані державні акти на право постійного користування землею.<br><br>
+       &nbsp;&nbsp;19. Фінансовому управлінню міськвиконкому здійснювати оперативний контроль за станом розрахунків з бюджетом по орендній платі за землю, платі за оренду майна бюджетних установ та спільно з юридичним управлінням готувати необхідні матеріали для стягнення належних міському бюджету коштів в порядку, визначеному законодавством.<br><br>
+       &nbsp;&nbsp;20. Встановити, що до міського бюджету (код платежу 24060300) зараховуються: кошти від проведення аукціонів, тендерів та конкурсів, що проводить міськвиконком та 70 відсотків від послуг, наданих інспекцією по держтехнагляду за станом машин та обладнання міськвиконкому, інші доходи згідно з чинним законодавством.<br><br>
+       &nbsp;&nbsp;21. Надати право управлінню житлово-комунального господарства міськвиконкому спрямувати кошти від надходження податку з власників транспортних засобів та інших самохідних машин і механізмів на ремонт та утримання міських шляхів.<br><br>
+       &nbsp;&nbsp;22. Затвердити перелік об'єктів (додаток 5), видатки на які у 2004 році будуть проводитись за рахунок коштів бюджету розвитку.<br><br>
+       &nbsp;&nbsp;23. Установити розмір резервного фонду на 2004 рік у сумі 100,0 тис.грн.<br><br>
+       &nbsp;&nbsp;24. Затвердити наступний перелік захищених статей видатків загального фонду міського бюджету на 2004 рік за економічною структурою:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- оплата праці працівників бюджетних установ (код 1110);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- нарахування на заробітну плату (код 1120);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- придбання медикаментів та перев'язувальних матеріалів (код 1132);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- забезпечення продуктами харчування (код 1133);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- трансферти населенню (код 1340);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- трансферти місцевим бюджетам (код 1320).<br><br>
+       &nbsp;&nbsp;25. Розпорядникам коштів міського бюджету:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;утримувати штатну чисельність працівників та здійснювати фактичні видатки на заробітну плату, включаючи видатки на премії та інші види заохочень чи винагород, матеріальну допомогу, лише в межах затвердженого фонду заробітної плати;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;передбачити у кошторисах доходів і видатків бюджетних установ і організацій в повному обсязі потребу в асигнуваннях на оплату праці працівників бюджетних установ відповідно до встановлених чинним законодавством умов оплати праці та розміру мінімальної заробітної плати; на проведення розрахунків за електричну енергію, теплову енергію, водопостачання, водовідведення, природний газ та послуги зв'язку, які споживаються бюджетними установами, не допускаючи будь-якої простроченої заборгованості із зазначених видатків. Управлінню економіки міськвиконкому в місячний термін встановити ліміти споживання енергоносіїв у фізичних обсягах по кожній бюджетній установі, виходячи з обсягів призначень, передбачених кошторисами видатків на 2004 рік;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;брати бюджетні зобов'язання у 2004 році з врахуванням необхідності виконання зобов'язань минулих років, взятих на облік у відділенні Державного казначейства в м.Черкаси в межах виділених їм асигнувань;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;забезпечити пріоритетне спрямування коштів на закупівлю бюджетними установами і організаціями необхідних матеріально-технічних засобів у вітчизняних товаровиробників відповідно до вимог Закону України "Про закупівлю товарів, робіт і послуг за державні кошти";<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;передбачити асигнування на реалізацію державних, міських програм і заходів, затверджених рішеннями міськвиконкому, міської ради та розпорядженнями міського голови;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;управлінню освіти міськвиконкому в строк до 1 лютого 2004 року розробити план приведення наповнюваності груп мережі дошкільних навчальних закладів міста відповідно до нормативних показників на підставі контрольних перевірок;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;привести свої витрати у відповідність з бюджетними асигнуваннями та іншими показниками, що доведені лімітними довідками. Для цього чисельність працівників установи, що пропонується до затвердження за штатним розписом, привести у відповідність з визначеним фондом оплати праці, а інші витрати - у відповідність з іншими встановленими асигнуваннями таким чином, щоб забезпечити виконання покладених на установу функцій;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;управлінню охорони здоров"я міськвиконкому до 01.02.2004 року розглянути питання про оптимізацію лікувальної мережі та профілізацію ліжкового фонду;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;оптимізувати мережу бюджетних установ та чисельності їх працівників, виходячи з реальних можливостей бюджету.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Зобов'язання, взяті без відповідних бюджетних асигнувань, не вважаються бюджетними зобов'язаннями і не підлягають оплаті за рахунок бюджетних коштів, за винятком кредиторської заборгованості по оплаті праці та нарахуваннях за другу половину грудня 2003 року. Взяття таких зобов'язань є бюджетним правопорушенням.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Розпорядники бюджетних коштів несуть відповідальність за управління бюджетними асигнуваннями і здійснення контролю за виконанням бюджетного законодавства.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Покласти відповідальність за виникнення дебіторської заборгованості на розпорядників бюджетних коштів.<br><br>
+       &nbsp;&nbsp;26. Дозволити фінансовому управлінню міськвиконкому за обґрунтованим поданням головних розпорядників коштів міського бюджету здійснювати перерозподіл видатків у межах загального обсягу головного розпорядника коштів по загальному та спеціальному фондах:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;за економічною класифікацією видатків;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;за функціональною класифікацією видатків з послідуючим затвердженням цих змін на черговій сесії міської ради.<br><br>
+       &nbsp;&nbsp;27. Делегувати повноваження виконавчому комітету Черкаської міської ради отримувати протягом бюджетного періоду тимчасові позички для покриття тимчасових касових розривів, пов'язаних із забезпеченням видатків на оплату праці працівників бюджетних установ та нарахування на заробітну плату, придбання продуктів харчування та медикаментів, за рахунок коштів єдиного казначейського рахунку на договірних умовах без нарахування відсотків за користування цими коштами у сумі до 25,0 млн.грн.<br><br>
+       &nbsp;&nbsp;28. Якщо обсяги власних надходжень бюджетних установ перевищують відповідні витрати, встановлені додатком 3 до цього рішення, розпорядник бюджетних коштів передбачає спрямування таких сум в першу чергу на погашення заборгованості з оплати праці, нарахувань на заробітну плату, комунальних послуг та енергоносіїв.<br><br>
+       &nbsp;&nbsp;<span style="font-size:15px">У</span> разі якщо відсутня така заборгованість, розпорядник бюджетних коштів спрямовує:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;50 відсотків коштів на заходи, які здійснюються за рахунок відповідних надходжень;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;50 відсотків коштів на заходи, які необхідні для виконання основних функцій, але не забезпечені коштами загального фонду бюджету за відповідним кодом функціональної класифікації видатків.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:15px">П</span>ри цьому розпорядник бюджетних коштів здійснює коригування обсягів взятих бюджетних зобов'язань по загальному фонду бюджету для проведення видатків по цих зобов'язаннях із спеціального фонду бюджету.<br><br>
+       &nbsp;&nbsp;29. За умови надходження до міського бюджету 10 відс. вартості реалізованої питної води, яка подається через системи централізованого постачання з відхиленням від вимог стандартів, затверджених Постановою Кабінету Міністрів України від 28 вересня 2001 року № 1282, кошти зараховуються до спеціального фонду міського бюджету (код платежу 23020000) та використовуються на фінансування заходів, пов'язаних з поліпшенням якості питної води (код функції 100209). Розпорядником коштів визначити управління житлово-комунального господарства міськвиконкому.<br><br>
+       &nbsp;&nbsp;30. За умови надходжень до міського бюджету коштів від підприємств, установ та організацій незалежно від форм власності, які сплачуються ними відповідно до Правил користування комунальними мережами зливової каналізації м.Черкаси - кошти зараховуються до спеціального фонду міського бюджету (код платежу 50110000) і використовуються на поточне утримання та капітальний ремонт міської зливової каналізації (код функції 240900). Головним розпорядником коштів визначити управління житлово-комунального господарства міськвиконкому.<br><br>
+       &nbsp;&nbsp;31. За умови надходження до міського бюджету коштів, передбачених Положенням про міський цільовий фонд щодо проведення капітального ремонту Центрального стадіону міста Черкаси, - кошти зараховуються до спеціального фонду міського бюджету (код платежу 50110000) і використовуються на капітальний ремонт Центрального стадіону (код функції 240900). Головним розпорядником коштів визначити комітет з фізичної культури і спорту міськвиконкому.<br><br>
+       &nbsp;&nbsp;32. Кошти, передбачені Положенням про міський цільовий фонд сприяння покращенню інфраструктури міста Черкаси, - зараховуються до спеціального фонду міського бюджету (код платежу 50110000) і використовуються на зміцнення матеріально-технічної бази об'єктів комунальної власності міста та інших підприємств і організацій, які забезпечують спільні потреби територіальної громади; проведення заходів, пов'язаних з відзначенням пам'ятних дат та ювілеїв; представницькі видатки для прийняття гостей міста та делегацій, що покращують інвестиційний клімат міста (код функції 240900). Головним розпорядником коштів визначити виконавчий комітет Черкаської міської ради.<br><br>
+       &nbsp;&nbsp;33. За умови надходження до міського бюджету коштів, передбачених Положенням про екологічний фонд охорони та відтворення зелених насаджень міста - кошти зараховуються до спеціального фонду міського бюджету (код платежу 50110000) і використовуються на озеленення міста (код функції 240900). Головним розпорядником коштів визначити відділ екології та раціонального природокористування міськвиконкому.<br><br>
+       &nbsp;&nbsp;34. Встановити, що у 2004 році рішення про надання пільг з оподаткування підприємств, організацій та громадян можуть розглядатися виключно у разі перевиконання загального фонду міського бюджету м.Черкаси на 5 відсотків, починаючи із звітності за 6 місяців. Рішення про надання пільг з оподаткування готується виключно фінансовим управлінням міськвиконкому.<br><br>
+       &nbsp;&nbsp;35. Відповідно до ст. 109 Закону України "Про Державний бюджет України на 2004 рік" спрямувати 1268,2 тис.грн. на придбання житла на вторинному ринку за рахунок коштів субвенції з державного бюджету, передбаченої на будівництво (придбання) житла для військовослужбовців, осіб рядового і навчального складу кримінально-виконавчої системи та органів внутрішніх справ.<br><br>
+       &nbsp;&nbsp;36. Рішення міської ради від 24.01.2003 № 3-110 "Про програму забезпечення закладів охорони здоров"я м.Черкаси медичним автотранспортом на 2003-2007 роки" вважати таким, що втратило чинність.<br><br>
+       &nbsp;&nbsp;37. Додатки 1-8 цього рішення є його невід'ємною частиною.<br><br>
+       &nbsp;&nbsp;38. Опублікувати рішення про міський бюджет на 2004 рік в газеті "Місто".<br><br>
+       &nbsp;&nbsp;39. Фінансовому управлінню міськвиконкому (Джуган Н.В.) та постійній комісії міської ради з питань стратегічного розвитку, планування, бюджету і фінансів (Титаренко М.М.) забезпечити підготовку та проведення в першу декаду березня 2004 року пленарного засідання сесії Черкаської міської ради з питання внесення змін до рішення міської ради від 30-31.12.2003 № 5-324 "Про міський бюджет на 2004 рік".<br><br>
+       &nbsp;&nbsp;40. Контроль за виконанням рішення покласти на постійну комісію міської ради з питань стратегічного розвитку, планування, бюджету і фінансів (Титаренко М.М.) та міського голову Волошина А.Б.</span><br><br><br>
+     </td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+ 
+ <tr> 
+  <td align="left">
+   <li><span style="font-size:13px">Связи</span><br><br>
+   <table width="100%%">
+    <tr>
+	 <td align="justify">
+      <span style="font-size:11px">&nbsp;&nbsp;<span style="font-size:15px">Д</span>ля развития экономических, культурных связей, расширения сотрудничества в разных направлениях между гражданами г.Черкасс и городами разных стран город Черкассы расширяет международное сотрудничество, в первую очередь, активизируя уже наработанные связи.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Т</span>ак, в <b>1989 г.</b> началось сотрудничество в разных направлениях с г. Санта-Роза, штат Калифорния, США. Безсрочный договор о сроднении городов был подписан мэрами в <b>1991 г.</b> За время, которое прошло, был неоднократно обмен делегациями разного направления. Граждане г. Санта-Роза и Черкасс вместе работали над созданием первого в Украине женского центра, который был зарегистрирован в <b>1997 г.</b> С <b>1998 г.</b> город Черкассы был включён в Программу Партнёрства Граждан по расширению опыта городского управления (проект Фундации "Украина-США", который создаётся при финансовой поддержке Агентства США по международному развитию). Городом-партнёром г. Черкассы стал м. Дэ-Мойн, штат Айова, США. В рамках этой программы проводилась стажировка представителей обеих сторон, был разработан стратегический план действий Черкасского водоканала сроком на 25 лет, создан Коммитет Действий.<br><br>
+      &nbsp;&nbsp;<b>17 сентября 2000 г.</b> в Черкассах был подписан договор о сотрудничестве между Черкассами и Быдгощем, Республика Польша. Сразу же были произведены конкретные шаги реализации условий договора, очертились первоочередные сферы сотрудничества – культура и образование, малый и средний бизнесс, охрана здоровья. Позади – обмен творческими коллективами, группами художников, участие предпринимателей Черкасс на выставке-ярмарке в Быдгоще. <b>20 августа 2001 г.</b> был подписан договор о сотрудничестве между городами Пермь, Российская Федерация, и Черкассами. В активе: сотрудничество между предпринимателями города-собрата с Черкасской торгово-промышленной палатой, обмен оффициальными группами.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">Д</span>авние культурные сообщества связуют город Черкассы с городом Сомбор, Югославия, о чём свидетельствует подписанный протокол <b>21 декабря 1995 г.</b> В соответсвии с ним активно сотрудничают Сербско-Украинское предприятие Сомбор-Черкассы и Украино-Сербское общество на принципах равноправности и долгосрокового партнёрства в гумманитарной сфере.<br><br>
+      &nbsp;&nbsp;<span style="font-size:15px">С</span> целью развития дружбы и сотрудничкства между народами Азербайджанськой Республики и Украины, укрепления економических связей в Черкассах был подписан безсрочный договор о восстановлении дружественных братских связей между городами Сумгаит и Черкассы. Стороны развивают сотрудничество в сферах производства, развития малого и среднего бизнесса, общеэкономических связей.<br><br>
+      &nbsp;&nbsp;<b>16 октября 1995 г.</b> подписан договор о сотрудничестве городов Черкассы и Гирин, КНР. В результате – обмен оффициальными группами, сотрудничество в торгово-экономической сфере. На базе общего китайско-украинского комюнике <b>12 сентября 2003 г.</b> в Черкассах был подписан договор о сотрудничестве городов Ваньчжоу, КНР и Черкассы. Плотно развивается сфера образования. Первая городская гимназия, которая является Ассоциированной школой ЮНЕСКО, установила дружественные отношения с Ваньсянской средней школой; был подписан договор об охране здоровья; китайская сторона проявляет интерес к дальнейшему развитию экономических отношений с регионом. В Черкасской Торгово-промышленной палате прошла выставка продукции предприятий городов Ваньчжоу и ознакомление с деловыми кругами Черкасщины. Город Черкассы поддерживает дружественные партнёрские связи с другими городами: г. Тирасполь (Молдавия); г. Даугавпилс (Латвия). Поддерживаются отношения с Францией, Германией, Данией, Турцией.</span><br><br><br>
+     </td>
+	</tr>
+   </table>
+  </td>
+ </tr>
+</table></td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

@@ -1,0 +1,788 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Образование - Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">23.8 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua/?mode=6&sub=Образование&language=ru" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua/?mode=6&sub=Образование&language=ru" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td width="825px" class="td_title_top" colspan="3"><div class="title_page">Образование</div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="../../includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "../../includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=81" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-12-21_22-44-25.jpg">
+ Красоты Черкасских аллей</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=1" class="link_razdel_gallery" title="Открыть раздел галереи">Природа</a> (6 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1552" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2016-11-18-574zveri.jpg"><br>
+ Фантастические звери и места их обитания</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">Кинотеатр "Украина"</a><br>
+ (2 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr><td colspan="3">      <!--<br><table cellspacing="1" cellpadding="0" border="0" align="center" bgcolor="black" width="98%%" align='center'>
+<tr>
+    <td bgcolor="#CCCCCC" width="40%%" align="center"><br><a href='../isic.htm' target='_blank'>&nbsp;<img src="../pic/isic.jpg" border="1">&nbsp;</a><br><br></td>
+	<td bgcolor="#EFEFEF" class="text"><blockquote><b>Саме для прогресивної молоді України  Банк Аваль  пропонує картку ISIC-MAESTRO, яка поєднала в собі функції міжнародного студентського посвідчення та найпоширенішої платіжної картки  Maestro.
+ ISIC – MAESTRO – переваги для тебе !<br><a href='http://www.sti.com.ua' target="_blank">Докладніше >></a></b></blockquote></td>
+</tr>
+</table><br>
+-->
+
+              <blockquote><b><A NAME="menu" class="arch_source">Разделы :</A></b><br>
+              - <A class="arch_source" HREF="#PTU">ПТУ</A><br>
+              - <A class="arch_source" HREF="#Tech">Техникумы, колледжи</A><br>
+              - <A class="arch_source" HREF="#Institute">Институты</A><br>
+              - <A class="arch_source" HREF="#University">Университеты</A><br>
+              - <A class="arch_source" HREF="#Academy">Академии</A><br>
+              - <A class="arch_source" HREF="#Schools">Гимназии, лицеи, средние школы </A><br>
+              - <a class="arch_source" href="#Libraries">Библиотеки</a><br>
+				<hr noshade size="1" color="black">
+
+<p align="center"><font color="#000000"><b><A NAME="PTU" class="arch_source">ПТУ</A></b></font></p>
+              
+<p> <font color="#000000"><span class="arch_source">ПТУ №6 </span><br>
+  <font color="#000000" class="arch_text">18028, г. Черкассы ул. Энгельса, 241/2<br>
+                тел. 64-62-11; 64-04-01</font></font></p>
+              
+<p><font color="#000000"><span class="arch_source">ПТУ №8</span><br>
+  <font color="#000000" class="arch_text">18028, г. Черкассы, ул. Сурикова, 6<br>
+                тел.64-50-57</font></font></p>
+              
+<p><font color="#000000"><span class="arch_source">ПТУ №13</span><br>
+  <font color="#000000" class="arch_text">18000, г. Черкассы, ул. Смаглия, 6<br>
+                тел. 65-99-12</font></font></p>
+              
+<p><font color="#000000"><span class="arch_source">ПТУ №15</span><br>
+  <font color="#000000"><span class="arch_text">18028, г. Черкассы, ул. Энгельса, 
+  168<br>
+  тел. 64-04-32</span></font></font></p>
+<p><font color="#000000"><span class="arch_source">ПТУ №17</span><br>
+  <font color="#000000"><span class="arch_text">18000, г. Черкассы, ул. Ярослава 
+  Галана, 13<br>
+  тел. 65-42-13</span></font></font></p>
+<p><font color="#000000"><span class="arch_source">Высшее художественное ПТУ №20 
+  </span><br>
+  <font color="#000000" class="arch_text">18029, г. Черкассы, ул. Сумгаитская, 
+  13 <br>
+                тел. 66-16-09; 66-17-33</font></font></p>
+              
+<p><font color="#000000"><span class="arch_source">ПТУ №21</span><br>
+  <font color="#000000" class="arch_text">18000, г. Черкассы, ул. Подолинского, 
+  20<br>
+                тел. 43-57-59</font></font></p>
+              
+<p><font color="#000000"><span class="arch_source">ПТУ №22</span><br>
+  <font color="#000000" class="arch_text">18034, г. Черкассы, ул. Оноприенко, 
+  4<br>
+                тел. 45-02-01, 45-02-18</font><br>
+                </font> </p>
+		
+<DIV align="right"><B><a href="#menu" class="arch_source">Наверх...</a></B></DIV>
+		<hr noshade color="black" size="1">
+
+
+<p align="center"><font color="#000000"><b><A NAME="Tech" class="arch_source">Техникумы, 
+  колледжи</A></b></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Шевченковский сельськогосподарський 
+  колледж</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">20214 с. Шевченково, Черкасская. обл., Звенигородский 
+  р-н<br>
+  тел./факс (04740) 5-22-76; 9-53-34</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Черкасский государственный 
+  бизнес-колледж</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18028 г. Черкассы, ул. Энгельса, 243<br>
+  тел. 64-93-44; 64-05-15<br>
+  e-mail: <a href="mailto:csbk@business-college.uch.net">csbk@business-college.uch.net</a> 
+  <a href="azmyk@business-college.uch.net">azmyk@business-college.uch.net</a><br>
+  <a href="http://www.business-college.uch.net" target="_blank">http://www.business-college.uch.net</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Смелянский техникум пищевой 
+  промышленности</span><br>
+  <span class="arch_text">20700 г. Смела, Черкасская обл., ул. Артема, 123<br>
+  тел. (04733) 4-04-52; 4-04-13; 4-50-02<br>
+  <a href="mailto:stxp@smela.ldc.net">stxp@smela.ldc.net</a><BR>
+  <a href="http://stxp.smela.ldc.net">http://stxp.smela.ldc.net</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Смелянский радиотехникум Черкасского 
+  инженерно-технологического института</span><br>
+  <span class="arch_text"> 20700 г. Смела, Черкасская обл., ул. Мазура, 24<br>
+  тел/факс (04733) 4-12-50<br>
+  e-mail: <a href="mailto:radiotex@smela.ldc.net">radiotex@smela.ldc.net</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Черкасcкий политехнический 
+  техникум</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000 г. Черкассы, ул. Ильина, 226<br>
+  тел/факс 47-04-92; 47-53-09; 45-12-37; 47-61-04<br>
+  e-mail: <a href="mailto:olegnag@ck.ukrtel.net">olegnag@ck.ukrtel.net</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Черкасcкий медицинский колледж</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000 г. Черкассы, ул.. Хрещатик, 215<br>
+  тел. 47-33-10</span></font></p>
+<p><span class="arch_source">Банковский коледж</span><span class="arch_text"><br>
+  18000, г. Черкассы, ул. Энгельса, 164,<br>
+  тел. (0472) 64-41-66, 64-43-44</span></p>
+<p><span class="arch_source">Берегиня, Колегиум</span><span class="arch_text"><br>
+  18008, г. Черкассы, ул. Хоменка, 14/1<br>
+  тел. (0472) 63-78-18</span></p>
+<p><span class="arch_source">Коледж Экономики и управления</span><span class="arch_text"><br>
+  18000, г. Черкассы, ул. Ильина, 421<br>
+  тел. (0472) 43-01-41, 43-02-62</span></p>
+<p><span class="arch_text">Ч</span><span class="arch_source">еркасский кооперативный 
+  экономико-правовой колледж</span><span class="arch_text"><br>
+  18008, г. Черкассы, ул. Смелянская, 92<br>
+  тел. (0472) 63-85-48</span></p>
+<p><span class="arch_source">Черкасский коммерческий техникум</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.Смелянская,84<br>
+  тел. (0472)63-87-33 </span> </p>
+<DIV align="right"><B><a href="#menu" class="arch_source">Наверх...</a></B></DIV>
+		<hr noshade color="black" size="1">
+
+
+
+
+<p align="center"><font color="#000000"><b><A NAME="Institute" class="arch_source">Институты</A></b></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Волынский институт экономики 
+  и менеджмента</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000, г. Черкасс, ул. Ильина, 228<br>
+  тел. 47-70-65</span></font></p>              
+              
+<p><font color="#000000"><span class="arch_source">Обласной институт последипломного 
+  образования педагогических работников</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18003 г. Черкассы, ул.. Быдгощская, 38/1<br>
+  тел/факс 64-24-39; 64-21-78<br>
+  <a href="http://www.osvitack.sdy.edy.ua" target="_blank">http://www.osvitack.sdy.edy.ua</a></span></font></p>
+		
+<p><span class="arch_source">Институт переподготовки кадров</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Ильина, 421<br>
+  тел. (0472) 43-02-62</span></p>
+<p><span class="arch_source">Межхозяйственный учебный центр управления сельского 
+  хозяйства</span><br>
+  <span class="arch_text">18008, г. Черкассы, ул. Смелянская, 144<br>
+  тел. (0472) 63-15-80, 63-17-78, 63-29-89</span></p>
+
+<DIV align="right"><B><a href="#menu" class="arch_source">Наверх...</a></B></DIV>
+		<hr noshade color="black" size="1">
+
+
+
+              
+<p align="center"><font color="#000000"><b><A NAME="University" class="arch_source">Университеты</A></b></font></p>
+
+<p><font color="#000000" class="arch_source">Восточноевропейский университет экономики и менеджмента
+<br></font>
+  <span class="arch_text">18036, г. Черкассы, ул. Нечуя-Левицкого, 16<br>тел./факс 0(472) 64-84-74, 64-73-00<br>e-mail: <a href="mailto:cim@cim.uch.net">cim@cim.uch.net</a><br><a href='http://www.suem.edu.ua/' target='new'>http://www.suem.edu.ua/</a></span></p>
+              
+<p><font color="#000000" class="arch_source">Черкасский государственный технологический 
+  университет<br></font>
+  <span class="arch_text">18006, г. Черкассы, бул. Шевченко, 460, <br>
+  тел. (0472) 43-35-64, 43-35-62<br>
+  e-mail : <a href="mailto:cheti@cheti.cherkassy.ua">cheti@cheti.cherkassy.ua</a></span></p>
+              
+<p><font color="#000000"><font color="#000000" class="arch_source">Черкасский 
+  национальный университет им. Б. Хмельницького </font><br>
+  <span class="arch_text">18031 г. Черкассы, бул. Шевченка, 79<br>
+  тел. 47-13-16; 47-03-90<br>
+  e-mail: <a href="mailto:cic@cdu.edu.ua">cic@cdu.edu.ua</a><br>
+  <a href="http://www.cdu.edu.ua/">http://www.cdu.edu.ua/</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Уманский государственный педагогический 
+  университет им. П. Тычины</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">20300, г.Умань, Черкасская обл., ул. Садовая 2<br>
+  тел. (04744) 5-05-63, 5-22-49</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Университет современных знаний</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">г. Черкассы, ул. Б.Вишневецкого, 14<br>
+  тел. (0472) 45-45-42, 47-73-49</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Харьковский национальний университет 
+  им.. В. Н. Карабина (Черк. филиал)</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000, г.Черкассы, ул. Энгельса 243/1, к. 412, т. 64-43-41, 
+  64-64-73</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Черкасский филиал национального 
+  аэрокосмического университета (ХАИ) <br>
+  </span></font><font color="#000000"><span class="arch_text">18016, г.Черкассы, 
+  бул. Шевченко 333/2, к. 203 <br>
+  т. 561512, 093-22-100-23, 067-931-97-13, <a href='http://xai.ck.ua/' target='new'>xai.ck.ua</a></span></font></p>
+              
+<p><font color="#000000"><span class="menu">Европейский университет финансов, 
+  информационних систем, менеджмента и бизнеса. Черкасский филиал (ЕУФИМБ)</span></font><span class="menu"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000, г.Черкассы, ул. Смелянская, 83<br>
+  тел.63-09-71<br>
+  e-mail: <a href="mailto:euniver@ck.ukrpack.net">euniver@ck.ukrpack.net</a> </span></font></p>
+		
+<DIV align="right"><B><a href="#menu" class="arch_text">Наверх...</a></B></DIV>
+		<hr noshade color="black" size="1">
+
+
+              
+<p align="center"><font color="#000000"><b><A NAME="Academy" class="arch_source">Академии</A></b></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Одесская национальная юридическая 
+  академия (Черкаський филиал)</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000 г. Черкассы, ул. Б. Вишневецкого, 17<br>
+  тел. 32-13-96, 54-17-68</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Черкасско-Днепрянская академия 
+  наук</span></font><span class="arch_text"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18002, г. Черкассы, ул. Хрещатик, 195, к. 910 тел. 45-14-87<br>
+  E-mail: <a href="mailto:academiy@ck.ukrpack.net">academiy@ck.ukrpack.net</a></span></font><br>
+              </p>
+<p><span class="arch_source">Черкасский академия пожарной безопасности им. Героев 
+  Чернобыля</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.Луначарского, 6<br>
+  тел. (0472) 47-65-36<br>
+  </span> </p>
+		
+<DIV align="right"><B><a href="#menu" class="arch_source">Наверх...</a></B></DIV>
+		<hr noshade color="black" size="1">
+
+
+
+              
+<p align="center"><font color="#000000"><b><A NAME="Schools" class="arch_source">Гимназии, 
+  Лицеи, Средние школы</A></b></font></p>
+              <p><font color="#000000"><span class="arch_source">Первая городская гимназия, Ассоциированная школа ЮНЕСКО</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Кирова, 68 <br>
+  тел. (0472) 32-58-28<br>e-mail: serte@i.ua<br>web: www.fcg.ck.ua</span></font></p>
+<p><span class="arch_source">Гимназия № 31</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.Героев Днепра, 27<br>
+  тел. (0472)43-03-95, 42-30-03, <br>e-mail <a href="mailto:gymnasium31@routec.net">gymnasium31@routec.net</a>, <br>HTTP : <a href="http://www.gymnasium31.osvita.ck.ua">http://www.gymnasium31.osvita.ck.ua</a></span><br>
+</p>              
+<p><font color="#000000"><span class="arch_source">Физико-математический лицей 
+  (ФИМЛИ)</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Благовестная, 280<br>
+  тел. 47-30-12</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Коллегиум &quot;Берегиня&quot; 
+  Киево - Могилянской академии</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Хоменко, 14/1<br>
+  тел. 63-78-45 e-mail: <a href="tytar@ck.ukrpack.net">tytar@ck.ukrpack.net</a></span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Гуманитарно-правовой лицей</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Ильина, 191<br>
+  тел. 47-29-77</span></font></p>
+<p><span class="arch_source">Экологический лицей, частная средняя школа</span><br>
+  <span class="arch_text">18000 г. Черкассы, ул. Горького, 9а<br>
+  тел. (0472) 43-04-72</span><br>
+</p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №2</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text"> ул. Розы Люксембург, 187<br>
+  тел 64-84-11</span></font></p>
+<p><font color="#000000"><span class="arch_source">Школа №3</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Байды Вишневецкого, 58<br>
+  Тел 47-20-81</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №4</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Парижской Коммуны, 16<br>
+  Тел. 47-51-37</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №5</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Рождественская, 60<br>
+  Тел 49-25-94</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №6</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Гоголя, 123<br>
+  Тел 47-54-47</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №7</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Красноармейская , 13<br>
+  Тел 45-45-70</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №8</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Смелянская, 88/2<br>
+  Тел 63-85-35</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №9</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Горького, 52<br>
+  Тел 43-73-93</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №10</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">Проспект Химиков, 36<br>
+  Тел 64-56-18</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №11</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Ильина, 291<br>
+  Тел 47-55-44</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №12</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Богдана Хмельницкого 118,<br>
+  Тел 47-13-77</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №13 экономического профиля</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Ватутина, 96<br>
+  тел 43-44-24</span></font></p>
+              
+<p><font color="#000000" class="arch_source">Школа - интернат 1-2 ступеней №14 
+  для детей больных сколиозом</font><font color="#000000"><br>
+  <span class="arch_text">ул. Ильина, 532<br>
+  тел 43-10-80</span><br>
+                </font></p>
+              
+<p><font color="#000000"><span class="arch_source">Школа №15</span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Вербовецкого, 77<br>
+  тел 43-54-00</span></font></p>
+              
+<p><font color="#000000"><span class="arch_source">Специальная школа-интернат 
+  № 16 для детей для детей с недостаточным умственным развитием </span></font><span class="arch_source"><font color="#000000"></font></span><font color="#000000"><br>
+  <span class="arch_text">ул. Тараскова, 14<br>
+  тел 66-34-10</span></font></p>
+		
+<p><span class="arch_source">Специализированная школа № 17</span><br>
+  <span class="arch_text">18002, г. Черкассы, ул. Крещатик, 218<br>
+  тел. (0472) 32-12-33, 32-12-40, <a href='mailto:asu17@ck.ukrtel.net'>asu17@ck.ukrtel.net</a><br><a href='http://www.fml17.ck.ua' target='_blank'>http://www.fml17.ck.ua</a></span></p>
+<p><span class="arch_source">Детская художественная школа</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Крещатик, 214<br>
+  тел. (0472) 47-80-67</span></p>
+<p><span class="arch_source">Черкасская детская школа искусств</span><br>
+  <span class="arch_text">18000, г. Черкассы, пр. Гастелло, 3<br>
+  тел. (0472) 41-71-31 </span></p>
+<p><span class="arch_source">Школа № 18 экономического профиля</span><br>
+  <span class="arch_text">18028, г. Черкассы, ул. Нечуй-Левицкого, 12<br>
+  тел. (0472) 64-75-00, 47-20-93</span></p>
+<p><span class="arch_source">Школа № 19</span><br>
+  <span class="arch_text">18031, г. Черкассы, ул. Университетская, 62а<br>
+  тел. (0472) 64-75-00, 64-71-22</span></p>
+<p><span class="arch_source">Школа № 20 Художественно-эстетического направления</span><br>
+  <span class="arch_text">18003, г. Черкассы, ул. Быдгожская, 3<br>
+  тел. (0472) 64-82-50, 64-94-22</span></p>
+<p><span class="arch_source">Школа № 21</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Нижняя, 82<br>
+  тел. (0472)43-16-62, 43-10-44</span></p>
+<p><span class="arch_source">Школа № 22</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Вербовецкого, 108<br>
+  тел. (0472) 43-32-16, 43-32-21</span></p>
+<p><span class="arch_source">Школа № 24</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Пастеровская, 189<br>
+  тел. (0472) 63-25-80, 63-25-86</span></p>
+<p><span class="arch_source">Школа № 25</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.Петровского, 206<br>
+  тел. (0472) 43-33-22, 43-44-15</span></p>
+<p><span class="arch_source">Школа № 26</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Конева, 15<br>
+  тел. (0472) 43-33-22, 43-34-15</span></p>
+<p><span class="arch_source">Школа № 27 школа гимназия</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Сумгаитская, 22<br>
+  тел. (0472) 66-25-75</span><br>
+</p>
+<p><span class="arch_source">Школа № 28</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Гайдара, 3<br>
+  тел. (0472) 66-18-95</span><br>
+</p>
+<p><span class="arch_source">Школа № 29</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.Крылова, 104/2<br>
+  тел. (0472) 11-42-23, 11-46-86</span><br>
+</p>
+<p><span class="arch_source">Школа № 30</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Батицкого, 14<br>
+  тел. (0472) 66-68-37, 66-66-30</span><br>
+</p>
+<p><span class="arch_source">Школа № 32</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Гайдара, 10<br>
+  тел. (0472) 66-09-44, 66-07-27</span><br>
+</p>
+<p><span class="arch_source">Школа № 33</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Героев Днепра, 13<br>
+  тел. (0472) 41-97-10, 41-98-18</span><br>
+</p>
+<p><span class="arch_source">Школа № 34</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Гагарина, 91<br>
+  тел. (0472) 54-23-20, 54-23-92</span><br>
+</p>
+<p><span class="arch_source">Школа № 35</span><br>
+  <span class="arch_text">18000, г. Черкассы, бул. Шевченко, 333 <br>
+  тел. (0472) 43-51-87, 43-51-94</span><br>
+</p>
+<p><span class="arch_source">Школа-детский садик для детей с пороком слуха</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Подолинского, 11/1<br>
+  тел. (0472) 43-42-63</span><br>
+</p>
+<p><span class="arch_source">Школа-интернат санаторного типа № 14</span><br>
+  <span class="arch_text">18030, г. Черкассы, ул. Ильина, 532<br>
+  тел. (0472) 43-10-80, 43-33-17, 43-10-93</span></p>
+<p><span class="arch_source">Музыкальная школа № 1</span><br>
+  <span class="arch_text">18003, г. Черкассы, ул. Б. Вишневецького, 33<br>
+  тел. (0472) 47-05-80, 47-51-84</span><br>
+</p>
+<p><span class="arch_source">Музыкальная школа № 2</span><br>
+  <span class="arch_text">18000, Г. Черкассы, бул. Шевченко, 182,<br>
+  тел. (0472) 45-33-32, 47-41-53</span><br>
+</p>
+<p><span class="arch_source">Музыкальная школа № 3</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Энгельса, 10<br>
+  тел. (0472) 45-34-29, 45-40-92, 45-32-64</span><br>
+</p>
+<p><span class="arch_source">Музыкальная школа № 5</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул.14 декабря, 101<br>
+  тел. (0472) 64-60-51</span><br>
+</p>
+<p><span class="arch_source">Черкасская детская музыкальная школа № 5</span><br>
+  <span class="arch_text">18018, г. Черкассы, ул.14 декабря, 101<br>
+  тел. (0472) 64-60-51, 64-77-73</span><br>
+</p>
+<p><span class="arch_source">Черкасское государственное музыкальное училище</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Б. Вишневецького, 6<br>
+  тел. (0472) 47-42-48, 45-52-73</span></p>
+<p><span class="arch_source">Детско-юношеская комплексная спортивная школа № 1</span><br>
+  <span class="arch_text">18008, г. Черкассы, ул. Смелянская, 94<br>
+  тел. (0472) 63-15-12<br>
+  </span> </p>
+<p><span class="arch_source">Детско-юношеская спортивная школа № 2</span><br>
+  <span class="arch_text">18010, г. Черкассы, ул. 30 лет Победы, 36<br>
+  тел. (0472) 66-46-37<br>
+  </span> </p>
+<p><span class="arch_source">Детско-юношеская спортивная школа № 3</span><br>
+  <span class="arch_text">18007, г. Черкассы, ул. Гагарина, 5<br>
+  тел. (0472) 47-51-43</span><br>
+</p>
+<p><span class="arch_source">Зенит, Черкасская ДЮСШ</span><br>
+  <span class="arch_text">18008, г. Черкассы, ул. Смелянская, 78<br>
+  тел. (0472) 45-99-46</span><br>
+</p>
+<p><span class="arch_source">Комплексная специализированная детско-юношеская спортивно-техническая 
+  школа</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Хрещатик, 195, к. 403<br>
+  тел. (0472) 45-75-14, 45-28-59</span><br>
+</p>
+<p><span class="arch_source">Специализированная ДЮСШ олимпийского резерва</span><br>
+  <span class="arch_text">18000, г. Черкассы, ул. Пастеровская, 102<br>
+  тел. (0472) 63-85-45, 63-86-06</span><br>
+</p>
+<p align="left"><span class="arch_source">Дом Учителя</span><br>
+  <span class="arch_text">18002, г. Черкассы, ул. Крещатик, 257<br>
+  тел. (0472) 47-40-70, 43-13-93</span></p>
+  </blockquote></td></tr>
+              <tr><td></td></tr>
+             <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>

@@ -1,0 +1,779 @@
+ 
+	 <!DOCTYPE html> 
+<html>
+ <head>
+  <title>Черкасский городской информационный портал</title>
+ 
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <meta NAME="keywords" CONTENT="Черкассы, информация о Черкассах, история
+                   Черкасс, архитектура Черкасс, символика Черкасс, городские власти,
+                   государственные структуры, учебные заведения, фотогалерея, web-камера,
+                   веб-камера, вэб-камера, кинотеатры, Кинопалац, Украина, ДнепроПлаза,
+                   рестораны Черкасс, бары Черкасс, мировые новости, черкасские новости, 
+                   каталог фирм, бизнес-каталог, каталог банков, вакансии, резюме, 
+                   предлагаю работу, ищу работу, конвертор валют, карта Украины онлайн, 
+                   карта Украины Online, друзья, форум, форумы, отправка SMS, отправка СМС, 
+                   почтовая рассылка, информационный портал, бизнес, каталог">
+  <meta NAME="description" CONTENT="Черкассы - информационный портал (Информационный портал города Черкассы). 
+                      Самая полная и исчерпывающая информация о городе Черкассы, Украина. 
+                      Мировые и черкасские новости, каталог фирм и банков. Обширная 
+                      фотогалерея городских фотографий и вебкамера. Конвертор валют и карта 
+                      Украины Online">
+ 
+  <link rel="shortcut icon" href="favicon.ico"> 
+ 
+  <link rel="stylesheet" href="/style_new.css" type="text/css">
+
+  <link rel="stylesheet" href="/style_horizontal_menu.css" type="text/css">
+  
+  <!-- Jquery Main -->
+  <script src="/includes/jquery-latest.js" type="text/javascript"></script> 
+ 
+  <script src="/includes/horizontal_menu.js" type="text/javascript"></script>
+  
+  <!-- VK -->
+  <!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+     VK.init({apiId: 3792408, onlyWidgets: true});
+  </script>-->
+
+  <!-- Datepicker -->	
+  <link type="text/css" href="includes/jquery_datepicker/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+ 
+  <script type="text/javascript" src="includes/jquery_datepicker/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+  <script type="text/javascript" src="includes/jquery_datepicker/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js"></script>
+  <script type="text/javascript">
+   $(function(){
+      // Datepicker
+      $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+	  $('#datepicker').datepicker( $.datepicker.regional[ "ru" ] );
+	  $('#datepicker').datepicker({
+	     inline: true,
+		 dateFormat: 'yy-mm-dd',
+		 // Событие, срабатывающее при клике на дату 
+         onSelect: function(dateText, inst) {
+            window.location = 'http://www.gorod.ck.ua/?mode=45&d=' + dateText;
+         }  
+	  });		
+   });
+  </script>
+ 
+ <!-- Снег 
+ <script type="text/javascript">
+          imageDir = "/scripts/snow/";
+        sflakesMax = 65;
+  sflakesMaxActive = 65;
+            svMaxX = 2;
+            svMaxY = 6;
+        ssnowStick = 1;
+      ssnowCollect = 0;
+      sfollowMouse = 1;
+      sflakeBottom = 0;
+           susePNG = 1;
+       sflakeTypes = 5;
+       sflakeWidth = 15;
+      sflakeHeight = 15;
+ </script>
+ <script type="text/javascript" src="/scripts/snow/snow.js"></script> -->  
+</head>
+
+<body>
+ <div class="block_horiz_main">
+  <table border='0' class="table_horiz_upper">
+   <tr>
+    <td>
+     <span class="date_main">Воскресенье, 25 Июня 2017<br><span title="Моментальная температура воздуха - термодатчик СП Инфоком">24.3 <a href='/?mode=213'>&deg;C</a></span></span><br>
+     <div class="lang">
+      <a href="http://www.misto.ck.ua" title="українська мова"><img src="../../img//languages/lang-ukr.png"></a>
+                <a href="http://www.town.ck.ua" title="english language"><img src="../../img//languages/lang-eng.png"></a>             						
+	 </div>
+    </td>
+    <td align="center"><a href='http://www.gorod.ck.ua' title='Черкасский городской информационный портал'><img src="/img/logo_main-.png" space='7' space='7' class='notborder'></a></td>
+    <td align="right"><form method="GET" action="http://www.google.com/search" target="_blank">                                             
+                       <input type="hidden" name="q" value="site:www.gorod.ck.ua" />             
+                       <input type=text name=q size='23' maxlength=255 placeholder="Поиск..." class="search_main">                            
+                       <input type=hidden name=domains value="www.gorod.ck.ua">
+                       <input type=hidden name=sitesearch value="www.gorod.ck.ua" checked>       
+                      </form></td>
+   </tr>
+  </table>
+ </div>
+  
+ 
+ <!-- Корневое горизонтальное меню -->
+ <div class="example2">
+ <div class="example">
+
+    <!-- defining main tabs elements -->
+    <div id="tabs-container">
+        <ul class="tabs">
+         <!--<li class="active"><a href="./">ГЛАВНАЯ</a></li>-->
+         <li><a href="#">НОВОСТИ</a></li><li><a href="#">БИЗНЕС И РАБОТА</a></li><li><a href="#">РАЗВЛЕЧЕНИЯ</a></li><li><a href="#">О ГОРОДЕ</a></li><li><a href="#">СПРАВКА</a></li><li><a href="#">ИНТЕРЕСНОЕ</a></li>         <span class="bookmark">ИЗБРАННОЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СТАРТОВАЯ</span>
+        </ul> 
+    </div>    
+
+    <div class="nav-container">
+        <!--<ul class="nav" id="1" style="display:none;">
+            <li><a href="#">РАДИО ОНЛАЙН</a></li>
+        </ul> -->
+        
+        <ul class="nav" id="1" style="display:none;"><li><a href="/p/1/">В Черкассах</a></li><li><a href="/pua/1/">В Украине</a></li><li><a href="/?mode=209">Лента новостей. Комментарии посетителей</a></li><li><a href="/go/?http://www.sportinfo.ck.ua/">Спорт</a></li></ul><ul class="nav" id="2" style="display:none;"><li><a href="/?mode=10">Каталог фирм</a></li><li><a href="/?mode=11">Каталог банков</a></li><li><a href="/?mode=14&md=list">Работа - резюме</a></li><li><a href="/?mode=15&md=list">Работа - вакансии</a></li><li><a href="/go/?http://www.1web.com.ua/">Создание сайтов</a></li></ul><ul class="nav" id="3" style="display:none;"><li><a href="/?mode=29&c=1">Кинотеатры</a></li><li><a href="/?mode=30">Искусство</a></li><li><a href="/?mode=203">Рестораны, кафе, клубы</a></li><li><a href="/?mode=32">Бары, клубы</a></li><li><a href="/?mode=47">Театры</a></li><li><a href="/?mode=211">Главная веб-камера Черкасс</a></li></ul><ul class="nav" id="4" style="display:none;"><li><a href="/?mode=1">История</a></li><li><a href="/?mode=2&sub=Архитектура&md=list&language=ru">Архитектура</a></li><li><a href="/?mode=3&sub=Символика&language=ru">Символика</a></li><li><a href="/?mode=4&sub=Муниципалитет&language=ru">Муниципалитет</a></li><li><a href="/?mode=5&sub=Гос. структуры&language=ru">Гос. структуры</a></li><li><a href="/?mode=6&sub=Образование&language=ru">Образование</a></li><li><a href="/?mode=7&sub=Газеты, журналы&language=ru">Газеты, журналы</a></li><li><a href="/?mode=216">Фотогалерея</a></li><li><a href="/?mode=9">Фотогалерея сайта (архив)</a></li><li><a href="/?mode=204">Решения горсовета</a></li></ul><ul class="nav" id="5" style="display:none;"><li><a href="/?mode=16">Транспорт</a></li><li><a href="/?mode=205">Наши друзья</a></li><li><a href="/?mode=72">Карта</a></li><li><a href="/?mode=206">Статистика</a></li><li><a href="/?mode=208">Реклама</a></li><li><a href="/?mode=152">Моб. операторы</a></li><li><a href="/?mode=207">О сайте</a></li></ul><ul class="nav" id="6" style="display:none;"><li><a href="/?mode=25&sub=Ежедневный гороскоп&language=ru">Гороскоп</a></li><li><a href="/?mode=28">TV-программа</a></li><li><a href="/?mode=42">Online игры</a></li><li><a href="/?mode=153">Знакомства</a></li><li><a href="/?mode=201">15 неустаревающих советов</a></li><li><a href="/?mode=213">Температурная история</a></li></ul>        
+    </div> 
+     
+ </div>
+</div> 
+         
+    <table class="center_table_links" border='0'>
+             <tr><td class="colored_news" colspan="3"><div class="news_big">СЮЖЕТЫ <span class="news_big_word">ДНЯ</span></div></td>
+           
+      <!-- ПРАВАЯ КОЛОНКА (ПОГОДА, БАННЕРЫ И ПРОЧЕЕ) -->    
+      <td class="column_right" rowspan="3" valign="top">
+       <div class="column_right_text">       
+       <!-- <div align='center'><br> <a href="http://www.invitro.ua/analizes/for-doctors/"><img src="/img/banners/invitro7h5g8gb3.jpg"></a></div> -->
+       <!-- <center><noindex><a href="/go/?http://www.forexclub.ua/" rel="nofollow"><img src="/img/banners/forex2.gif" class='notborder' align='center'></a></noindex><br></center><br> -->       
+       <!-- <center><noindex><a href="/go/?http://inagro.com.ua/ru/component/content/article/18-service2/363-cherkassy.html" rel="nofollow"><img src="/img/banners/in.agro.gif" class='notborder' align='center'></a></noindex><br></center><br> --><br>
+       
+       <a href="http://www.ck.infocom.ua/" title="Wi-fi Интернет от СП Инфоком за 50 грн.">Беспроводной Интернет</a><br><br>
+       
+       
+<!-- <script type="text/javascript">
+idleTimer = null;
+idleState = false;
+//idleWait = 60000; // задаём время ожидания бездействия
+idleWait = 100000; // задаём время ожидания бездействия
+
+(function ($) {
+    $(document).ready(function () {
+                $('*').bind('mousemove keydown scroll', function () {
+                    clearTimeout(idleTimer);
+                    if (idleState == true) {
+
+                    // Что делаем, когда пользователь активировался
+                    $("body").append("<p>S vozvrascheniem!</p>");
+                    // Что делаем, когда пользователь активировался
+
+                    }
+
+                    idleState = false;
+                    idleTimer = setTimeout(function () {
+                       // Что делаем при бездействии юзера больше указанного времени
+                       $("body").append("<p>Vy bezdeystvuete uzhe " + idleWait / 1000 + " sek!</p>");
+                       setTimeout("window.location.href='http://www.gorod.ck.ua/';",4000);
+
+                       idleState = true;
+                    }, idleWait);
+                });
+            // Инициализация
+            $("body").trigger("mousemove");
+        });
+    })(jQuery)
+</script> -->
+
+<script type="text/javascript" src="includes/flowplayer/flowplayer-3.2.13.min.js"></script>
+
+<div id="page" style="width: 250px; margin-left: 3px;">
+ <span class="text_black">Веб-камера компании <a href="http://www.ic.ck.ua/" title="Быстрый Интернет для дома и бизнеса">Инфоком</a></span><br>
+ <a href="http://212.1.94.10:8090/8F2cL3a4V7j.flv" style="display:block;width:250px;height:170px" id="player"></a>
+ <script>
+  flowplayer("player", { allowfullscreen: 'false', src: "includes/flowplayer/flowplayer-3.2.18.swf"}, {
+     clip: {
+        autoPlay: false,
+        // duration for the parent clip
+        duration: 300,
+        autoBuffering: false // <- do not place a comma here
+     },
+     plugins: {
+        controls: {
+           volume: false,
+           mute: false,
+           fullscreen: false
+        }
+     }
+  });
+ </script>
+ <span class="text_black">Смотреть <a href="./?mode=211" title="Главная веб-камера Черкасс">большое видео</a></span><br>
+</div>
+<br>
+       
+       <!--<div align='center'><a href="http://rdr.salesdoubler.com.ua/in/offer/338?aid=22451" title="Качественная электроника и техника с удобной оплатой и доставкой"><img src="/img/banners/allo_oijwfe8ojtf.jpg"></a></div>-->
+       
+       <div style="margin-top: px; margin-bottom: 17px; margin-left: 2px; color: black;">Страницы из <a href="http://vk.com/life_of_celebrities" title="Любовь и искусство, интриги и сплетни, новости и сюрпризы - всё самое аппетитное из современной жизни известных личностей">жизни знаменитостей</a></div>
+       
+       <div align='center' style="order: 1px solid black; padding-left: 0px;">
+ <!-- Gismeteo informer START -->
+       <link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+       <div id="gsInformerID-76IC0NCMTswIi7" class="gsInformer" style="width:250px;height:198px">
+        <div class="gsIContent">
+         <div id="cityLink">
+          <a href="http://www.gismeteo.ua/weather-cherkasy-4956/" target="_blank">Погода в Черкассах</a>
+         </div>
+         <div class="gsLinks">
+          <table>
+           <tr>
+            <td>
+             <div class="leftCol">
+              <a href="http://www.gismeteo.ua" target="_blank">
+               <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+               <span>Gismeteo</span>
+              </a>
+             </div>
+             <div class="rightCol">
+              <a href="http://www.gismeteo.ua/weather-cherkasy-4956/14-days/" target="_blank">Погода на 2 недели</a>
+             </div>
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+       </div>
+       <script src="http://www.gismeteo.ua/ajax/getInformer/?hash=76IC0NCMTswIi7" type="text/javascript"></script>
+ <!-- Gismeteo informer END -->
+</div><br>       
+       <!--<div align='center'><br><noindex><a href="/go/?http://rynok.ck.ua/price/" rel="nofollow"><img src="/img/banners/rynok_gorod.jpg" class='notborder' align='center'></a></noindex>-->
+       <!--<a href="http://www.invitro.ua/"><img src="/img/banners/invitro8jf65yh47fyhc.jpg"></a></div><br>
+       </div>-->
+                                    
+       <div style="margin-top: 1px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=8&id=72" class="link_foto_gallery" title="Просмотреть в большем размере"><img src="/img/galereya/small_2016-09-07_17-12-32.JPG">
+ Праздник Осени в детском саду №42, 1967 г.</a><br>
+ <a href="http://www.gorod.ck.ua?mode=12&id=2" class="link_razdel_gallery" title="Открыть раздел галереи">Люди</a> (20 фото)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Любопытные фотографии из жизни Черкасс, личности, события, архитектура, природа. Авторские работы</div></div>          
+       <!--<span class="text_black">Занимательное <a href='http://ureader.ru' target='_blank'>бесплатное чтиво</a></span><br><br>-->
+         
+         <!-- Minfin.com.ua region informer 250x120 yellow-->
+          <div id="minfin-informer-m1Fn-region">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="254" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/region/47/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:254px;height:120px;ove'+'rflow:hidden;"></iframe>';
+          var cl = 'minfin-informer-m1Fn-region';
+          document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+         <!-- Minfin.com.ua region informer 250x120 yellow--><br>
+         <!-- Minfin.com.ua currency informer 250x120 yellow
+          <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="250" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:250px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+          Minfin.com.ua currency informer 250x120 yellow <br> -->                                             
+                            
+             <a href="http://www.rada.cherkasy.ua/" title="Официальный портал городского совета, исполнительного комитета">Городской совет</a> <span class="text_black">Черкасс</span><br>
+             <span class="text_black">Портал</span> <a href="http://www.oda.ck.ua/" title="Черкасская областная государственная администрация">областной администрации</a><br>
+             <span class="text_black">Региональный</span> <a href="http://chk.hsc.gov.ua/" title="Региональный сервисный центр МВД в Черкасской области">сервисный центр МВД</a><br>
+             <span class="text_black">Управління</span> <a href="https://ch.npu.gov.ua/" title="Головне управління Національної поліції у Черкаській області">Національної поліції</a><br>
+             <span class="text_black">Служба </span> <a href="http://ck.mns.gov.ua/" title="Управление ГСЧС Украины в Черкасской области">чрезвычайных ситуаций</a><br>
+             <a href="http://ck.sfs.gov.ua/" title="Органы государственной фискальной службы">Фискальная служба</a> <span class="text_black">города</span><br>             
+              
+             <!--<div align='center'>
+              <div class="advertizement_user">
+               <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+               <img src="/img/reklama8ry6gh48-.jpg">
+               <div class="advertizement_user_text">Разместите здесь Вашу рекламу</div>
+              </div>
+                
+               </div>-->
+                <div style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #cccccc; padding: 19px; background: #f8f8f8;">
+<a href="http://www.gorod.ck.ua?mode=31&id=1553" class="link_foto_gallery" title="Почитать больше о картине, а так же времени и месте показа"><img src="/pic/cinema/2016-11-18-157pribitie.jpg"><br>
+ Прибытие</a><br>
+ <a href="http://www.gorod.ck.ua?mode=29" class="link_razdel_gallery" title="Что нового в кинозалах Черкасс?">Кинотеатр "Украина"</a><br>
+ (2 кино)
+ <div style="margin-top: 8px; argin-bottom: 5px; padding-top: 5px; border-top: 1px dashed; font-size: 11px;">
+ Приходите сегодня в кино. Проведите время с пользой и удовольствием. Городские кинозалы ждут вас.</div></div><div style="float: margin 0;"><div id="datepicker"></div><div><br>               </td>
+              </tr>
+           
+                    <tr>
+               <td colspan="2">
+                      <!--<div style="text-align: center; margin: 0 auto; padding-bottom: 6px;"><a href="http://www.invitro.ua/about/news/2014/9394/"><img src="invitro468x60malysh_ukr.jpg"></a></div>-->
+         
+  <!--<tr><td><table border='0' cellspacing='0' cellpadding='5'>
+           <tr>
+            <td width='20' bgcolor='red'></td>
+            <td bgcolor='#ffffff' style='border: 2px solid black; border-left: 0px;'>Всего за <b>80 грн.</b> в месяц ваш рекламный
+             баннер уже сегодня увидят более 1000 потенциальных клиентов.<br>
+             Показы в выходные дни не будут вам стоить ни копейки.<br>             
+             <b>Совершенно бесплатно</b> информация о вас публикуется
+             в самом посещаемом бизнес-каталоге Черкасс и области.<br>
+             Телефон: 54-23-25, <a href='mailto:web@ic.ck.ua'>web@ic.ck.ua</a>.</td>
+           </tr>
+          </table></td></tr>-->
+ 
+ <!-- <tr><td colspan=2 height="2" align="center"><a href="http://www.gorod.ck.ua/go/?http://rabota.ucoz.ua"><img src="http://gorod.ck.ua/banners/rabota_1.gif" border="0"></a></td></tr> -->
+ 
+ <!--<tr><td height="5" colspan="2"></td></tr>
+ <tr><td>
+ 
+ Баннерочек   
+ <table width='100%' align='center' cellspacing='0' cellpadding='0'>
+     <tr valign="middle" height="">
+      <td colspan="2">
+       <table width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>        
+        <tr><td bgcolor="#FFFFFF" align='center'>                  
+         <iframe src="/img/banners/Rud/sv_rud.html" width="768" height="90" scrolling="no" frameborder="no" align='center' valign='top' marginheight="0" marginwidth="0"> </iframe>          
+        </td></tr>
+       </table>
+      </td>
+     </tr>
+    </table>       
+ Баннерочек
+   
+ </td></tr> 
+ 
+ <tr><td height="5" colspan="2"></td></tr>-->
+ 
+ <!--<tr><td align='center'><embed src="img/banners/forex2.swf" width="468" height="60" type="application/x-shockwave-flash"
+	       pluginspage="http://www.macromedia.com/go/getflashplayer"></td></tr>-->
+ 
+ <!-- Баннер 
+ <tr><td>	                 
+      <table width='100%' border="0" cellspacing="0" cellpadding="0">        
+       <tr><td align='center'><noindex><img src='/img/banners/banner_120gr.gif' border='0'></a></noindex></td></tr>
+      </table>               
+ </td></tr>
+ /Баннерочек -->
+          
+ <!-- Ротатор баннеров --> 
+           
+      <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="ffffff">       
+        <tr>
+         <td align=center valign=middle>
+          
+          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+           <tr><td align='center'></td></tr>                              
+          </table>
+         
+         </td>
+        </tr>                  
+       </table> -->             
+ 
+   
+ <!-- /Ротатор баннеров -->
+ 
+ <!-- <tr><td align='center'><embed src="img/banners/tb_468x60.swf" width="468" height="60" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></td></tr> -->
+ 
+ <!-- Новости (Черкассы) -->
+    
+                    
+                          
+           
+                    <!-- <iframe src="/linking/index.php" height='100%' width='100%' scrolling="no" frameborder="no" align='center' valign='top' marginheight="0" marginwidth="0"> </iframe> --> 
+                                                         		               
+                    <img src="../pic/news/2017-06-14-379.jpg" class="img_bordered"><br><br>
+                                 <a href="/news/8160/" class="link_news_title_big">На мосту через Днепр 19 июня начнутся ремонтные работы</a><br>
+                                 Опубликовано: 2017-06-14 | Категория: Общество<br>
+                                 На автодороге государственного значения Н-16 Золотоноша-Черкассы-Смела-Умань 19 июня начнутся ремонтные работы на мосту через реку Днепр и на дамбе. <br /><br />Во время проведения текущего среднего ремонта моста через Днепр на автодороге Н-16 на км 23 + 068 и дамбы на участках км 12 + 300 - 23 + 062 и км 24 + 236 - 25 + 440 движение автотранспорта будет ограничено. <br /><br />В целях обеспечения безопасности дорожного движения, охраны труда и устойчивого автомобильного сообщения во время проведения...<br><div class="comments_news_first"><img src="/img/IM88u43.png"> 0:комментариев  | <a href="/?mode=208" title="Стоимость и условия рекламного сотрудничества" class="link_undecor">Ваша новость</a></div><table border="0">
+                                  <tr>
+                                   <td width="10%"><img src="../pic/news/smaller_2017-05-31-335.jpg" class="img_bordered" style="float: left; margin-right: 1em;">  </td>                                   
+                                   <td><span class="news_title"><a href="/news/8159/" class="link_news_titulka">1 июня в парке Химиков</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-31
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> КП "Дирекція парків"<br></div><br>
+                                    <div class="news_preview">Развлечения, концерт, улыбки, мороженое, каша, чай, мастер-классы. Приглашаем в черкасские парки!...</div><br><div class="news_source"><img src="/img/IM88u43.png"> 0:комментариев | <a href="/rss/" title="Получайте свежие новости Черкасс ежедневно" class="link_undecor">RSS-подписка</a></div></td>
+                                  </tr>
+                                 </table><br><br><table border="0">
+                                  <tr>
+                                   <td width="10%"><img src="../pic/news/smaller_2017-05-31-476.jpg" class="img_bordered" style="float: left; margin-right: 1em;">  </td>                                   
+                                   <td><span class="news_title"><a href="/news/8158/" class="link_news_titulka">Черкасские патрульные опросили горожан и провели совещание с перевозчиками</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-31
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Патрульна поліція Черкас <br></div><br>
+                                    <div class="news_preview">30 мая на базе Управления патрульной полиции состоялось совместное совещание с перевозчиками и Укртрансбезопасностью. До этого, на...</div><br><div class="news_source"><img src="/img/IM88u43.png"> 0:комментариев | <a href="/rss/" title="Получайте свежие новости Черкасс ежедневно" class="link_undecor">RSS-подписка</a></div></td>
+                                  </tr>
+                                 </table><br><br>     				
+		           	                                                                                                                               
+<!--/Новости (Черкассы)--> 
+
+   <!-- Баннерочек -->
+    <!--<table width='100%' align='center' cellspacing='0' cellpadding='0'>
+     <tr valign="middle" height="40">
+      <td colspan="2">
+       <table width='100%' border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">        
+        <tr height="70"><td bgcolor="#FFFFFF" align='center' valign='middle'><noindex><img src='/img/banners/mehbud_banner2.gif' border='0'></a></noindex></td></tr>
+       </table>
+      </td>
+     </tr>
+    </table>-->
+   <!-- /Баннерочек -->
+ 
+        
+               
+     
+               
+                <!--<div style="margin-left: 37px;"><a href="http://rdr.salesdoubler.com.ua/in/offer/275?aid=22451" title="Тысячи предложений работы с достойной зарплатой"><img src="/img/banners/original_f34fqfq34.jpg"></a></div>-->
+               </td>
+               <td class="news_vertical" width="250px"><!--<a href="http://nashecafe.com/"><img src="img/banners/banner_nashekafe34f43fsf-.jpg"></a>-->
+               <div class="news_vertical_text"><span class="news_title"><a href="/news/8157/" class="link_news_titulka_vertical">ВЕЛОДЕНЬ-2017</a></span><br>
+             <div class="news_source"><img src="/img/calendar.png"> 2017-05-24
+             &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> КП "Дирекція парків"<br></div><br>
+             <div class="news_vertical_preview">Веломероприятия в Черкассах! При содействии КП &laquo;Дирекция парков&raquo; в очередной раз в городе проведут Велодень-2017! 27 мая: 10.00 - площадь Б. Хмельницкого; 11.00 - старт колонны;...</div><br><span class="news_title"><a href="/news/8156/" class="link_news_titulka_vertical">В Умани задержали авто с незарегистрированным автоматическим оружием</a></span><br>
+             <div class="news_source"><img src="/img/calendar.png"> 2017-05-17
+             &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Національна поліція Черкас<br></div><br>
+             <div class="news_vertical_preview">Незарегистрированное оружие и патроны изъяли сотрудники криминальной полиции Черкасс. По факту незаконного обращения с оружием открыто уголовное производство.   Во время оперативных мероприятий сотрудники управления...</div><br><span class="news_title"><a href="/news/8155/" class="link_news_titulka_vertical">В Черкасской области появится первый в Украине мобильный стерилизационно-карантинный пункт</a></span><br>
+             <div class="news_source"><img src="/img/calendar.png"> 2017-05-16
+             &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br></div><br>
+             <div class="news_vertical_preview">Уникальный автобус, оборудованный как современный ветеринарный кабинет, поможет области оперативно и системно решать проблему бездомных животных. - Средства на оборудование мобильного стерилизационно-карантинного пункта выделены Фондом поддержки...</div><br><span class="news_title"><a href="/news/8154/" class="link_news_titulka_vertical">Из-за нехватки денег города в Черкасской области отказались от ночного освещения улиц</a></span><br>
+             <div class="news_source"><img src="/img/calendar.png"> 2017-05-15
+             &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://24tv.ua<br></div><br>
+             <div class="news_vertical_preview">В Черкасской области уже 3 города отказались от ночного освещения из-за экономии денег. Фонари горят только до полуночи, ведь тарифы на освещение, установленные государством, для местных...</div><br><span class="news_title"><a href="/news/8153/" class="link_news_titulka_vertical">Стало известно, как будет выглядеть черкасское колесо обозрения</a></span><br>
+             <div class="news_source"><img src="/img/calendar.png"> 2017-05-13
+             &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> КП "Дирекція парків"<br></div><br>
+             <div class="news_vertical_preview">Состоялась рабочая встреча куратора развития парков в городе, секретаря горсовета Александра Радуцкого и директора КП &laquo;Дирекция парков&raquo; Владимира Стойка с производителем колеса обозрения. Аттракцион производит винницкий...</div><br>     </div></td>
+              </tr>
+                            
+              <tr><td colspan="3"><table width='100%' border='0' cellspacing=0 cellpadding=0 align=center>      
+        <!-- Новые фирмы -->        
+        <tr>
+          <td valign="top">
+                          
+                <table width='100%' border='0' cellspacing="0" cellpadding="0">
+                 <tr>
+                  <td colspan="4" style="border-top: 3px solid #316494;"></td>
+                  <td colspan="4" style="border-top: 1px solid #cccccc;"></td>
+                 </tr>
+                 <tr>                  
+                  <td colspan="2" style="padding-top: 0.5em;"><span style="vertical-align: middle; font-family: Times New Roman; font-size: 2em; color: black; adding-left: 0.2em; argin-top: -15px; ackground: yellow;"> <a href='./?mode=10' class="link_vacancy_title">Организации Черкасс</a></span></td>                  
+                  <td colspan="2" style="padding-top: 0.5em;"><span style="vertical-align: middle; font-family: Times New Roman; font-size: 2em; color: black; padding-left: 0.6em; argin-top: -15px; ackground: yellow;"> <a href='./?mode=15' class="link_vacancy_title">Городские вакансии</a></span></td>
+                 </tr>                 
+                 <tr>
+                  <td colspan="2" tyle="border-top: 1px solid #cccccc;"></td>
+                  <td colspan="2" tyle="border-top: 1px solid #cccccc;"></td>
+                 </tr>
+                 <tr><td height="6px"></td></tr>
+                 <tr>
+                  <td width='50%' colspan="2" style="padding-right: 1em;">               
+                                                             
+                      <img src="/img/organization.png"> <noindex><a href='./?mode=89&id=26971' class="link_vacancy">Гранит-Стар</a> - <span class='news_preview'>Черкасский производитель гранитных изделий из украинского гранита (памятники, столы, лавочки,...</span></noindex><br>
+                                                         
+                      <img src="/img/organization.png"> <noindex><a href='./?mode=89&id=26970' class="link_vacancy">Стоматология 3D Черкассы</a> - <span class='news_preview'>Услуги предоставляются в следующих направлениях: рентгенология, лечение зубов, лечение дёсен,...</span></noindex><br>
+                                                         
+                      <img src="/img/organization.png"> <noindex><a href='./?mode=89&id=26969' class="link_vacancy">ФЛП Придан Е.В.</a> - <span class='news_preview'>Программное обеспечение для ВЭД MD Office.<br />
+Услуги таможенного брокера в...</span></noindex><br>
+                                                         
+                      <img src="/img/organization.png"> <noindex><a href='./?mode=89&id=26968' class="link_vacancy">ТОВ &quot;Трім Стар&quot;</a> - <span class='news_preview'>     ТОВ «Трим Стар»  це...</span></noindex><br>
+                               </td>
+                  <td width="1px" bgcolor="#cccccc"> </td>
+                  <td olspan="2" style="padding-left: 1em;">                                   
+                                
+                                       
+                      <img src="/img/vacancy.png"> <noindex><a href='./?mode=83&id=2637' class="link_vacancy">Оператор Call-Center по обслуживанию абонентов Kyivstar</a> - <span class='news_preview'>Обязанности:
+Предоставление консультаций абонентам Компании в телефонном режиме на счет услуг,...</span></noindex><br>
+                                   
+                      <img src="/img/vacancy.png"> <noindex><a href='./?mode=83&id=2636' class="link_vacancy">Работа на дому, в интернете, без вложений</a> - <span class='news_preview'>Работа исключительно в сети интернет, рекламно-информационного характера, график свободный, занимает...</span></noindex><br>
+                                   
+                      <img src="/img/vacancy.png"> <noindex><a href='./?mode=83&id=2635' class="link_vacancy">Куратор вводных уроков</a> - <span class='news_preview'>Ваша задача - проводить вводные занятия, на которых вы будете...</span></noindex><br>
+                                   
+                      <img src="/img/vacancy.png"> <noindex><a href='./?mode=83&id=2634' class="link_vacancy">Уборщицы(-ки)</a> - <span class='news_preview'>Срочно в супермаркеты г.Киев Дневные и ночные смены.Жилье.Оплата раз в...</span></noindex><br>
+                               </td>
+                 </tr>                                                 
+                </table>
+               
+          </td>
+        </tr>        
+        <!-- /Новые фирмы -->              	                                                     
+              	       			              
+             
+        <!-- Ротатор баннеров --> 
+                    
+<noindex><img src='/img/banners/' alt='' border=0></noindex>          
+        <!-- /Ротатор баннеров -->
+                                  
+      </table></td></tr>
+            <tr>
+       <td align='center' colspan="4">
+       
+        <div class="img_news_horizont"><a href="/news/8160/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-06-14-379.jpg" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8159/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-31-335.jpg" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8158/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-31-476.jpg" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8157/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-24-928.JPG" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8156/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-17-552.jpg" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8155/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-16-73.jpg" class="img_bordered"></a></div><div class="img_news_horizont"><a href="/news/8154/" class="link_news_titulka" title=""><img src="../pic/news/cropped_2017-05-15-443.jpg" class="img_bordered"></a></div>                          
+       </td>
+      </tr>
+      
+     <tr>
+      <td lign='center' colspan="3"><div class="news_big_kategor" style="ackground: blue;"><span class="news_big_word">& </span>КАТЕГОРИИ </div> </td>
+      <td class="quote_day">Как ни странно, но умение быть одному является условием способности любить.<br><div style="float: right; ackground: yellow; color: black;">- Эрих Фромм</div></td>
+     </tr>
+     
+     <tr><td colspan="3"><table cellspacing="0" cellpadding="0">
+
+ <tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=4" class="link_news_title_big">Общество</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_2017-06-14-379.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/8160/" class="link_news_titulka">На мосту через Днепр 19 июня начнутся ремонтные работы</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2017-06-14
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Прес-служба САД у Черкаській області<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">На автодороге государственного значения Н-16 Золотоноша-Черкассы-Смела-Умань 19 июня начнутся ремонтные работы на мосту через реку Днепр и на дамбе. <br /><br />Во время проведения текущего...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/8160/" class="link_news_titulka_footer">На мосту через Днепр 19 июня начнутся ремонтные работы</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-06-14
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Прес-служба САД у Черкаській області<br>
+                                    </div><br><span class="news_title"><a href="/news/8159/" class="link_news_titulka_footer">1 июня в парке Химиков</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-31
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> КП "Дирекція парків"<br>
+                                    </div><br><span class="news_title"><a href="/news/8158/" class="link_news_titulka_footer">Черкасские патрульные опросили горожан и провели совещание с перевозчиками</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-31
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Патрульна поліція Черкас <br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=5" class="link_news_title_big">Культура</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_2016-11-18-137.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/8110/" class="link_news_titulka">Черкасский академический областной украинский музыкально-драматический театр   имени Т.Г. Шевченко Черкасского областного совета ПРЕДСТАВЛЯЕТ</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2016-11-18
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer"><div style="text-align: center;">ПРЕМЬЕРА</div>
+<div style="text-align: center;"><br />Мина Мазайло</div>
+<br />В основу произведения легла анекдотическая история о том, как харьковский служащий &laquo;Донуголь&raquo; с Н-ской улицы Холодной Горы Мина...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/8110/" class="link_news_titulka_footer">Черкасский академический областной украинский музыкально-драматический театр   имени Т.Г. Шевченко Черкасского областного совета ПРЕДСТАВЛЯЕТ</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2016-11-18
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                                    </div><br><span class="news_title"><a href="/news/8105/" class="link_news_titulka_footer">Черкасский академический областной украинский музыкально-драматический театр имени Т. Г. Шевченко начинает ВОСКРЕСНЫЙ показ детских спектаклей</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2016-11-03
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                                    </div><br><span class="news_title"><a href="/news/8091/" class="link_news_titulka_footer">На днях будет установлен новый купол сгоревшего драматического театра</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2016-10-03
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> city.ck.ua<br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=6" class="link_news_title_big">Происшествия</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_2017-05-17-552.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/8156/" class="link_news_titulka">В Умани задержали авто с незарегистрированным автоматическим оружием</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2017-05-17
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Національна поліція Черкас<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">Незарегистрированное оружие и патроны изъяли сотрудники криминальной полиции Черкасс. По факту незаконного обращения с оружием открыто уголовное производство. <br /> <br /> Во время оперативных...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/8156/" class="link_news_titulka_footer">В Умани задержали авто с незарегистрированным автоматическим оружием</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-17
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Національна поліція Черкас<br>
+                                    </div><br><span class="news_title"><a href="/news/8144/" class="link_news_titulka_footer">У Черкасского стадиона загорелся автомобиль</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-04-04
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> city.ck.ua<br>
+                                    </div><br><span class="news_title"><a href="/news/8142/" class="link_news_titulka_footer">В Золотоношском районе продолжаются поиски пропавшего дайвера</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-03-28
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://ck.dsns.gov.ua<br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=2" class="link_news_title_big">Политика</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_sheremet.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/7877/" class="link_news_titulka">Уволен прокурор Черкасской области</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2015-06-18
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://korrespondent.net<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">Юрий Шеремет заявил, что он сам решил покинуть пост, но не хочет объявлять причины.<br />
+<br />
+Генеральный прокурор Виктор Шокин подписал приказ об увольнении с должности...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/7877/" class="link_news_titulka_footer">Уволен прокурор Черкасской области</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2015-06-18
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://korrespondent.net<br>
+                                    </div><br><span class="news_title"><a href="/news/7842/" class="link_news_titulka_footer">Новий сайт ОДА тестуватимуть громадські активісти</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2015-04-10
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Прес-служба Черкаської обласної державної адміністрації<br>
+                                    </div><br><span class="news_title"><a href="/news/7642/" class="link_news_titulka_footer">Депутати міськради Черкас збиралися просто неба </a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2014-06-17
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> kray.ck.ua<br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=1" class="link_news_title_big">Экология</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_2017-05-16-73.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/8155/" class="link_news_titulka">В Черкасской области появится первый в Украине мобильный стерилизационно-карантинный пункт</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2017-05-16
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">Уникальный автобус, оборудованный как современный ветеринарный кабинет, поможет области оперативно и системно решать проблему бездомных животных. <br /><br />- Средства на оборудование мобильного стерилизационно-карантинного пункта...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/8155/" class="link_news_titulka_footer">В Черкасской области появится первый в Украине мобильный стерилизационно-карантинный пункт</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-16
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                                    </div><br><span class="news_title"><a href="/news/8148/" class="link_news_titulka_footer">"Дирекция парков" приглашает на субботник</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-04-06
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> КП "Дирекція парків"<br>
+                                    </div><br><span class="news_title"><a href="/news/8141/" class="link_news_titulka_footer">Международная благотворительная организация «Четыре лапы» прибыла в Канев помочь в решении проблемы бездомных животных</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-03-28
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Черкаський прес-клуб<br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp; <a href="./?mode=18&id=3" class="link_news_title_big">Экономика и финансы</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_2017-05-15-443.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"> <div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/news/8154/" class="link_news_titulka">Из-за нехватки денег города в Черкасской области отказались от ночного освещения улиц</a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2017-05-15
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://24tv.ua<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">В Черкасской области уже 3 города отказались от ночного освещения из-за экономии денег. Фонари горят только до полуночи, ведь тарифы на освещение, установленные государством, для...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/news/8154/" class="link_news_titulka_footer">Из-за нехватки денег города в Черкасской области отказались от ночного освещения улиц</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2017-05-15
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://24tv.ua<br>
+                                    </div><br><span class="news_title"><a href="/news/8116/" class="link_news_titulka_footer">Депутаты приняли изменения в бюджет Черкасс на 2016-й год</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2016-12-05
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> Мерія Черкас<br>
+                                    </div><br><span class="news_title"><a href="/news/8112/" class="link_news_titulka_footer">Звонки с таксофонов на фиксированные номера телефонов становятся бесплатными</a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2016-11-24
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> ukrtelecom.ua<br>
+                                    </div><br>      </td></tr>
+                    </table><br>
+         </td></tr><tr><td class="colored_news_titulka" colspan="3">&nbsp;&nbsp; <a href="/pua/1/" class="link_news_title_big">Украина</a><br></td></tr>
+               <tr><td colspan="3"><br>
+               
+                    <table border="0" width="100%">
+                     <tr>
+                      <td width="212px"><img src="../pic/news/smaller_68655.jpg" class="img_bordered" style="argin-right: 2.4em;">       </td>                         
+                      <td style="padding-right: 1.4em;"><div style="margin-left: 1em; ackground: grey; float: left; isplay: inline-block;" lass="td_news_title_footer">
+                        <span class="news_title"><a href="/newsua/1662/" class="link_news_titulka"></a></span><br>
+                        <div class="news_source"><img src="/img/calendar.png"> 2015-02-25
+                         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> "Местные вести"<br>
+                        </div><br>                                     
+                        <div class="news_preview_footer">...</div><br><span class="news_source"><img src="/img/IM88u43.png"> 0:комментариев</span>
+                       </div>
+                         
+                       <div class="td_news_footer" style="ackground: red; float: left; isplay: inline-block;"></td>
+                       <td width="230px" style="margin-left: 2.4em; padding-left: 1em; border-left: 1px solid #cccccc;"><span class="news_title"><a href="/newsua/1661/" class="link_news_titulka_footer"></a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2014-11-20
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://blogs.korrespondent.net<br>
+                                    </div><br><span class="news_title"><a href="/newsua/1660/" class="link_news_titulka_footer"></a></span><br>
+                                    <div class="news_source"><img src="/img/calendar.png"> 2014-11-20
+                                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/man05.png"> http://korrespondent.net<br>
+                                    </div><br>      </td></tr>
+                    </table>
+         </td></tr>      
+      </table></td>
+      
+      <td owspan="2" class="column_right"><div class="column_right_text">
+                                    
+      <div class="td_archive">+ Архив</div>
+      <div class="archive_block"><div class="archive_month">Июнь &#39;17</div><div class="archive_month">Май &#39;17</div><div class="archive_month">Апрель &#39;17</div><div class="archive_month">Март &#39;17</div><div class="archive_month">Февраль &#39;17</div><div class="archive_month">Январь &#39;17</div><div class="archive_month">Декабрь &#39;16</div><div class="archive_month">Ноябрь &#39;16</div><div class="archive_month">Октябрь &#39;16</div><div class="archive_month">Сентябрь &#39;16</div><div class="archive_month">Август &#39;16</div><div class="archive_month">Июль &#39;16</div><div class="archive_month">Июнь &#39;16</div></div>
+           
+       <div class="comments_titulka">Свежие комментарии<br>
+        <br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Первый? А как же питьевые фонтаны</a></span><br>
+                 Володя 2016-04-26<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Прокурор обязан настаивать не просто на</a></span><br>
+                 Алексей Венедиктович 2016-01-12<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Добрый день!Как можно записаться на прием?Подскажите</a></span><br>
+                 Оля 2015-11-18<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Утримувачів собак потрібно притягти до кримінальної</a></span><br>
+                 Ярмоленко 2015-09-18<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Дякую за статтю, дуже корисна інформація.</a></span><br>
+                 Вероніка 2015-08-12<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">КНП "Перша Черкаська міська лікарня" ЧМР<br</a></span><br>
+                 Перша Черкаська міська лікарня 2015-08-07<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">А почему обязательна регистрация? Есть же</a></span><br>
+                 Александр 2015-07-27<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">одно меня радует, что рано или</a></span><br>
+                 Черкас 2015-07-10<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Це ж як вона його дістала...</a></span><br>
+                 Dfcz 2015-07-03<br><br><span class="news_title"><a href="?mode=209" class="link_comments_titulka">Ничево не поменялось с приходом новой</a></span><br>
+                 Вечно Недовольный 2015-06-25<br>       </div>
+       
+       <!--<div class="advertizement_user">
+        <div style="font-family: Times New Roman; color: black; font-size: 1.6em; margin-top: 0.9em; margin-bottom: 0.9em;">Рекламная секция</div>
+        <img src="/img/car13fhxfx99.jpg" style="argin-bottom: 1.2em;">                        
+       </div>-->
+       
+       <div class="td_gallery"><a href="?mode=9" class="link_undecor_black">+ Фотогалерея</a></div>
+       <div class="archive_block">
+        <div class="gallery_titulka"><IMG src="pic/gallery/../../pic/gallery/sparks61.jpg" alt="Детский парк" style="float: left; padding-right: 1em;"><span class="gallery_photo_title">Детский парк</span><br>
+                                                                              <span style="font-size: 0.8em; padding-top: 0.6em; ackground: yellow; loat: left;">Июль 2000 г.</span></div><div class="gallery_titulka"><IMG src="pic/gallery/../../pic/gallery/s2.jpg" alt="Ольга Алексеевна Сокуренко - художница (батик, масло)" style="float: left; padding-right: 1em;"><span class="gallery_photo_title">Ольга Алексеевна Сокуренко -</span><br>
+                                                                              <span style="font-size: 0.8em; padding-top: 0.6em; ackground: yellow; loat: left;">Март 2003 г.</span></div><div class="gallery_titulka"><IMG src="pic/gallery/../../pic/gallery/sPa300046.jpg" alt="Вид с Холма Славы" style="float: left; padding-right: 1em;"><span class="gallery_photo_title">Вид с Холма Славы</span><br>
+                                                                              <span style="font-size: 0.8em; padding-top: 0.6em; ackground: yellow; loat: left;">Ноябрь 2002 г.</span></div><div class="gallery_titulka"><IMG src="pic/gallery/../../pic/gallery/sP1120075.jpg" alt="Зима 2002-2003 года" style="float: left; padding-right: 1em;"><span class="gallery_photo_title">Зима 2002-2003 года</span><br>
+                                                                              <span style="font-size: 0.8em; padding-top: 0.6em; ackground: yellow; loat: left;">Зима 2003 г.</span></div>       </div>
+       
+                          
+       </div>                      
+      </td>
+     </tr>     
+     
+     <tr><td colspan="4">
+<table class='footer_table_links' width='1117px' align='center' border='0' cellspacing='0' cellpadding='0'>
+  <tr>          
+   <td class="colored">Новости и сюжеты</td>
+   <td class="colored">Вакансии и работа</td>
+   <td class="colored">О городе</td>
+   <td class="colored">Развлечения</td>
+  </tr> 
+  <tr>
+   <td><ul class='footer_text_vertical'>        
+        <li><a>Экология</a></li><li><a>Политика</a></li><li><a>Экономика и финансы</a></li><li><a>Общество</a></li><li><a>Культура</a></li><li><a>Происшествия</a></li>                
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=10' class='footer_links_vertical'>Организации и фирмы</a></li>
+        <li><a href='/?mode=11' class='footer_links_vertical'>Банки и финансы</a></li>
+        <li><a href='/?mode=15&md=list' class='footer_links_vertical'>Поиск сотрудников</a></li>
+        <li><a href='/?mode=14&md=list' class='footer_links_vertical'>Резюме соискателей</a></li>
+        <li><a>Центры занятости</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=2&md=list' class='footer_links_vertical'>Архитектура</a></li>
+        <li><a href='/?mode=3' class='footer_links_vertical'>Символика</a></li>
+        <li><a href='/?mode=1' class='footer_links_vertical'>История</a></li>
+        <li><a href='/?mode=6' class='footer_links_vertical'>Образование</a></li>
+        <li><a href='/?mode=4' class='footer_links_vertical'>Муниципалитет</a></li>
+        <li><a href='/?mode=5' class='footer_links_vertical'>Гос. учреждения</a></li>
+       </ul></td>
+   <td><ul class='footer_text_vertical'>
+        <li><a href='/?mode=203' class='footer_links_vertical'>Рестораны и кафе</a></li>
+        <li><a href='/?mode=32' class='footer_links_vertical'>Бары и клубы</a></li>
+        <li><a href='/?mode=29&с=1' class='footer_links_vertical'>Городская киноафиша</a></li>
+        <li><a href='/?mode=47' class='footer_links_vertical'>Театральные постановки</a></li>
+        <li><a href='/?mode=9' class='footer_links_vertical'>Фотогалерея</a></li>
+        <li><a href='/?mode=201' class='footer_links_vertical'>Неустаревающие советы</a></li>
+       </ul></td>    
+  </tr>
+  <tr>
+   <td colspan="3"><div class="copyright2"><a href="http://www.gorod.ck.ua/?mode=207" class="link_undecor" title="Важная информация о сайте www.gorod.ck.ua">О сайте</a> www.gorod.ck.ua.
+                     <a href="http://www.gorod.ck.ua/?mode=208" class="link_undecor" title="Услуги и цены">Размещение рекламы и информации</a> на сайте<br><b>Создание и поддержка -</b> <a href="mailto:skyatmiami@gmail.com" class="link_undecor">Сергей Бондарь</a>.
+                    Все права защищены и охраняются законом Украины<br>
+
+                    &copy; 2001-2017 <b><a href=http://www.gorod.ck.ua/ class="link_undecor">www.gorod.ck.ua</a></b> не несёт 
+                    ответственности за содержание сайтов и иных источников информации, на которых ссылается</div></td>   
+   <td align='right'></td>
+  </tr>
+ </table>   
+</td></tr>     
+    </table><br>    
+    
+    <div class="copyright">
+ 18000, Украина, г. Черкассы, ул. Б. Вишневецкого, 34<br>
+                      Главный информационный портал города Черкассы (Черкасская обл.). Самые свежие и актуальные 
+                      новости в жизни горожан, интересные события, комментарии очевидцев.
+                      Афиши и планируемые мероприятия, заведения для всевозможного досуга и развлечений для молодёжи, 
+                      бары, рестораны, ночные клубы, дискотеки, служба знакомств, места отдыха для семьи и детей, 
+                      спортивные секции. Кинотеатры и яркие киноанонсы, музыкальные вечера и художественные выставки<br><br>
+                      
+                      Транспортное сообщение, решения городской власти, коммунальные вопросы, а также полезные 
+                      справочные данные. Городское такси, номера телефонов экстренного вызова, магазины, торговые 
+                      центры, покупки для всех. История города, культурное наследие, достопримечательности и фотогалерея. 
+                      Всё для бизнеса и трудоустройства. Погода, рекламные объявления, курсы валют, интерактивный 
+                      календарь. Популярные материалы для гостей города и иностранцев, путеводители, карты проезда<br><br>
+</div>                      <!-- Yandex.Metrika counter
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+   <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1329129 = new Ya.Metrika({id:1329129, webvisor:true, clickmap:true});}
+    catch(e) { }
+    </script>
+   </div>
+  <noscript><div><img src="//mc.yandex.ru/watch/1329129" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  /Yandex.Metrika counter --> </body>
+</html>
